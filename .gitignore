@@ -2,6 +2,11 @@
 progress.txt
 website/static/js
 website/static/scss
+design.xd
+*.jpg
+*.jpeg
+*.png
+
 
 # //SECTION: GENERAL
 
