@@ -1,3 +1,0 @@
-BUSINESS_INFO = {
-    
-}
