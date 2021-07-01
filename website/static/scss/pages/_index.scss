@@ -1,0 +1,11 @@
+#index_section1{
+    h1{
+        @include proj_h1;
+    }
+    small{
+        @include subtitle;
+    }
+    h1, small{
+        margin-left: 1rem;
+    }
+}

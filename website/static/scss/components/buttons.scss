@@ -1,0 +1,46 @@
+@mixin primary_btn{
+    color: $text_inv;
+    background-color: $primary;
+    border: .9rem solid transparent;
+    border-radius: $border_radius;
+}
+
+@mixin secondary_btn{
+    color: $primary;
+    background-color: $secondary;
+    border: .05rem solid $primary;
+    border-radius: $border_radius;
+}
+
+
+
+
+.button_like{
+    display: flex;
+    border-radius: 10em;
+    box-shadow: 0.1em 0.3em 1em 0.05em $shadow_color;
+    justify-content: center;
+    align-items: center;
+    border: $border_width solid $primary;
+    padding: .5em 1em;
+    gap: 1em;
+    width: 75%;
+    img{
+        width: 1.5em;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+.inverse_btn_like{
+    background-color: $secondary;
+    color: $primary;
+    border-width: .15em;
+}
+
+.standard_btn_like{
+    background-color: $primary;
+    color: $text_inv;
+    border-width: .15em;
+}

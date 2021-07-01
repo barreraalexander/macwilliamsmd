@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.5 22.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-width: 2.5px;
+      }
+    </style>
+  </defs>
+  <g id="hamburger" transform="translate(-310.25 -19.25)">
+    <line id="Line_2" data-name="Line 2" class="cls-1" x2="25" transform="translate(311.5 20.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-1" x2="25" transform="translate(311.5 30.5)"/>
+    <line id="Line_4" data-name="Line 4" class="cls-1" x2="25" transform="translate(311.5 40.5)"/>
+  </g>
+</svg>

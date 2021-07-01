@@ -1,0 +1,64 @@
+h1,h2,h3,p,ul,li{
+    margin: 0;
+}
+
+
+@mixin proj_h1{
+    color: $primary;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+@mixin proj_h2{
+    color: $primary;
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+@mixin proj_a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+@mixin heading{
+    color: $primary;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+@mixin subtitle{
+    font-style: italic;
+    color: $accent_dk;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+
+@mixin details{
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.sm_details{
+    font-size: .8rem;
+    color: $accent_dk;
+    font-style: italic;
+}
+
+@mixin button_text{
+    font-weight: 500;
+
+}
+
+@mixin sm_paragraph{
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+@mixin md_paragraph{
+    font-size: 1.4rem;
+    font-weight: 400;
+    
+}

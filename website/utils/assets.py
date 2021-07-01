@@ -4,7 +4,9 @@ bundles = {
     'main_scss' : Bundle(
         'scss/main.scss',
         filters='libsass',
-        depends='scss/*.scss',
+        depends=['scss/*.scss',
+                'scss/pages/*.scss',
+                'scss/components/*.scss', ],
         output='gen/css/main.%(version)s.css'
     ),
     'main_js' : Bundle(
