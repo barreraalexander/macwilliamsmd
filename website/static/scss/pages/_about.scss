@@ -1,5 +1,5 @@
 #about_section{
-    margin: 2em;
+    margin: $section_margin;
     h1{
         @include proj_h1;
         // font-size: 2rem;

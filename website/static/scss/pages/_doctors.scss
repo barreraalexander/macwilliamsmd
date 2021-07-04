@@ -1,5 +1,5 @@
 #doctors_section{
-    margin: 2em;
+    margin: $section_margin;
     h1{
         @include proj_h1;
     }
