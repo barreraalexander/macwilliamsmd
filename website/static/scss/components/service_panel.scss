@@ -1,0 +1,35 @@
+.service_ctnr{
+    padding: 2em;
+    display: flex;
+    gap: 1em;
+    .picture_title{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        gap: 1em;
+        align-items: center;
+        flex: 1;
+        p{
+            @include border_bottom($primary);
+        }
+        img{
+            width:7em;
+        }
+    }
+    .service_description{
+        flex: .8;
+    }
+}
+
+
+.inverse_service_panel{
+    background-color: $primary;
+    color: $text_inv;
+    flex-direction: row-reverse;
+    .picture_title{
+        p{
+            @include border_bottom($text_inv);
+        }
+    }
+
+}

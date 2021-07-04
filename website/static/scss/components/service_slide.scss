@@ -1,0 +1,28 @@
+.serice_slide{
+}
+
+.slide_description_ctnr{
+    margin-top: 2em;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    margin:  0 -2em;
+    p{
+        @include md_paragraph;
+        z-index: 999;
+        position: relative;
+        padding: 1em;
+    }
+}
+
+.stripe{
+    background-color: $secondary_lighter;
+    width: 150vw;
+    height: 4em;
+    position: absolute;
+    z-index: 998;
+    top: 2em;
+    left: -5em;
+    transform: rotate(18deg);
+}
+

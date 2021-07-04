@@ -25,12 +25,11 @@ def component(btn_type='navigation'):
         classes = "standard_btn_like"
         btn_text = "FILL OUT THE FORM"
 
+    elif btn_type=='submit':
+        img_src = url_for('static', filename='images/assets/send.svg')
+        classes = "standard_btn_like"
+        btn_text = "SUBMIT"
 
-
-    # # img_src = url_for('static', filename='images/assets/navigation.svg')
-    # img_src = url_for('static', filename='images/assets/send.svg')
-    # classes = "standard_btn_like"
-    # btn_text = "Navigate Here"
     return Markup (f"""
         <div class="button_like {classes}">
             <img

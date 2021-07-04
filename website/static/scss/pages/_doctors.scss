@@ -1,0 +1,49 @@
+#doctors_section{
+    margin: 2em;
+    h1{
+        @include proj_h1;
+    }
+}
+
+.img_circle_ctnr{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.img_ctnr{
+    @include box_shadow;
+    background-color: $secondary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 16em;
+    height: 16em;
+    overflow: hidden;
+    img{
+        width: 70%;
+    }
+}
+
+.doctor_panel_ctnr{
+    margin-bottom: 2em;
+    h3{
+        @include proj_h2;
+        color: $accent_dk;
+    }
+    small{
+        @include details;
+        color: $accent_dk;
+    }
+    p{
+        // @include md_paragraph;
+        @include sm_paragraph;
+        margin-top: 1em;
+    }
+    hr{
+        margin: 0 auto;
+        width: 90%;
+        opacity: .5;
+    }
+}

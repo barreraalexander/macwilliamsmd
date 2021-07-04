@@ -3,17 +3,45 @@
 {% block content %}
 <main>
     <section id="index_section1">
-        <h1>
+        <h1 id="slide_h1">
             Mac Williams MD
         </h1>
-        <small>
+        <small id="slide_small">
             & Associates
         </small>
         <div class="slide_dots_ctnr">
+            <div class="slide_dot" dataset-active='true' data-panel_id:"#"></div>
             <div class="slide_dot" data-panel_id:"#"></div>
             <div class="slide_dot" data-panel_id:"#"></div>
             <div class="slide_dot" data-panel_id:"#"></div>
             <div class="slide_dot" data-panel_id:"#"></div>
+        </div>
+        <div id="slider_ctnr">
+            {{ service_slide('welcome')}}
+            <!-- {{ service_slide('ekg')}} -->
+            <!-- {{ service_slide('laboratory')}} -->
+            <!-- {{ service_slide('radiology')}} -->
+            <!-- {{ service_slide('gynecology')}} -->
+        </div>
+        <div class="doctors_ctnr">
+            <h2>
+                Our Healthcare Providers
+            </h2>
+            <div class="doctor_card_ctnr">
+                {{doctor_card('Williams')}}
+                {{doctor_card('Jones')}}
+            </div>
+            <button>
+                Read More
+            </button>
+        </div>
+        <div class="insurances_ctnr">
+            <h2>
+                Insurances that we Accept
+            </h2>
+            <div class="insurance_imgs">
+                
+            </div>
         </div>
     </section>
 </main>

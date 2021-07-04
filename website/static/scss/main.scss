@@ -1,11 +1,21 @@
 // MUST IMPORT FIRST
 @import '_variables';
 @import '_typo';
+@import '_mixin';
 
 @import './components/buttons';
+@import './components/service_panel';
+@import './components/forms';
+@import './components/service_slide';
+@import './components/doctor_card';
 
 @import './pages/_base';
 @import './pages/_index';
+@import './pages/_about';
+@import './pages/_doctors';
+@import './pages/_services';
+@import './pages/_contact';
+@import './pages/_new_client';
 
 
 

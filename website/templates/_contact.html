@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main>
+        <section id="contact_section">
+            <h1>
+                Reach Out
+            </h1>
+            <div class="form_ctnr">
+                <div class="form_group">
+                    {{form.fname.label}}
+                    {{form.fname}}
+                </div>
+                <div class="form_group">
+                    {{form.fname.label}}
+                    {{form.fname}}
+                </div>
+
+                <div class="form_group_btn">
+                    <img src="{{ url_for('static', filename='images/assets/send.svg') }}" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

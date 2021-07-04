@@ -1,0 +1,33 @@
+#new_client_section{
+    margin: 2em;
+    h1{
+        @include proj_h1;
+    }
+    p:first-of-type{
+        @include sm_paragraph;
+        margin: .5em 0em;
+        // color: red;
+    }
+    a{
+        @include proj_a;
+        text-decoration: underline;
+    }
+    #new_client_ctnr{
+        margin-top: 3em;
+        h3{
+            @include proj_h2;
+            color: $accent_dk;
+        }
+        hr{
+            margin-bottom: 1em;
+        }
+        .form_ctnr{
+            border: none;
+            .button_like{
+                margin: 0 auto;
+                font-weight: 600;
+                padding: 0;
+            }
+        }
+    }
+}

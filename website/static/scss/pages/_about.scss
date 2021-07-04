@@ -1,0 +1,46 @@
+#about_section{
+    margin: 2em;
+    h1{
+        @include proj_h1;
+        // font-size: 2rem;
+    }
+}
+
+#about_header_ctnr{
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+    margin-top: 2em;
+    h2{
+        @include subtitle;
+        font-size: 2rem;
+    }
+    small{
+        @include details;
+        color: $accent_dk;
+        font-size: 1.4rem;
+    }
+    button{
+        padding: .5em;
+    }
+    #book_now_btn{
+        @include secondary_btn;
+        flex: 1;
+        font-size: 1rem;
+    }
+    #new_client_btn{
+        @include primary_btn;
+        flex: 1;
+        font-size: 1rem;
+    }
+    p{
+        @include md_paragraph;
+        // font-size: 1.2rem;
+    }
+}
+
+#btn_ctnr{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}

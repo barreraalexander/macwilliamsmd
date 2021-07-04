@@ -1,11 +1,82 @@
 #index_section1{
+    margin: 2em;
     h1{
         @include proj_h1;
     }
     small{
         @include subtitle;
     }
-    h1, small{
-        margin-left: 1rem;
+    .img_ctnr{
+        img{
+            width: unset;
+        }
+        #radiology_img{
+            margin-top: 1em;
+            margin-left: 8em;
+        }
+        #laboratory_img{
+            margin-top: 1em;
+        }
     }
+    #slider_ctnr{
+        margin-top: 2em;
+    }
+}
+
+
+.doctors_ctnr{
+    background-color: $secondary;
+    margin: 2em -2em;
+    padding: 2em 0;
+    display: flex;
+    flex-flow: column;
+
+    h2{
+        @include proj_h2;
+        text-align: center;
+    }
+    .doctor_card{
+        margin-top: 2em;
+    }
+    button{
+        @include primary_btn;
+        font-size: 2rem;
+        padding: .5em 1em;
+        margin: 1em auto;
+    }
+}
+
+
+.insurances_ctnr{
+    margin-top: 4em;
+    h2{
+        @include proj_h2;
+        text-align: center;
+    }
+    .insurance_imgs{
+        background-color: $secondary;
+        display: flex;
+        height: 5em;
+        margin: 1em -2em;
+    }
+}
+
+
+
+.slide_dots_ctnr{
+    display: flex;
+    gap: .5em;
+    margin-top: .5em;
+}
+
+.slide_dot{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: $primary;
+    border: $border_width solid $accent_dk;
+}
+
+.slide_dot[dataset-active='true']{
+    background-color: $secondary;
 }

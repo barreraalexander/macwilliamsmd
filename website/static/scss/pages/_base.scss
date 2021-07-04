@@ -60,6 +60,7 @@ image{
         width: 50vw;
         height: 90vh;
         padding: 1em 0;
+        z-index: 1000;
         li{
             width: 100%;
             text-align: center;
@@ -75,8 +76,8 @@ image{
             gap: 2rem;
             :hover{
                 a{
+                    @include border_bottom($primary);
                     transition: 1s;
-                    border-bottom: $border_width solid $primary
                 }
             }
             a{
@@ -106,6 +107,9 @@ image{
             @include details;
             font-style: italic;
         }
+        i{
+            width: 70%;
+        }
     }
     .action_ctnr+.action_ctnr{
         margin-top: 1.5em;
@@ -127,8 +131,6 @@ image{
         p{
             @include subtitle;
             font-size: 1.3rem;
-            // font-family: 'Times New Roman', Times, serif;
-            // font-family: 'Helvetica';
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
         }
@@ -183,9 +185,9 @@ image{
 }
 
 main{
-    background-color: red;
+    // background-color: red;
     width: 100%;
-    height: 10em;
+    min-height: 10em;
 }
 
 

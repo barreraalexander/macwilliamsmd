@@ -1,0 +1,7 @@
+@mixin box_shadow{
+    box-shadow: 0.1em 0.3em 1em 0.05em $shadow_color;
+}
+
+@mixin border_bottom($color){
+    border-bottom: $border_width solid $color;
+}

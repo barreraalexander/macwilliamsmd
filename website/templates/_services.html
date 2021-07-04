@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main>
+        <section id="services_section">
+            <h1>
+                Our Services
+            </h1>
+            {{service_panel('ekg')}}
+            {{service_panel('laboratory')}}
+            {{service_panel('radiology')}}
+            {{service_panel('gynecology')}}
+            <div class="btn_ctnr">
+                <button id="book_now_btn">
+                    BOOK NOW
+                </button>
+                <button id="new_client_btn">
+                    NEW CLIENT
+                </button>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

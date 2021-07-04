@@ -5,7 +5,8 @@ h1,h2,h3,p,ul,li{
 
 @mixin proj_h1{
     color: $primary;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    // font-size: 2.5rem;
     font-weight: 700;
 }
 

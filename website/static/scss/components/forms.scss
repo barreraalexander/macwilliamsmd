@@ -1,0 +1,31 @@
+.form_ctnr{
+    border-radius: 1em;
+    border: $border_width solid $primary;
+    width: 90%;
+}
+.form_group{
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    gap: .5em;
+    margin-bottom: 1em;
+    input{
+        border: $border_width solid $primary;
+        border-radius: $border_radius;
+        width: 90%;
+        font-size: 1.2rem;
+        padding: .5em;
+    }
+}
+.form_group_btn{
+    display: flex;
+    position: relative;
+    border-radius: 0 0 1em 1em;
+    justify-content: center;
+    background-color: $primary;
+    bottom: -1px;
+    padding: .5em;
+    img{
+        width: 3em;
+    }
+}

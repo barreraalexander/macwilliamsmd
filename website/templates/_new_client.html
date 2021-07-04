@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main>
+        <section id="new_client_section">
+            <h1>
+                Welcome
+            </h1>
+            <p>
+                This is a welcome message. This is a welcome message. This is a welcome message. This is a welcome message. This is a welcome message. This is a welcome message. This is a welcome message. This is a welcome message. This is a welcome message. This is a welcome message. 
+            </p>
+            <a href="{{url_for('main.contact')}}">
+                Contact Us Here...
+            </a>
+            <div id="new_client_ctnr">
+                <h3>
+                    New Patient
+                </h3>
+                <hr>
+                <div class="form_ctnr">
+                    <div class="form_group">
+                        {{form.fname.label}}
+                        {{form.fname}}
+                    </div>
+                    <div class="form_group">
+                        {{form.contact_info.label}}
+                        {{form.contact_info}}
+                    </div>
+                    {{button_like('submit')}}
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
