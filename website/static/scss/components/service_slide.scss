@@ -26,3 +26,21 @@
     transform: rotate(18deg);
 }
 
+
+
+
+@media only screen and (min-width: $tablet_bp){
+    .stripe{
+        display: none;
+    }
+    .slide_description_ctnr{
+        width: unset;
+    }
+    #slider_ctnr{
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    
+
+}

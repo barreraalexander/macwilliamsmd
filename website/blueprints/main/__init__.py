@@ -4,3 +4,10 @@ CONTACT_DICT = {
     'address_city' : 'Miami',
     'address' : '8500 Jones Street, Miami FL 00000',
 }
+
+SERVICES = {
+    'ekg',
+    'laboratory',
+    'radiology',
+    'gynecology'
+}

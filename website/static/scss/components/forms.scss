@@ -29,3 +29,36 @@
         width: 3em;
     }
 }
+
+.form_group_btn_lg{
+    display: none;
+}
+
+@media only screen and (min-width: $tablet_bp){
+    .form_ctnr{
+        border: none;
+    }
+
+    .form_group_btn{
+        display: none;
+    }
+
+    .form_columns{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .form_column{
+        width: 40%;
+    }
+
+    .form_group_btn_lg{
+        display: block;
+        padding: 1em;
+        width: 100%;
+        .button_like{
+            width: 10rem;
+        }
+    }
+
+}

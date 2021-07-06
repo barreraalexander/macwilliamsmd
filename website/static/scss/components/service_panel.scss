@@ -1,14 +1,15 @@
 .service_ctnr{
+    align-items: center;
     padding: 2em;
     display: flex;
-    gap: 1em;
+    gap: 3em;
+    justify-content: center;
     .picture_title{
         display: flex;
         flex-flow: column;
         justify-content: flex-start;
-        gap: 1em;
+        gap: 3em;
         align-items: center;
-        flex: 1;
         p{
             @include border_bottom($primary);
         }
@@ -17,7 +18,10 @@
         }
     }
     .service_description{
-        flex: .8;
+        width: 50%;
+    }
+    .lg_service_img{
+        display: none;
     }
 }
 
@@ -29,6 +33,48 @@
     .picture_title{
         p{
             @include border_bottom($text_inv);
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: $tablet_bp){
+    .service_ctnr{
+        align-items: flex-start;
+        .sm_service_img{
+            display: none;
+        }
+        .lg_service_img{
+            display: block;
+        }
+        .picture_title{
+            .sm_service_title{
+                display: none;
+            }
+            img{
+                width: 18rem;
+            }
+        }
+        .service_description{
+            display: flex;
+            flex-flow: column;
+            gap: 1em;
+            p{
+                @include md_paragraph;
+            }
+            .lg_service_title{
+                display: block;
+                @include proj_h1;
+            }
+        }
+    }
+    .inverse_service_panel{
+        .service_description{
+            text-align: right;
+            .lg_service_title{
+                // text-align: right;
+            }
         }
     }
 

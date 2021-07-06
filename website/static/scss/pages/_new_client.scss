@@ -30,4 +30,38 @@
             }
         }
     }
+    .columns_ctnr{
+        display: flex;
+    }
+    .left_column{
+        align-items: flex-start;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+    }
+    .right_column{
+        align-items: center;
+        flex: 1;
+        display: none;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: $tablet_bp){
+    #new_client_section{
+        .right_column{
+            display: flex;
+        }
+        #new_client_ctnr{
+            .form_ctnr{
+                .button_like{
+                    max-width: 12rem;
+                    margin: 0 1em;
+                }
+            }
+            
+        }
+
+    }
 }

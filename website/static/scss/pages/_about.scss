@@ -4,6 +4,38 @@
         @include proj_h1;
         // font-size: 2rem;
     }
+    .hidden_about{
+        display: none;
+    }
+    .row_img_ctnr{
+        display: none;
+    }
+    .about_row{
+        margin-top: 1rem;
+    }
+    #btn_ctnr{
+        margin: 1em 0;
+    }
+    .about_doctor_ctnr{
+        margin: 5em 0;
+        h1{
+            text-align: center;
+        }
+    }
+    .about_doctor_panels_lg_ctnr{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2em;
+        margin-top: 2em;
+        .doctor_panel_lg_ctnr{
+            width:15rem;
+            max-width: 160px;
+            text-align: center;
+        }
+    }
+
 }
 
 #about_header_ctnr{
@@ -22,25 +54,53 @@
     }
     button{
         padding: .5em;
+        width: 12rem;
     }
     #book_now_btn{
         @include secondary_btn;
-        flex: 1;
         font-size: 1rem;
     }
     #new_client_btn{
         @include primary_btn;
-        flex: 1;
         font-size: 1rem;
     }
     p{
         @include md_paragraph;
-        // font-size: 1.2rem;
     }
 }
 
 #btn_ctnr{
     display: flex;
     gap: 2em;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+
+@media only screen and (min-width: $tablet_bp){
+    #about_section{
+        .hidden_about{
+            display: block;
+        }
+        .about_row{
+            align-items: flex-start;
+            display: flex;
+            gap: 2em;
+
+        }
+        .row_text_ctnr{
+            display: flex;
+            flex-flow: column;
+            flex: 1;
+        }
+        .row_img_ctnr{
+            display: block;
+            position: relative;
+            flex: 1;
+            overflow: hidden;
+        }
+        #btn_ctnr{
+            // margin: unset;
+        }
+    
+    }
 }

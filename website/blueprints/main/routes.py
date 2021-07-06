@@ -3,9 +3,12 @@ from website.blueprints.main import CONTACT_DICT
 from website.components.button_like import component as button_like
 from website.components.doctor_card import component as doctor_card
 from website.components.doctor_panel import component as doctor_panel
+from website.components.doctor_panel_lg import component as doctor_panel_lg
 from website.components.service_panel import component as service_panel
 from website.components.service_slide import component as service_slide
+from website.components.service_grid import component as service_grid
 from website.components.doctor_card import component as doctor_card
+from website.components.link_set import component as link_set
 from website.blueprints.api.forms import ContactUsForm
 from website.blueprints.api.forms import NewClientForm
 
@@ -19,6 +22,8 @@ def index():
                         button_like=button_like,
                         service_slide=service_slide,
                         doctor_card=doctor_card,
+                        doctor_panel_lg=doctor_panel_lg, 
+                        link_set=link_set,
                         CONTACT_DICT=CONTACT_DICT)
 
 
@@ -27,6 +32,8 @@ def about():
     return render_template('_about.html',
                         title="About Us",
                         button_like=button_like,
+                        link_set=link_set,
+                        doctor_panel_lg=doctor_panel_lg, 
                         CONTACT_DICT=CONTACT_DICT)
 
 
@@ -36,6 +43,8 @@ def doctors():
                         title="Our Doctors",
                         button_like=button_like,
                         doctor_panel=doctor_panel,
+                        link_set=link_set,
+                        doctor_panel_lg=doctor_panel_lg,
                         CONTACT_DICT=CONTACT_DICT)
 
 
@@ -45,6 +54,8 @@ def services():
                         title="Our Services",
                         button_like=button_like,
                         service_panel=service_panel,
+                        link_set=link_set,
+                        service_grid=service_grid,
                         CONTACT_DICT=CONTACT_DICT)
 
 @main.route('/contact')
@@ -54,6 +65,7 @@ def contact():
                         title="Contact",
                         button_like=button_like,
                         service_panel=service_panel,
+                        link_set=link_set,
                         form=form,
                         CONTACT_DICT=CONTACT_DICT)
 
@@ -66,5 +78,7 @@ def new_client():
                         button_like=button_like,
                         service_panel=service_panel,
                         form=form,
+                        link_set=link_set,
+                        service_grid=service_grid,
                         CONTACT_DICT=CONTACT_DICT)
 

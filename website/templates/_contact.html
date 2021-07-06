@@ -7,18 +7,41 @@
                 Reach Out
             </h1>
             <div class="form_ctnr">
-                <div class="form_group">
-                    {{form.fname.label}}
-                    {{form.fname}}
-                </div>
-                <div class="form_group">
-                    {{form.fname.label}}
-                    {{form.fname}}
+                <div class="form_columns">
+                    <div class="form_column">
+                        <div class="form_group">
+                            {{form.fname.label}}
+                            {{form.fname}}
+                        </div>
+                        <div class="form_group">
+                            {{form.fname.label}}
+                            {{form.fname}}
+                        </div>
+                    </div>
+                    <div class="form_column">
+                        <div class="form_group">
+                            {{form.fname.label}}
+                            {{form.fname}}
+                        </div>
+                        <div class="form_group">
+                            {{form.fname.label}}
+                            {{form.fname}}
+                        </div>
+                    </div>
+
+                    <div class="recaptcha_ctnr">
+                    </div>
+
+
+                    <div class="form_group_btn_lg">
+                        {{button_like('submit')}}
+                    </div>
+    
+                    <div class="form_group_btn">
+                        <img src="{{ url_for('static', filename='images/assets/send.svg') }}" alt="">
+                    </div>
                 </div>
 
-                <div class="form_group_btn">
-                    <img src="{{ url_for('static', filename='images/assets/send.svg') }}" alt="">
-                </div>
             </div>
         </section>
     </main>

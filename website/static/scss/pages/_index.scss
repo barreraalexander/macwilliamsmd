@@ -21,6 +21,9 @@
     #slider_ctnr{
         margin-top: 2em;
     }
+    .doctor_panels_lg_ctnr{
+        display: none;
+    }
 }
 
 
@@ -79,4 +82,138 @@
 
 .slide_dot[dataset-active='true']{
     background-color: $secondary;
+}
+
+
+.main_display_ctnr{
+    .right_col{
+        display: none;
+    }
+    .left_col{
+        .buttons_ctnr{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $tablet_bp){
+    .main_display_ctnr{
+        // border: 1px solid blue;
+        height: 90vh;
+        position: relative;
+        display: flex;
+
+        .left_col, .right_col{
+            // border: 1px solid red;
+        }
+        
+        .left_col{
+            background-color: $accent_lt;
+            display: flex;
+            flex-flow: column;
+            padding: 2em;
+            width: 40%;
+            .buttons_ctnr{
+                display: flex;
+                justify-content: flex-start;
+                gap: 1em;
+                margin-top: 2em;
+                button{
+                    padding: .5em;
+                    font-size: 1rem;
+                    width: 45%;
+                }
+            }
+            .book_btn{
+                @include primary_btn;
+            }
+            .phone_btn{
+                @include secondary_btn;
+            }
+            .slide_dots_ctnr{
+                order: 1;
+                margin-top: auto;
+            }
+        }
+        
+        .right_col{
+            display: block;
+            overflow: hidden;
+            position: relative;
+            width: 60%;
+            img{
+                height: 100%;
+                position: absolute;
+            }
+            #welcome_full{
+                right: -50rem;
+            }
+            #ekg_full{
+                right: -33rem;
+            }
+            #laboratory_full{
+                right: -12rem;
+            }
+            #gynecology_full{
+                right: -26rem;
+            }
+            #radiology_full{
+                right: -69em;
+            }
+        }
+    }
+    #index_section1{
+        margin: 0;
+        .img_circle_ctnr{
+            display: none;
+        }
+        .doctor_panels_lg_ctnr{
+            margin-top: 2em;
+            display: flex;
+            flex-flow: wrap;
+            gap: 4em;
+            justify-content: center;
+            hr{
+                margin: 0;
+                opacity: .5;
+            }
+        }
+    }
+    .doctors_ctnr{
+        margin: unset;
+        background-color: $text_inv;
+        .doctor_card_ctnr{
+            display: none;
+        }
+        #read_more_button{
+            display: none;
+        }
+    }
+
+    .insurances_ctnr {
+        .insurance_imgs{
+            margin: unset;
+        }
+
+    }
+}
+
+
+@media only screen and (min-width: $desktop_bp){
+    .main_display_ctnr{
+        .right_col{
+            #welcome_full{
+                right: -15rem;
+            }
+            #ekg_full{
+                right: -4rem;
+            }
+            #gynecology_full{
+                right: -16rem;
+            }
+            #radiology_full{
+                right: -20em;
+            }
+        }
+    }
 }

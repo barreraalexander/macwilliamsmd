@@ -12,15 +12,17 @@ def component (lastname):
                     <img src="{img_src}" alt="doctor svg">
                 </div>
             </div>
-            <h3>
-                {firstname} {lastname}
-            </h3>
-            <small>
-                {titles}
-            </small>
-            <p>
-                {details}
-            </p>
+            <div class="doctor_text_ctnr">
+                <h3>
+                    {firstname} {lastname}
+                </h3>
+                <small>
+                    {titles}
+                </small>
+                <p>
+                    {details}
+                </p>
+            </div>
         </div>
 
     """)

@@ -4,9 +4,21 @@
 
     <main>
         <section id="services_section">
-            <h1>
-                Our Services
-            </h1>
+            <div class="services_banner_ctnr">
+                <div class="services_text_ctnr">
+                    <h1>
+                        Our Services
+                    </h1>
+                    <p class="service_summary">
+                        Summary about our services. Summary about our services. Summary about our services. 
+                    </p>
+                    <button class="book_btn">
+                        BOOK NOW
+                    </button>
+                </div>
+                {{service_grid()}}
+            </div>
+
             {{service_panel('ekg')}}
             {{service_panel('laboratory')}}
             {{service_panel('radiology')}}

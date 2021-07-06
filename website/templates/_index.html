@@ -3,37 +3,76 @@
 {% block content %}
 <main>
     <section id="index_section1">
-        <h1 id="slide_h1">
-            Mac Williams MD
-        </h1>
-        <small id="slide_small">
-            & Associates
-        </small>
-        <div class="slide_dots_ctnr">
-            <div class="slide_dot" dataset-active='true' data-panel_id:"#"></div>
-            <div class="slide_dot" data-panel_id:"#"></div>
-            <div class="slide_dot" data-panel_id:"#"></div>
-            <div class="slide_dot" data-panel_id:"#"></div>
-            <div class="slide_dot" data-panel_id:"#"></div>
+        
+
+        <div class="main_display_ctnr">
+            <div class="left_col">
+                <h1 id="slide_h1">
+                    Mac Williams MD
+                </h1>
+                <small id="slide_small">
+                    & Associates
+                </small>
+                <div class="slide_dots_ctnr">
+                    <div class="slide_dot" dataset-active='true' data-panel_id:"#"></div>
+                    <div class="slide_dot" data-panel_id:"#"></div>
+                    <div class="slide_dot" data-panel_id:"#"></div>
+                    <div class="slide_dot" data-panel_id:"#"></div>
+                    <div class="slide_dot" data-panel_id:"#"></div>
+                </div>
+        
+        
+        
+                <div id="slider_ctnr">
+                    {{ service_slide('welcome')}}
+                    <!-- {{ service_slide('ekg')}} -->
+                    <!-- {{ service_slide('laboratory')}} -->
+                    <!-- {{ service_slide('radiology')}} -->
+                    <!-- {{ service_slide('gynecology')}} -->
+                </div>
+
+                <div class="buttons_ctnr">
+                    <button class='book_btn'>
+                        BOOK NOW
+                    </button>
+                    <button class='phone_btn'>
+                        {{CONTACT_DICT['phone']}}
+                    </button>
+
+                </div>
+        
+            </div>
+
+            <div class="right_col">
+                <!-- <img id="welcome_full" src="{{url_for('static', filename='images/slide/welcome_full_1920_1090.png')}}" alt=""> -->
+                <!-- <img id="ekg_full" src="{{url_for('static', filename='images/slide/ekg_full.png')}}" alt=""> -->
+                <!-- <img id="ekg_full" src="{{url_for('static', filename='images/slide/ekg_full8bit.png')}}" alt=""> -->
+                <!-- <img id="laboratory_full" src="{{url_for('static', filename='images/slide/laboratory_full.png')}}" alt=""> -->
+                <!-- <img id="gynecology_full" src="{{url_for('static', filename='images/slide/gynecology_full.png')}}" alt=""> -->
+                <img id="radiology_full" src="{{url_for('static', filename='images/slide/radiology_full.png')}}" alt="">
+            </div>
+
         </div>
-        <div id="slider_ctnr">
-            {{ service_slide('welcome')}}
-            <!-- {{ service_slide('ekg')}} -->
-            <!-- {{ service_slide('laboratory')}} -->
-            <!-- {{ service_slide('radiology')}} -->
-            <!-- {{ service_slide('gynecology')}} -->
-        </div>
+
+
+
+
         <div class="doctors_ctnr">
             <h2>
-                Our Healthcare Providers
+                Meet Our Doctors
             </h2>
             <div class="doctor_card_ctnr">
                 {{doctor_card('Williams')}}
                 {{doctor_card('Jones')}}
             </div>
-            <button>
+            <button id="read_more_button">
                 Read More
             </button>
+            <div class="doctor_panels_lg_ctnr">
+                {{doctor_panel_lg('Williams')}}
+                <hr>
+                {{doctor_panel_lg('Williams')}}
+            </div>
         </div>
         <div class="insurances_ctnr">
             <h2>

@@ -32,8 +32,8 @@
     <section id="base_header_section">
         <aside>
             <nav>
-                <ul>
-                    <li>
+                <ul class="main_nav_ul">
+                    <li id="logo_ctnr">
                         <a href="#">
                             <img
                                 id="mac_banner"
@@ -42,12 +42,23 @@
                             >
                         </a>
                     </li>
-                    <li>
+                    <li id="hamburger_ctnr">
                         <img
                             id="hamburger"
                             src="{{url_for('static', filename='images/assets/hamburger.svg')}}"
                             alt="mobile navigation button"
                         >
+                    </li>
+                    {{link_set("tablet")}}
+                    <li id="patient_portal_ctnr" dataset-mquery="tablet">
+                        <button>
+                            Patient Portal
+                        </button>
+                    </li>
+                    <li id="book_appointment_ctnr" dataset-mquery="tablet">
+                        <button>
+                            Book Now
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -65,36 +76,7 @@
             </div>
             <div id="hidden_menu">
                 <ul>
-                    <li dataset-active='true'>
-                        <a href="{{url_for('main.index')}}">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('main.services')}}">
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('main.doctors')}}">
-                            Doctors
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('main.new_client')}}">
-                            New Client
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('main.contact')}}">
-                            Contact Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('main.about')}}">
-                            About Us
-                        </a>
-                    </li>
+                    {{link_set("hidden_menu")}}
                 </ul>
             </div>
         </aside>
@@ -144,6 +126,7 @@
         </div>
 
         <hr>
+        
 
         <div id="office_hours_ctnr">
             <h2>
