@@ -1,11 +1,17 @@
 #contact_section{
-    margin: $section_margin;
+    margin : $section_margin;
     h1{
         @include proj_h1;
     }
 }
 
 @media only screen and (min-width: $tablet_bp){
+    #contact_section{
+        margin: unset;
+        padding: $section_margin;
+        background-color: $secondary;
+
+    }
 }
 
 

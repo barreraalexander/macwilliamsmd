@@ -36,6 +36,10 @@
     p{
         font-size: 1.3rem;
     }
+    :hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 .inverse_btn_like{
@@ -48,4 +52,8 @@
     background-color: $primary;
     color: $text_inv;
     border-width: .15em;
+    :hover{
+        background-color: darken($secondary, 10%);
+        cursor: pointer;
+    }
 }

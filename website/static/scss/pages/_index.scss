@@ -43,7 +43,7 @@
     }
     button{
         @include primary_btn;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: .5em 1em;
         margin: 1em auto;
     }
@@ -59,7 +59,7 @@
     .insurance_imgs{
         background-color: $secondary;
         display: flex;
-        height: 5em;
+        height: 20em;
         margin: 1em -2em;
     }
 }
@@ -174,9 +174,18 @@
             flex-flow: wrap;
             gap: 4em;
             justify-content: center;
+            text-align: center;
+            // width: 10rem;
+            img{
+                width: 7rem;
+            }
             hr{
                 margin: 0;
                 opacity: .5;
+            }
+            .doctor_panel_lg_ctnr{
+                width: 10rem;
+
             }
         }
     }

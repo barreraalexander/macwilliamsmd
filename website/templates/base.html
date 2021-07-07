@@ -50,12 +50,12 @@
                         >
                     </li>
                     {{link_set("tablet")}}
-                    <li id="patient_portal_ctnr" dataset-mquery="tablet">
+                    <li id="patient_portal_ctnr" dataset-mquery="desktop">
                         <button>
                             Patient Portal
                         </button>
                     </li>
-                    <li id="book_appointment_ctnr" dataset-mquery="tablet">
+                    <li id="book_appointment_ctnr" dataset-mquery="desktop">
                         <button>
                             Book Now
                         </button>
@@ -174,11 +174,12 @@
             </a>
         </div>
 
-        
-        <img
-            src="{{url_for('static', filename='/images/assets/mac_logo_sqr.svg')}}"
-            alt="Mac Williams & Associates Logo"
-        >
+        <div class="last_logo_ctnr">
+            <img
+                src="{{url_for('static', filename='/images/assets/mac_logo_sqr.svg')}}"
+                alt="Mac Williams & Associates Logo"
+            >
+        </div>
         <div id="top_btn_ctnr">
             <button id="to_top_btn">
                 BACK TO THE TOP

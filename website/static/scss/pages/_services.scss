@@ -30,6 +30,9 @@
     .book_btn{
         display: none;
     }
+    .lg_service_title{
+        display: none;
+    }
 }
 
 
@@ -73,6 +76,9 @@
             color: $primary;
             .service_description{
             }
+        }
+        .lg_service_title{
+            display: block;
         }
         
     }

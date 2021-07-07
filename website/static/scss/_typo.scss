@@ -5,14 +5,16 @@ h1,h2,h3,p,ul,li{
 
 @mixin proj_h1{
     color: $primary;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    // font-size: 2rem;
     // font-size: 2.5rem;
     font-weight: 700;
 }
 
 @mixin proj_h2{
     color: $primary;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
+    // font-size: 1.9rem;
     font-weight: 400;
 }
 
@@ -31,7 +33,7 @@ h1,h2,h3,p,ul,li{
 @mixin subtitle{
     font-style: italic;
     color: $accent_dk;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     
 }
@@ -59,7 +61,8 @@ h1,h2,h3,p,ul,li{
 }
 
 @mixin md_paragraph{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    // font-size: 1.4rem;
     font-weight: 400;
     
 }

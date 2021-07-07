@@ -1,5 +1,6 @@
 body, html {
-    font-family: "GoogleSans", "Helvetica";
+    // font-family: "GoogleSans", "Helvetica";
+    font-family: 'Roboto', sans-serif;
     height: calc(100% - 2em);
     margin: 0;
 }
@@ -18,6 +19,11 @@ button:hover{
     position: relative;
     nav{
         padding: .5em 1em;
+    }
+    li>button{
+        @include primary_btn;
+        padding: .5rem;
+        font-size: 1rem;
     }
     .main_nav_ul{
         align-items: center;
@@ -60,6 +66,9 @@ button:hover{
     *[dataset-mquery="tablet"]{
         display: none;
     }
+    *[dataset-mquery="desktop"]{
+        display: none;
+    }
     #hidden_menu{
         background-color: $secondary;
         border-radius: 0px 0px $border_radius $border_radius;
@@ -70,11 +79,12 @@ button:hover{
         top: 0;
         width: 50vw;
         height: 90vh;
-        padding: 1em 0;
+        padding: 2em 0;
         z-index: 1000;
         li{
             width: 100%;
             text-align: center;
+            padding: .5em 0;
         }
         li[dataset-active='true']{
             background-color: $text_inv;
@@ -85,6 +95,8 @@ button:hover{
             flex-flow: column;
             justify-content: flex-start;
             gap: 2rem;
+            list-style: none;
+            padding: 0;
             :hover{
                 a{
                     @include border_bottom($primary);
@@ -158,6 +170,7 @@ button:hover{
         .time{
             width: 60%;
             text-align: center;
+            max-width: 600px;
         }
 
     }
@@ -210,6 +223,13 @@ main{
         font-size: 0.9em;
     }
     #base_header_section{
+        nav{
+            @include box_shadow;
+            background-color: $secondary;
+            a{
+                color: $primary;
+            }
+        }
         #hamburger_ctnr{
             display: none;
         }
@@ -220,9 +240,7 @@ main{
         #hidden_menu{
             display: none;
         }
-        #top_btn_ctnr{
-            display: none;
-        }
+
         *[dataset-mquery="tablet"]{
             display: block;
         }
@@ -233,11 +251,15 @@ main{
             #logo_ctnr{
                 margin-right: auto;
             }
-        }           
+        }
+    
     }
 
     //FOOTER MEDIA QUERIES
     #base_footer_section{
+        #top_btn_ctnr{
+            display: none;
+        }
         #footer_actions_ctnr{
             flex-flow: row wrap;
             align-items: flex-end;
@@ -246,6 +268,15 @@ main{
                 i{
                     font-size: 1.2rem;
                 }
+            }
+        }
+        .last_logo_ctnr{
+            background-color: $logo_bg;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img{
+                max-width: 37rem;
             }
         }
     }
@@ -272,9 +303,21 @@ main{
     body,html{
         font-size: 1.2em;
     }
+    #base_header_section{
+        *[dataset-mquery="desktop"]{
+            display: block;
+        }
+    }
+
     #base_footer_section{
+
         .button_like{
-            width: 15rem;
+            width: 13rem;
+            padding: .25rem;
+            p{
+                font-size: 1rem;
+                text-align: left;
+            }
         }
         hr{
             margin: 0 2em;
@@ -284,16 +327,6 @@ main{
         #office_hours_ctnr{
             h2{
                 text-align: left;
-            }
-            .office_hour{
-                .date{
-                    width: 8em;
-                    text-align: left;
-                }
-                .time{
-                    width: unset;
-                }
-
             }
         }
     }

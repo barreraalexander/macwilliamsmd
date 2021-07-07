@@ -31,7 +31,7 @@
         margin-top: 2em;
         .doctor_panel_lg_ctnr{
             width:15rem;
-            max-width: 160px;
+            // max-width: 160px;
             text-align: center;
         }
     }
@@ -97,6 +97,10 @@
             position: relative;
             flex: 1;
             overflow: hidden;
+            img{
+                border-radius: $border_radius;
+                border: $border_width solid $secondary;
+            }
         }
         #btn_ctnr{
             // margin: unset;
