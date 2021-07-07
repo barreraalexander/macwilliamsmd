@@ -52,8 +52,20 @@
     background-color: $primary;
     color: $text_inv;
     border-width: .15em;
-    :hover{
-        background-color: darken($secondary, 10%);
-        cursor: pointer;
+}
+
+.standard_btn_like:hover{
+    background-color: darken($primary, 10%);
+    cursor: pointer;
+    p{
+        text-decoration: underline;
+    }
+}
+
+.inverse_btn_like:hover{
+    background-color: lighten($secondary, 5%);
+    cursor: pointer;
+    p{
+        text-decoration: underline;
     }
 }
