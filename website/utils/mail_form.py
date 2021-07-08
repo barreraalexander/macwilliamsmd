@@ -1,4 +1,3 @@
-import secrets
 from flask_mail import Message
 from website import mail
 from datetime import datetime
@@ -15,13 +14,11 @@ def send_contact (form_data):
 
     FIRST NAME: {form_data['fname']}
     
-    LAST NAME: {form_data['lname']}
     
     TIME SENT : {form_data['time_sent'].strftime('%B %d, %Y    %I:%M %p')}
     \n
     MESSAGE
     -------
-    {form_data['help_description']}
     """)
 
     try:

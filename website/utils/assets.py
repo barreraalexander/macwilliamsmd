@@ -11,6 +11,7 @@ bundles = {
     ),
     'main_js' : Bundle(
         'js/interface_mods/menu.js',
+        'js/form_mods/submit_contact.js',
         filters='jsmin',
         depends='js/*.js',
         output='gen/js/main.%(version)s.js'

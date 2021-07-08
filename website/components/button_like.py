@@ -1,7 +1,7 @@
 from flask import Markup, url_for
 from website.blueprints.main import CONTACT_DICT
 
-def component(btn_type='navigation'):
+def component(btn_type='navigation', elem_id=''):
     img_src = ""
     classes = ""
     btn_text = ""
@@ -31,7 +31,7 @@ def component(btn_type='navigation'):
         btn_text = "SUBMIT"
 
     return Markup (f"""
-        <div class="button_like {classes}">
+        <div id="{elem_id}" class="button_like {classes}">
             <img
             src="{img_src}"
             alt="navigation img"

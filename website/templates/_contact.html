@@ -7,7 +7,7 @@
                 Reach Out
             </h1>
             <div class="form_ctnr">
-                <form action="{{url_for('api.send_contact')}}">
+                <form id="client_form" action="{{url_for('api.send_contact')}}" method="POST">
                     {{form.hidden_tag()}}
                     <div class="form_columns">
                         <div class="form_column">
@@ -15,7 +15,7 @@
                                 {{form.fname.label}}
                                 {{form.fname}}
                             </div>
-                            <div class="form_group">
+                            <!-- <div class="form_group">
                                 {{form.fname.label}}
                                 {{form.fname}}
                             </div>
@@ -28,7 +28,7 @@
                             <div class="form_group">
                                 {{form.fname.label}}
                                 {{form.fname}}
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="recaptcha_ctnr">
@@ -36,7 +36,8 @@
 
 
                         <div class="form_group_btn_lg">
-                            {{button_like('submit')}}
+                            {{button_like('submit', elem_id='contact_submit')}}
+                            <!-- {{form.submit}} -->
                         </div>
         
                         <div class="form_group_btn">
