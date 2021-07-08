@@ -1,0 +1,34 @@
+@-webkit-keyframes show_menu {
+    from {
+        right: 'initial';
+    }
+    to {
+        right: 0em;
+    }
+}
+
+@keyframes show_menu {
+    from {
+        right: 'initial';
+    }
+    to {
+        right: 0em;
+    }
+}
+
+.apply_show_menu{
+    -webkit-animation: show_menu ease 1 forwards;
+    animation: show_menu ease 1 forwards;
+    animation-duration: 2s;
+    display: block !important;
+}
+
+.apply_hide_menu{
+    -webkit-animation: show_menu ease 1 forwards reverse;
+    animation: show_menu ease 1 forwards reverse;
+    animation-duration: 2s;
+    display: none !important;
+}
+
+
+
