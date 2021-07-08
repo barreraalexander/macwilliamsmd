@@ -4,8 +4,10 @@
         margin-left: 2em;
     }
     .btn_ctnr{
+        background-color: $accent_lt;
         display: flex;
         flex-flow: column;
+        padding: 1.5em 0em;
         margin-top: 1em;
         gap: 1.5em;
         justify-content: center;
@@ -16,7 +18,7 @@
         font-size: 1.3rem;
         padding: .5em 1em;
         max-width: 22rem;
-        width: 75%;
+        width: 18rem;
     }
     #book_now_btn{
         @include primary_btn;

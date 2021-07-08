@@ -26,7 +26,11 @@
                 </h3>
                 <hr>
                 <div class="form_ctnr">
-                    <form action="{{url_for('api.send_new_client')}}">
+                    <form
+                        id="new_client_form"
+                        action="{{url_for('api.send_new_client')}}"
+                        method="POST"
+                        >
                         <div class="form_columns">
                             <div class="form_column">
                                 <div class="form_group">
@@ -49,7 +53,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{button_like('submit')}}
+                        {{button_like('submit', elem_id='new_client_submit')}}
                     </form>
                 </div>
             </div>

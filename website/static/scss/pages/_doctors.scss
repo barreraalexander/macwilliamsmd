@@ -40,6 +40,7 @@
         // @include md_paragraph;
         @include sm_paragraph;
         margin-top: 1em;
+        max-width: 90%;
     }
     hr{
         margin: 3em auto;
@@ -58,15 +59,15 @@
             display: flex;
             margin-top: 2em;
             margin-bottom: 4em;
-            gap: 3em;
+            gap: 3rem;
             padding: 0 4em;
             .img_circle_ctnr{
                 margin: unset;
             }
             .img_ctnr{
                 border-radius: 2em;
-                height: 20em;
-                width: 20em;
+                height: 20rem;
+                width: 20rem;
             }
         }
         .doctor_panel_ctnr:nth-child(4){

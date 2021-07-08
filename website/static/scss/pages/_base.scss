@@ -21,6 +21,7 @@ button:hover{
         padding: .5em 1em;
     }
     li>button{
+        // @include secondary_btn;
         @include primary_btn;
         padding: .5rem;
         font-size: 1rem;
@@ -34,6 +35,7 @@ button:hover{
         padding: 0;
         a{
             @include proj_a;
+            // color: $text_inv;
         }
     }
     #mac_banner{
@@ -212,7 +214,7 @@ button:hover{
 main{
     // background-color: red;
     width: 100%;
-    min-height: 10em;
+    // min-height: 10em;
 }
 
 
@@ -226,6 +228,7 @@ main{
         nav{
             @include box_shadow;
             background-color: $secondary;
+            // background-color: $primary;
             a{
                 color: $primary;
             }
@@ -333,4 +336,13 @@ main{
 }
 
 @media only screen and (min-width: $desktop_4k_bp){
+    body,html{
+        // font-size: 1.4em;
+        font-size: 2.2em;
+    }
+    #base_footer_section{
+        .button_like{
+            width: 25rem;
+        }
+    }
 }

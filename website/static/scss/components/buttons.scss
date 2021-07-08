@@ -4,7 +4,7 @@
     background-color: $primary;
     border: .05rem solid transparent;
     border-radius: $border_radius;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @mixin secondary_btn{
@@ -13,7 +13,7 @@
     background-color: $secondary;
     border: .05rem solid $primary;
     border-radius: $border_radius;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -31,7 +31,7 @@
     width: 75%;
     max-width: 18rem;
     img{
-        width: 1.5em;
+        width: 1.5rem;
     }
     p{
         font-size: 1.3rem;
@@ -45,13 +45,13 @@
 .inverse_btn_like{
     background-color: $secondary;
     color: $primary;
-    border-width: .15em;
+    border-width: $border_width;
 }
 
 .standard_btn_like{
     background-color: $primary;
     color: $text_inv;
-    border-width: .15em;
+    border-width: $border_width;
 }
 
 .standard_btn_like:hover{

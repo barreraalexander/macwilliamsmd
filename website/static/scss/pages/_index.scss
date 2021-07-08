@@ -51,16 +51,18 @@
 
 
 .insurances_ctnr{
+    // margin: 1em -2em;
     margin-top: 4em;
+    padding: 2em;
+    background-color: $secondary;
     h2{
         @include proj_h2;
         text-align: center;
     }
     .insurance_imgs{
-        background-color: $secondary;
+        // background-color: $secondary;
         display: flex;
         height: 20em;
-        margin: 1em -2em;
     }
 }
 
@@ -73,8 +75,8 @@
 }
 
 .slide_dot{
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     background-color: $primary;
     border: $border_width solid $accent_dk;
