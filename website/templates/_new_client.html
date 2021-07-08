@@ -26,29 +26,31 @@
                 </h3>
                 <hr>
                 <div class="form_ctnr">
-                    <div class="form_columns">
-                        <div class="form_column">
-                            <div class="form_group">
-                                {{form.fname.label}}
-                                {{form.fname}}
+                    <form action="{{url_for('api.send_new_client')}}">
+                        <div class="form_columns">
+                            <div class="form_column">
+                                <div class="form_group">
+                                    {{form.fname.label}}
+                                    {{form.fname}}
+                                </div>
+                                <div class="form_group">
+                                    {{form.fname.label}}
+                                    {{form.fname}}
+                                </div>                            
                             </div>
-                            <div class="form_group">
-                                {{form.contact_info.label}}
-                                {{form.contact_info}}
-                            </div>                            
+                            <div class="form_column">
+                                <div class="form_group">
+                                    {{form.fname.label}}
+                                    {{form.fname}}
+                                </div>
+                                <div class="form_group">
+                                    {{form.fname.label}}
+                                    {{form.fname}}
+                                </div>
+                            </div>
                         </div>
-                        <div class="form_column">
-                            <div class="form_group">
-                                {{form.fname.label}}
-                                {{form.fname}}
-                            </div>
-                            <div class="form_group">
-                                {{form.contact_info.label}}
-                                {{form.contact_info}}
-                            </div>
-                        </div>
-                    </div>
-                    {{button_like('submit')}}
+                        {{button_like('submit')}}
+                    </form>
                 </div>
             </div>
         </section>

@@ -1,8 +1,7 @@
 from flask import Blueprint, request, redirect, url_for, flash
-# from website.utils.mail_form import send_form
-# from website.utils.mail_form import send_quick_form
+from website.utils.mail_form import send_contact
+from website.utils.mail_form import send_new_client
 from website import mail
-# from datetime import 
 from datetime import datetime
 
 import json
@@ -10,17 +9,13 @@ import json
 api = Blueprint ('api', __name__)
 
 
-@api.route('/send_mail', methods=['GET', 'POST'])
-def send_mail():
+@api.route('/send_contact', methods=['GET', 'POST'])
+def send_contact():
     form_data = []
     if request.method == 'POST':
         form_data = {
             'fname' : request.form.get('fname'),
             'lname' : request.form.get('lname'),
-            'contact_info' : request.form.get('contact_info'),
-            'best_time' : request.form.get('best_time'),
-            'company_name' : request.form.get('company_name'),
-            'company_size' : request.form.get('company_size'),
             'time_sent' : datetime.now(),
             'help_description' : request.form.get('help_description'),
         }
@@ -37,21 +32,17 @@ def send_mail():
 
     return redirect(url_for('main.index'))
 
-@api.route('/send_client', methods=['GET', 'POST'])
-def send_client():
+@api.route('/send_new_client', methods=['GET', 'POST'])
+def send_new_client():
     form_data = []
     if request.method == 'POST':
         form_data = {
             'fname' : request.form.get('fname'),
             'lname' : request.form.get('lname'),
-            'contact_info' : request.form.get('contact_info'),
-            'best_time' : request.form.get('best_time'),
-            'company_name' : request.form.get('company_name'),
-            'company_size' : request.form.get('company_size'),
             'time_sent' : datetime.now(),
             'help_description' : request.form.get('help_description'),
         }
-        # response = send_form(form_data)
+        # response = send_new_client(form_data)
         response = "hey"
         if response == 'SUCCESS':
             flash ('We got your message!')
