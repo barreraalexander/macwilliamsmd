@@ -13,6 +13,10 @@ function mod_menu(){
         hidden_menu.classList.add('apply_show_menu')
         hidden_menu.dataset.menu_status = 'open'
         window.addEventListener('click', check_target, false)
+
+    //SECTION: REFERENCE TO slideshow_clock
+        slideshow_clock.stop()
+
     } else if (menu_status=='open'){
         window.removeEventListener('click', check_target)
         menu_status = 'closed' 
@@ -29,5 +33,9 @@ function check_target(event){
         hidden_menu.classList.add('apply_hide_menu')
         menu_status = 'closed'
         window.removeEventListener('click', check_target)
+
+    //SECTION: REFERENCE TO slideshow_clock
+        slideshow_clock.start()
+
     }
 }

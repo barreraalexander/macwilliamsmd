@@ -2,10 +2,13 @@
 progress.txt
 website/static/gen/js
 website/static/gen/css
+website/static/images/slide
+website/static/images/services
 *.xd
 *.jpg
 *.jpeg
 *.png
+
 
 
 # //SECTION: GENERAL

@@ -16,19 +16,69 @@
     }
 }
 
+@-webkit-keyframes hide_menu {
+    from {
+        right: -15em;
+    }
+    to {
+        right: 0em;
+    }
+}
+
+@keyframes hide_menu {
+    from {
+        right: -15em;
+    }
+    to {
+        right: 0em;
+    }
+}
+
 .apply_show_menu{
     -webkit-animation: show_menu ease 1 forwards;
     animation: show_menu ease 1 forwards;
-    animation-duration: 2s;
+    animation-duration: .8s;
     display: block !important;
 }
 
 .apply_hide_menu{
-    -webkit-animation: show_menu ease 1 forwards reverse;
-    animation: show_menu ease 1 forwards reverse;
-    animation-duration: 2s;
-    display: none !important;
+    -webkit-animation: hide_menu ease 1 forwards;
+    animation: hide_menu ease 1 forwards;
+    animation-duration: .8s;
+    // display: none !important;
 }
 
 
+@-webkit-keyframes shift_opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes shift_opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+.apply_disappear{
+    -webkit-animation: shift_opacity ease 1 forwards;
+    animation: shift_opacity ease 1 forwards;
+    animation-duration: .5s;
+    display: none;
+}
+
+.remove_disappear{
+    -webkit-animation: shift_opacity ease 1 forwards reverse;
+    animation: shift_opacity ease 1 forwards reverse;
+    animation-duration: .5s;
+    display: block !important;
+}
 

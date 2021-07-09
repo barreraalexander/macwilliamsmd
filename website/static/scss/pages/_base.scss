@@ -89,7 +89,7 @@ button:hover{
             text-align: center;
             padding: .5em 0;
         }
-        li[dataset-active='true']{
+        li[data-active='true']{
             background-color: $text_inv;
             font-weight: 600;
         }
@@ -317,7 +317,7 @@ main{
 
         .button_like{
             width: 13rem;
-            padding: .25rem;
+            padding: 1rem;
             p{
                 font-size: 1rem;
                 text-align: left;

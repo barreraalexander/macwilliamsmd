@@ -6,6 +6,7 @@ from website.components.doctor_panel import component as doctor_panel
 from website.components.doctor_panel_lg import component as doctor_panel_lg
 from website.components.service_panel import component as service_panel
 from website.components.service_slide import component as service_slide
+from website.components.slide_text import component as slide_text
 from website.components.service_grid import component as service_grid
 from website.components.doctor_card import component as doctor_card
 from website.components.link_set import component as link_set
@@ -24,6 +25,7 @@ def index():
                         doctor_card=doctor_card,
                         doctor_panel_lg=doctor_panel_lg, 
                         link_set=link_set,
+                        slide_text=slide_text,
                         CONTACT_DICT=CONTACT_DICT)
 
 

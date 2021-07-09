@@ -20,6 +20,10 @@
     }
     #slider_ctnr{
         margin-top: 2em;
+        .slide_ctnr + .slide_ctnr{
+            display: none;
+        }
+
     }
     .doctor_panels_lg_ctnr{
         display: none;
@@ -82,7 +86,7 @@
     border: $border_width solid $accent_dk;
 }
 
-.slide_dot[dataset-active='true']{
+.slide_dot[data-active='true']{
     background-color: $secondary;
 }
 
@@ -95,6 +99,10 @@
         .buttons_ctnr{
             display: none;
         }
+        .slide_text_ctnr + .slide_text_ctnr{
+            display: none;
+        }
+
     }
 }
 
@@ -148,8 +156,11 @@
                 height: 100%;
                 position: absolute;
             }
+            .slide_img_full + .slide_img_full{
+                display: none;
+            }
             #welcome_full{
-                right: -50rem;
+                right: -55rem;
             }
             #ekg_full{
                 right: -33rem;
@@ -210,6 +221,16 @@
     }
 }
 
+@media only screen and (min-width: $laptop_bp){
+    .main_display_ctnr{
+        .right_col{
+            #welcome_full{
+                right: -35rem;
+            }
+        }
+    }
+}
+
 
 @media only screen and (min-width: $desktop_bp){
     #index_section1{
@@ -223,7 +244,7 @@
     .main_display_ctnr{
         .right_col{
             #welcome_full{
-                right: -15rem;
+                right: -20rem;
             }
             #ekg_full{
                 right: -4rem;

@@ -7,7 +7,7 @@ def component(list_type="hidden_menu"):
         mquery = "dataset-mquery='tablet'"
 
     return Markup(f"""
-                    <li {mquery} dataset-active='true'>
+                    <li {mquery} data-active='true'>
                         <a href="{url_for('main.index')}">
                             Home
                         </a>

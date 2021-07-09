@@ -1,8 +1,8 @@
 from flask import Markup, url_for
 
 def component(service_name):
-    img_sm_src = url_for('static', filename=f'images/services/{service_name}_service_circle.png')
-    img_lg_src = url_for('static', filename=f'images/services/{service_name}_service_square.png')
+    img_sm_src = f"https://macwilliamsmd-static.s3.us-east-2.amazonaws.com/service_imgs/{service_name}_service_circle.png"
+    img_lg_src = f"https://macwilliamsmd-static.s3.us-east-2.amazonaws.com/service_imgs/{service_name}_service_square.png"
     classes = ""
 
     if service_name=="ekg":

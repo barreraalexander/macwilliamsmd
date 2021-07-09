@@ -5,7 +5,7 @@ def component():
     learn_more_icon = url_for('static', filename=f'images/assets/more.svg')
 
     def grid_slot(service):
-        img_src = url_for('static', filename=f'images/services/{service}_service_square.png')
+        img_src = f"https://macwilliamsmd-static.s3.us-east-2.amazonaws.com/service_imgs/{service}_service_square.png"
         title = ""
 
         if service=="ekg":
