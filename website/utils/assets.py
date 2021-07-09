@@ -12,6 +12,7 @@ bundles = {
     'main_js' : Bundle(
         'js/interface_mods/menu.js',
         'js/interface_mods/slideshow.js',
+        'js/interface_mods/scroll.js',
         'js/form_mods/submit_contact.js',
         filters='jsmin',
         depends='js/*.js',

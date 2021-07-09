@@ -4,7 +4,7 @@
 .slide_description_ctnr{
     margin-top: 2em;
     position: relative;
-    width: 100vw;
+    width: 100vw;  
     overflow: hidden;
     margin:  0 -2em;
     p{
@@ -35,6 +35,10 @@
     }
     .slide_description_ctnr{
         width: unset;
+        p{
+            width: 85%;
+            margin-left: 1rem;
+        }
     }
     #slider_ctnr{
         display: flex;
@@ -43,4 +47,12 @@
 
     
 
+}
+
+@media only screen and (min-width: $desktop_4k_bp){
+    .slide_description_ctnr{
+        p{
+            margin-left: 3.2rem;
+        }
+    }
 }

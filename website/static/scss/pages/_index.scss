@@ -225,8 +225,22 @@
     .main_display_ctnr{
         .right_col{
             #welcome_full{
-                right: -35rem;
+                left: 0;
+                right: unset;
             }
+            #ekg_full{
+                left: 0;
+                right: unset;
+            }
+            #radiology_full{
+                left: 0;
+                right: unset;
+            }
+            #gynecology_full{
+                left: 0;
+                right: unset;
+            }
+
         }
     }
 }

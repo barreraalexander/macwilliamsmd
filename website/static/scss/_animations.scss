@@ -45,7 +45,6 @@
     -webkit-animation: hide_menu ease 1 forwards;
     animation: hide_menu ease 1 forwards;
     animation-duration: .8s;
-    // display: none !important;
 }
 
 
@@ -82,3 +81,35 @@
     display: block !important;
 }
 
+
+
+
+@-webkit-keyframes lift {
+    from {
+        opacity: 0;
+        bottom: -10em;
+    }
+    to {
+        opacity: 1; 
+        bottom: 0; 
+    }
+}
+
+@keyframes lift {
+    from {
+        // opacity: 0;
+        bottom: -20em;
+    }
+    to {
+        // opacity: 1; 
+        bottom: 0; 
+    }
+}
+
+
+
+.apply_lift{
+    position: relative;
+    -webkit-animation: lift ease 2s forwards;
+    animation: lift ease 2s forwards;
+}
