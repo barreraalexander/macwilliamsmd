@@ -8,7 +8,7 @@ website/static/images/services
 *.jpg
 *.jpeg
 *.png
-
+*.pem
 
 
 # //SECTION: GENERAL

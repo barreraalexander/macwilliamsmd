@@ -123,6 +123,9 @@ button:hover{
         margin: 2em;
         gap: 2em;
     }
+    .map_widget_ctnr{
+        height: 20rem;
+    }
     .action_ctnr{
         display: flex;
         flex-flow: column;
@@ -305,7 +308,7 @@ main{
 
 @media only screen and (min-width: $desktop_bp){
     body,html{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     #base_header_section{
         *[dataset-mquery="desktop"]{
@@ -338,7 +341,6 @@ main{
 
 @media only screen and (min-width: $desktop_4k_bp){
     body,html{
-        // font-size: 1.4em;
         font-size: 2.2em;
     }
     #base_footer_section{
