@@ -30,6 +30,21 @@ def component(btn_type='navigation', elem_id=''):
         classes = "standard_btn_like"
         btn_text = "SUBMIT"
 
+    elif btn_type=='patient':
+        img_src = url_for('static', filename='images/assets/person_navy.svg')
+        classes = "inverse_btn_like"
+        btn_text = "Patient Portal"
+
+    elif btn_type=='appointment':
+        img_src = url_for('static', filename='images/assets/appointment.svg')
+        classes = "standard_btn_like"
+        btn_text = "Appointments"
+        if elem_id=="header_appointment":    
+            img_src = url_for('static', filename='images/assets/appointment_navy.svg')
+            classes = "inverse_btn_like"
+
+
+
     return Markup (f"""
         <div id="{elem_id}" class="button_like {classes}">
             <img

@@ -72,15 +72,15 @@ def contact():
                         CONTACT_DICT=CONTACT_DICT)
 
 
-@main.route('/new_client')
-def new_client():
-    form = NewClientForm()
-    return render_template('_new_client.html',
-                        title="New Client",
-                        button_like=button_like,
-                        service_panel=service_panel,
-                        form=form,
-                        link_set=link_set,
-                        service_grid=service_grid,
-                        CONTACT_DICT=CONTACT_DICT)
+# @main.route('/new_client')
+# def new_client():
+#     form = NewClientForm()
+#     return render_template('_new_client.html',
+#                         title="New Client",
+#                         button_like=button_like,
+#                         service_panel=service_panel,
+#                         form=form,
+#                         link_set=link_set,
+#                         service_grid=service_grid,
+#                         CONTACT_DICT=CONTACT_DICT)
 

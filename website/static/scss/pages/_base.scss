@@ -14,18 +14,19 @@ button:hover{
     
 }
 
+a{
+    text-decoration: none;
+}
+
+
 
 #base_header_section{
     position: relative;
     nav{
         padding: .5em 1em;
+        background-color: $primary;
     }
-    li>button{
-        // @include secondary_btn;
-        @include primary_btn;
-        padding: .5rem;
-        font-size: 1rem;
-    }
+
     .main_nav_ul{
         align-items: center;
         list-style: none;
@@ -35,6 +36,7 @@ button:hover{
         padding: 0;
         a{
             @include proj_a;
+            
             // color: $text_inv;
         }
     }
@@ -50,7 +52,7 @@ button:hover{
         width: 100%;
         margin-bottom: 2em;
         #header_book_btn{
-            background-color: $primary;
+            background-color: $accent_dk;
             color: $text_inv;
         }
         #header_phone_btn{
@@ -210,19 +212,15 @@ button:hover{
             margin: 0 auto;
             padding: 0.5em 1em;
             font-size: 1rem;
+            box-shadow: none;
         }
     }
 
 }
 
 main{
-    // background-color: red;
     width: 100%;
-    // min-height: 10em;
 }
-
-
-
 
 @media only screen and (min-width: $tablet_bp){
     body,html{
@@ -231,10 +229,12 @@ main{
     #base_header_section{
         nav{
             @include box_shadow;
-            background-color: $secondary;
+
             // background-color: $primary;
             a{
-                color: $primary;
+                color: $secondary;
+                // color: $logo_text_lighter;
+                // color: $logo_text;
             }
         }
         #hamburger_ctnr{
@@ -257,6 +257,9 @@ main{
             padding: 0 .2em;
             #logo_ctnr{
                 margin-right: auto;
+            }
+            a{
+                font-size: 1rem;
             }
         }
     
@@ -320,7 +323,6 @@ main{
 
         .button_like{
             width: 13rem;
-            padding: 1rem;
             p{
                 font-size: 1rem;
                 text-align: left;

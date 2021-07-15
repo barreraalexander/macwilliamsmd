@@ -45,27 +45,23 @@
                     <li id="hamburger_ctnr">
                         <img
                             id="hamburger"
-                            src="{{url_for('static', filename='images/assets/hamburger.svg')}}"
+                            src="{{url_for('static', filename='images/assets/hamburger_lblue.svg')}}"
                             alt="mobile navigation button"
                         >
                     </li>
                     {{link_set("tablet")}}
-                    <li id="patient_portal_ctnr" dataset-mquery="desktop">
-                        <button>
-                            Patient Portal
-                        </button>
+                    <li id="patient_portal_ctnr" dataset-mquery="tablet">
+                        {{button_like('patient')}}
                     </li>
-                    <li id="book_appointment_ctnr" dataset-mquery="desktop">
-                        <button>
-                            Book Now
-                        </button>
+                    <li id="book_appointment_ctnr" dataset-mquery="tablet">
+                        {{button_like('appointment', elem_id='header_appointment')}}
                     </li>
                 </ul>
             </nav>
             <div id="header_btn_ctnr">
                 <div id="header_book_btn">
                     <p>
-                        BOOK ONLINE
+                        APPOINTMENTS
                     </p>
                 </div>
                 <div id="header_phone_btn">
@@ -117,12 +113,12 @@
                 </h2>
                 {{button_like(btn_type='send')}}
             </div>
-            <div class="action_ctnr">
+            <!-- <div class="action_ctnr">
                 <h2>
                     New Client
                 </h2>
                 {{button_like(btn_type='send')}}
-            </div>
+            </div> -->
         </div>
 
         <hr>

@@ -33,7 +33,7 @@
 
 .doctors_ctnr{
     background-color: $secondary;
-    margin: 2em -2em;
+    margin: 0em -2em;
     padding: 2em 0;
     display: flex;
     flex-flow: column;
@@ -55,10 +55,10 @@
 
 
 .insurances_ctnr{
-    // margin: 1em -2em;
-    margin-top: 4em;
+    margin: 0 -2em;
+    // margin-top: 4em;
     padding: 2em;
-    background-color: $secondary;
+    background-color: $accent_lt;
     h2{
         @include proj_h2;
         text-align: center;
@@ -128,6 +128,7 @@
                 justify-content: flex-start;
                 gap: 1em;
                 margin-top: 2em;
+                flex-flow: wrap;
                 button{
                     padding: .5em;
                     font-size: 1rem;
@@ -214,6 +215,7 @@
     }
 
     .insurances_ctnr {
+        background-color: $secondary;
         .insurance_imgs{
             margin: unset;
         }

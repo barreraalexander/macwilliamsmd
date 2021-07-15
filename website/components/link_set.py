@@ -32,9 +32,5 @@ def component(list_type="hidden_menu"):
                             Contact
                         </a>
                     </li>  
-                    <li {mquery}>
-                        <a href="{url_for('main.new_client')}">
-                            New Client
-                        </a>
-                    </li>
+
     """)

@@ -12,9 +12,7 @@
                     <p class="service_summary">
                         Summary about our services. Summary about our services. Summary about our services. 
                     </p>
-                    <button class="book_btn">
-                        BOOK NOW
-                    </button>
+                    {{button_like('appointment')}}
                 </div>
                 {{service_grid()}}
             </div>
@@ -24,12 +22,7 @@
             {{service_panel('radiology')}}
             {{service_panel('gynecology')}}
             <div class="btn_ctnr">
-                <button id="book_now_btn">
-                    BOOK NOW
-                </button>
-                <button id="new_client_btn">
-                    NEW CLIENT
-                </button>
+                {{button_like('appointment')}}
             </div>
         </section>
     </main>
