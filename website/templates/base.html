@@ -5,24 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="shortcut icon" href="https://tod-website-staticfiles.s3.amazonaws.com/images/tod/tod_logo.svg"> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=GoogleSans:wght@100;400&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{DOMAIN_NAME}}" />
+    <!-- <meta property="og:description" content="DESCRIPTION GOES HERE" /> -->
+    <!-- <meta property="og:url" content="URL GOES HERE" /> -->
+    <meta property="og:site_name" content="{{DOMAIN_NAME}}" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:description" content="DESCRIPTION GOES HERE" /> -->
+    <meta name="twitter:title" content="{{DOMAIN_NAME}}" />
+
+
+
+    <link
+        rel="shortcut icon"
+        href="{{url_for('static', filename='images/assets/mac_logo_banner.svg')}}"
+    >
+    
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+    >
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=GoogleSans:wght@100;400&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+    > 
 
     
     {% assets "main_scss" %}
-        <link rel="stylesheet" href="{{ ASSET_URL}}">
+        <link
+            rel="stylesheet"
+            href="{{ ASSET_URL }}"
+        >
     {% endassets %}
 
-
-
     <title>
-        {{title}}
+        {{title}} | {{DOMAIN_NAME}}
     </title>
 
 </head>
@@ -34,7 +71,7 @@
             <nav>
                 <ul class="main_nav_ul">
                     <li id="logo_ctnr">
-                        <a href="#">
+                        <a href="{{ url_for('main.index') }}">
                             <img
                                 id="mac_banner"
                                 src="{{url_for('static', filename='images/assets/mac_logo_banner.svg')}}"

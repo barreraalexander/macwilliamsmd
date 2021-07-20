@@ -85,6 +85,10 @@
             align-items: flex-start;
             display: flex;
             gap: 2em;
+            // p{
+                // width: 70%;
+            // }
+
 
         }
         .row_text_ctnr{
@@ -107,5 +111,15 @@
             // margin: unset;
         }
     
+    }
+    #about_header_ctnr{
+        p{
+            width: 80%;
+        }
+        .button_like{
+            p{
+                width: unset;
+            }
+        }
     }
 }

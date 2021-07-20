@@ -14,6 +14,7 @@ bundles = {
         'js/interface_mods/slideshow.js',
         'js/interface_mods/scroll.js',
         'js/form_mods/submit_contact.js',
+        'js/button_like_listeners.js',
         filters='jsmin',
         depends='js/*.js',
         output='gen/js/main.%(version)s.js'

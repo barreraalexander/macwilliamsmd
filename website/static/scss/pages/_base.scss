@@ -1,5 +1,6 @@
 body, html {
     // font-family: "GoogleSans", "Helvetica";
+    font-size: .9em;
     font-family: 'Roboto', sans-serif;
     height: calc(100% - 2em);
     margin: 0;
@@ -36,8 +37,9 @@ a{
         padding: 0;
         a{
             @include proj_a;
-            
-            // color: $text_inv;
+        }
+        a:hover{
+            text-decoration: underline;
         }
     }
     #mac_banner{
@@ -311,7 +313,7 @@ main{
 
 @media only screen and (min-width: $desktop_bp){
     body,html{
-        font-size: 1em;
+        font-size: .9em;
     }
     #base_header_section{
         *[dataset-mquery="desktop"]{
@@ -330,8 +332,6 @@ main{
         }
         hr{
             margin: 0 2em;
-            width: 25%;
-            max-width: 25em;
         }
         #office_hours_ctnr{
             h2{
@@ -343,7 +343,7 @@ main{
 
 @media only screen and (min-width: $desktop_4k_bp){
     body,html{
-        font-size: 2.2em;
+        font-size: 1.5em;
     }
     #base_footer_section{
         .button_like{

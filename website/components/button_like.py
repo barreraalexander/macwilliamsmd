@@ -37,11 +37,11 @@ def component(btn_type='navigation', elem_id=''):
 
     elif btn_type=='appointment':
         img_src = url_for('static', filename='images/assets/appointment.svg')
-        classes = "standard_btn_like"
+        classes = "standard_btn_like appointment_btn"
         btn_text = "Appointments"
         if elem_id=="header_appointment":    
             img_src = url_for('static', filename='images/assets/appointment_navy.svg')
-            classes = "inverse_btn_like"
+            classes = "inverse_btn_like appointment_btn"
 
 
 

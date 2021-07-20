@@ -1,5 +1,7 @@
 from flask import Blueprint, render_template, url_for
 from website.blueprints.main import CONTACT_DICT
+from website.blueprints.main import DOMAIN_NAME
+from website.blueprints.main import SERVICES
 from website.components.button_like import component as button_like
 from website.components.doctor_card import component as doctor_card
 from website.components.doctor_panel import component as doctor_panel
@@ -12,6 +14,8 @@ from website.components.doctor_card import component as doctor_card
 from website.components.link_set import component as link_set
 from website.blueprints.api.forms import ContactUsForm
 from website.blueprints.api.forms import NewClientForm
+
+
 
 main = Blueprint ('main', __name__ )
 
@@ -26,6 +30,7 @@ def index():
                         doctor_panel_lg=doctor_panel_lg, 
                         link_set=link_set,
                         slide_text=slide_text,
+                        DOMAIN_NAME=DOMAIN_NAME,
                         CONTACT_DICT=CONTACT_DICT)
 
 
@@ -35,7 +40,8 @@ def about():
                         title="About Us",
                         button_like=button_like,
                         link_set=link_set,
-                        doctor_panel_lg=doctor_panel_lg, 
+                        doctor_panel_lg=doctor_panel_lg,
+                        DOMAIN_NAME=DOMAIN_NAME,
                         CONTACT_DICT=CONTACT_DICT)
 
 
@@ -47,6 +53,7 @@ def doctors():
                         doctor_panel=doctor_panel,
                         link_set=link_set,
                         doctor_panel_lg=doctor_panel_lg,
+                        DOMAIN_NAME=DOMAIN_NAME,
                         CONTACT_DICT=CONTACT_DICT)
 
 
@@ -58,6 +65,7 @@ def services():
                         service_panel=service_panel,
                         link_set=link_set,
                         service_grid=service_grid,
+                        DOMAIN_NAME=DOMAIN_NAME,
                         CONTACT_DICT=CONTACT_DICT)
 
 @main.route('/contact')
@@ -69,6 +77,7 @@ def contact():
                         service_panel=service_panel,
                         link_set=link_set,
                         form=form,
+                        DOMAIN_NAME=DOMAIN_NAME,
                         CONTACT_DICT=CONTACT_DICT)
 
 
@@ -82,5 +91,6 @@ def contact():
 #                         form=form,
 #                         link_set=link_set,
 #                         service_grid=service_grid,
+                        # DOMAIN_NAME=DOMAIN_NAME,
 #                         CONTACT_DICT=CONTACT_DICT)
 

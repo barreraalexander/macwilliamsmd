@@ -80,3 +80,21 @@
         }
     }
 }
+
+
+@media only screen and (min-width: $desktop_bp){
+    #doctors_section{
+        hr{
+            display: none;
+        }
+        .doctor_panel_ctnr{
+            justify-content: center;
+            .img_circle_ctnr{
+                width: unset;
+            }
+        }
+        .doctor_text_ctnr{
+            width: 50%;
+        }
+    }
+}

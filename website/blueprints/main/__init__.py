@@ -1,3 +1,5 @@
+DOMAIN_NAME = "Mac Wlliams Md & Associates"
+
 CONTACT_DICT = {
     'phone' : '954-000-0000',
     'phone2' : '954-000-1111',
