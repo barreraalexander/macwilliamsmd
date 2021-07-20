@@ -33,7 +33,6 @@ document.addEventListener('scroll', function(e) {
   if (!ticking) {
     window.requestAnimationFrame(function() {
         if (screen.width >= 1200){
-            console.log(lastKnownScrollPosition)
             mod_doctor_cards(lastKnownScrollPosition)
         }
 

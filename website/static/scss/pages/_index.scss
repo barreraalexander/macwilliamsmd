@@ -28,6 +28,11 @@
     .doctor_panels_lg_ctnr{
         display: none;
     }
+    #read_more_btn{
+        a{
+            color: $text_inv;
+        }
+    }
 }
 
 
@@ -206,7 +211,7 @@
         .doctor_card_ctnr{
             display: none;
         }
-        #read_more_button{
+        #read_more_btn{
             display: none;
         }
     }

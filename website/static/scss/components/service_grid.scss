@@ -34,7 +34,8 @@
         display: flex;
         justify-content: center;
         gap: .5rem;
-        p{
+        .learn_more_anchor{
+            color: $text_inv;
             border-bottom: $border_width solid $text_inv;
             font-size: .7rem;
             font-weight: 900;

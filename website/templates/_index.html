@@ -116,8 +116,10 @@
                 {{doctor_card('Williams')}}
                 {{doctor_card('Jones')}}
             </div>
-            <button id="read_more_button">
-                Read More
+            <button id="read_more_btn" >
+                <a href="{{url_for('main.doctors')}}">
+                    Read More
+                </a>
             </button>
             <div class="doctor_panels_lg_ctnr">
                 {{doctor_panel_lg('Williams')}}

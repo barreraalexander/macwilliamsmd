@@ -4,6 +4,7 @@ body, html {
     font-family: 'Roboto', sans-serif;
     height: calc(100% - 2em);
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 image{
@@ -55,17 +56,27 @@ a{
         margin-bottom: 2em;
         #header_book_btn{
             background-color: $accent_dk;
-            color: $text_inv;
+            a{
+                color: $text_inv;
+            }
         }
         #header_phone_btn{
             background-color: $secondary;
-            color: $text;
+            a{
+                color: $text;
+            }
         }
         #header_book_btn, #header_phone_btn{
             border-radius: 0;
             text-align: center;
             padding: .5em 1em;
             flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            img{
+                width: 1em;
+            }
         }
 
     }

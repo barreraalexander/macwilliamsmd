@@ -97,14 +97,22 @@
             </nav>
             <div id="header_btn_ctnr">
                 <div id="header_book_btn">
-                    <p>
-                        APPOINTMENTS
-                    </p>
+                    <img
+                        src="{{url_for('static', filename='images/assets/appointment.svg')}}"
+                        alt=""
+                    >
+                    <a href="{{url_for('main.contact')}}">
+                        Appointments
+                    </a>
                 </div>
                 <div id="header_phone_btn">
-                    <p>
+                    <img
+                        src="{{url_for('static', filename='images/assets/call_navy.svg')}}"
+                        alt=""
+                    >
+                    <a href="tel:{{CONTACT_DICT['phone']}}">
                         {{CONTACT_DICT['phone']}}
-                    </p>
+                    </a>
                 </div>
             </div>
             <div id="hidden_menu" data-status='closed'>
@@ -218,9 +226,11 @@
             >
         </div>
         <div id="top_btn_ctnr">
-            <button id="to_top_btn">
-                BACK TO THE TOP
-            </button>
+            <a href="#base_header_section">
+                <button id="to_top_btn">
+                    BACK TO THE TOP
+                </button>                
+            </a>
         </div>
 
     </section>

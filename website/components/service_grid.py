@@ -27,12 +27,14 @@ def component():
                     {title}
                 </h3>
                 <div class="learn_more_ctnr">
-                    <p>
+                    <a class="learn_more_anchor" href="#{service}_panel">
                         MORE
-                    </p>
-                    <img
-                        src="{learn_more_icon}"
-                    >
+                    </a>
+                    <a href="#{service}_panel">
+                        <img
+                            src="{learn_more_icon}"
+                        >
+                    </a>
                 </div>
             </div>
         </div>        
