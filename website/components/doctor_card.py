@@ -1,39 +1,29 @@
 from flask import Markup, url_for
+from website.blueprints.main import DOCTORS_DICT
 
-
-def component (lname):
+def component (doctor):
+    doctor_dict = DOCTORS_DICT[doctor]
     img_src = url_for('static', filename='images/assets/doctor.svg')
-    fname = ""
-    titles = ""
-
-    if lname=="Williams":
-        fname = "Mac"
-        titles = "Primary Care Physician"
-
-    elif lname=="Jones":
-        fname = "John"
-        titles = "Primary Care Physician"
 
     return Markup (f"""
-    <div id="{lname}_doctor_card" class="doctor_card">
+    <div id="{doctor_dict['lname']}_doctor_card" class="doctor_card">
         <div class="card_left">
             <p class='name'>
-                {lname},
+                {doctor_dict['lname']},
             </p>
             <p class='name'>
-                {fname}
+                doctor_dict['fname']
             </p>
             <p class='titles'>
-                {titles}
+                {doctor_dict['titles']}
             </p>
         </div>
         <div class="card_right">
             <img
-                id="{lname}_img"
+                id="{doctor_dict['lname']}_img"
                 src="{img_src}"
-                alt="picture of {lname}"
+                alt="picture of {doctor_dict['lname']}"
             >
-
         </div>
     </div>
     

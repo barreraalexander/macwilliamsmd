@@ -113,8 +113,8 @@
                 Meet Our Doctors
             </h2>
             <div class="doctor_card_ctnr">
-                {{doctor_card('Williams')}}
-                {{doctor_card('Jones')}}
+                {{doctor_card('doctor1')}}
+                {{doctor_card('doctor2')}}
             </div>
             <button id="read_more_btn" >
                 <a href="{{url_for('main.doctors')}}">
@@ -122,9 +122,9 @@
                 </a>
             </button>
             <div class="doctor_panels_lg_ctnr">
-                {{doctor_panel_lg('Williams')}}
+                {{doctor_panel_lg('doctor1')}}
                 <hr>
-                {{doctor_panel_lg('Williams')}}
+                {{doctor_panel_lg('doctor2')}}
             </div>
         </div>
         <div class="insurances_ctnr">

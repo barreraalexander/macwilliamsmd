@@ -7,6 +7,22 @@ CONTACT_DICT = {
     'address' : '8500 Jones Street, Miami FL 00000',
 }
 
+DOCTORS_DICT = {
+    'doctor1' : {
+        'fname' : 'Mac',
+        'lname' : 'Williams',
+        'titles' : 'MD, PA, Primary Care Physician',
+        'details' : 'This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. ',
+    },
+    'doctor2' : {
+        'fname' : 'james',
+        'lname' : 'jones',
+        'titles' : 'MD, PA, Primary Care Physician',
+        'details' : 'This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. ',
+    }
+}
+
+
 SERVICES = {
     'ekg',
     'laboratory',

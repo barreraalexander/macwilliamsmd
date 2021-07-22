@@ -1,9 +1,9 @@
 from flask import Markup, url_for
+from website.blueprints.main import DOCTORS_DICT
 
-def component (lastname):
-    firstname = "Mac"
-    titles = "MD, PA, Primary Care Physician"
-    details = "This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. "
+
+def component (doctor):
+    doctor_dict = DOCTORS_DICT[doctor]
     img_src = url_for('static', filename='images/assets/doctor.svg')
     return Markup (f"""
         <div class="doctor_panel_ctnr">
@@ -14,13 +14,13 @@ def component (lastname):
             </div>
             <div class="doctor_text_ctnr">
                 <h3>
-                    {firstname} {lastname}
+                    {doctor_dict['fname']} {doctor_dict['lname']}
                 </h3>
                 <small>
-                    {titles}
+                    {doctor_dict['titles']}
                 </small>
                 <p>
-                    {details}
+                    {doctor_dict['details']}
                 </p>
             </div>
         </div>
