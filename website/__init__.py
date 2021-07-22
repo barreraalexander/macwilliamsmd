@@ -18,12 +18,12 @@ def create_app(config_class=Config):
     
     from website.blueprints.main.routes import main
     from website.blueprints.api.routes import api
-    # from website.blueprints.errors.handlers import errors
+    from website.blueprints.errors.handlers import errors
 
 
     assets.register(bundles)
     app.register_blueprint (main)
     app.register_blueprint (api)
-    # app.register_blueprint (errors)
+    app.register_blueprint (errors)
 
     return app

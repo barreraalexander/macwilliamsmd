@@ -1,5 +1,3 @@
-
-
 META_DICT = {
     'domain_name' : "Mac Wlliams Md & Associates",
     'domain_url' : "www.URLHERE.com",
@@ -14,6 +12,7 @@ CONTACT_DICT = {
     'address_city' : 'Miami',
     'address' : '8500 Jones Street, Miami FL 00000',
 }
+
 
 DOCTORS_DICT = {
     'doctor1' : {

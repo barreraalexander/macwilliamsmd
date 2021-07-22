@@ -13,7 +13,6 @@ from website.components.service_grid import component as service_grid
 from website.components.doctor_card import component as doctor_card
 from website.components.link_set import component as link_set
 from website.blueprints.api.forms import ContactUsForm
-from website.blueprints.api.forms import NewClientForm
 
 
 main = Blueprint ('main', __name__ )
