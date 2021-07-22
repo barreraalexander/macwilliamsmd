@@ -35,6 +35,11 @@
     .lg_service_title{
         display: none;
     }
+    .services_text_ctnr{
+        .button_like{
+            display: none;
+        }
+    }
 }
 
 
@@ -52,6 +57,10 @@
             flex-flow: column;
             gap: 2em;
             flex: 1;
+            .button_like{
+                display: flex;
+                width: unset;
+            }
         }
         h1{
             font-size: 3rem;
