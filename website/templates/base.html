@@ -8,14 +8,14 @@
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{DOMAIN_NAME}}" />
-    <!-- <meta property="og:description" content="DESCRIPTION GOES HERE" /> -->
-    <!-- <meta property="og:url" content="URL GOES HERE" /> -->
-    <meta property="og:site_name" content="{{DOMAIN_NAME}}" />
+    <meta property="og:title" content="{{META_DICT['domain_name']}}" />
+    <meta property="og:description" content="{{META_DICT['description']}}" />
+    <meta property="og:url" content="{{META_DICT['domain_url']}}" />
+    <meta property="og:site_name" content="{{META_DICT['domain_name']}}" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- <meta name="twitter:description" content="DESCRIPTION GOES HERE" /> -->
-    <meta name="twitter:title" content="{{DOMAIN_NAME}}" />
+    <meta name="twitter:description" content="{{META_DICT['description']}}" />
+    <meta name="twitter:title" content="{{META_DICT['domain_name']}}" />
 
 
 
@@ -59,7 +59,7 @@
     {% endassets %}
 
     <title>
-        {{title}} | {{DOMAIN_NAME}}
+        {{title}} | {{META_DICT['domain_name']}}
     </title>
 
 </head>

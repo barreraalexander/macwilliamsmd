@@ -1,4 +1,12 @@
-DOMAIN_NAME = "Mac Wlliams Md & Associates"
+
+
+META_DICT = {
+    'domain_name' : "Mac Wlliams Md & Associates",
+    'domain_url' : "www.URLHERE.com",
+    'description' : "Mac Wlliams Md & Associates",
+    
+}
+
 
 CONTACT_DICT = {
     'phone' : '954-000-0000',
