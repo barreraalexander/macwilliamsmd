@@ -39,7 +39,7 @@ function mod_slide(){
         selected_slide_text.classList.remove('apply_disappear')
     
         curr_slide_id = this.dataset.panel_id
-        // slideshow_clock.stop()
+        slideshow_clock.stop()
           
     }
 }
