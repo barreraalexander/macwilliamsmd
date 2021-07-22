@@ -80,6 +80,18 @@ def contact():
                         CONTACT_DICT=CONTACT_DICT)
 
 
+@main.route('/sitemap')
+def sitemap():
+    return render_template('_sitemap.html',
+                        title="Sitemap",
+                        button_like=button_like,
+                        service_panel=service_panel,
+                        link_set=link_set,
+                        META_DICT=META_DICT,
+                        CONTACT_DICT=CONTACT_DICT)
+    
+
+
 # @main.route('/new_client')
 # def new_client():
 #     form = NewClientForm()

@@ -5,7 +5,8 @@
     display: flex;
     justify-content: center;
     height: 20em;
-    width: 100%;
+    width: 50%;
+    margin: 3em auto;
     h1{
         @include proj_h1;
     }
