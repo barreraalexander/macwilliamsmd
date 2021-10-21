@@ -1,4 +1,4 @@
-// COLORS
+//SECTION: COLORS
 $primary : #0e153a;
 $secondary : #ecf1ff;
 $secondary_lighter : #f5f7ff;
@@ -11,14 +11,51 @@ $text: $primary;
 $text_inv: #fff;
 $shadow_color: #c8c8c8;
 
-//STANDARD SIZES
+//SECTION: BREAKPOINTS
+$tablet_bp: 767px;
+$desktop_bp: 1400px;
+$desktop_4k_bp: 3839px;
+
+
+// $tablet_bp: 768px;
+// $laptop_bp: 1000px;
+// $laptop_bp: 1999px;
+// $desktop_bp: 1919px;
+// $desktop_4k_bp: 3839px;
+
+//SECTION: GENERAL
+
 $border_width: .09rem;
 $border_radius: .9rem;
 $section_margin: 2em;
 
-//BREAKPOINTS
-$tablet_bp: 768px;
-$laptop_bp: 1000px;
-$laptop_bp: 1999px;
-$desktop_bp: 1919px;
-$desktop_4k_bp: 3839px;
+
+$common_padding: 1em;
+$common_padding_tb: .5em;
+$common_padding_lr: 1.5em;
+
+$gap_sm: .5em;
+$gap_md: 2em;
+
+$border_radius: .9em;
+$border_width: .09em;
+$border_width_thick: .2em;
+
+//SECTION: TYPOGRAPHY
+$font_sz_sm: .9em;
+$font_sz_md: 1.1em;
+$font_sz_lg: 1.4em;
+$font_sz_xl: 2em;
+
+$font_wt_light: 300;
+$font_wt_regular: 400;
+$font_wt_heavy: 600;
+$font_wt_xheavy: 700;
+
+$letter_spacing_sm: 0.024em;
+$letter_spacing_md: 0.033em;
+$letter_spacing_lg: 0.045em;
+$letter_spacing_xl: 0.075em;
+
+$font_family: 'Roboto';
+$font_family_alt: 'Roboto Condensed';

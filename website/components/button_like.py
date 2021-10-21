@@ -51,9 +51,11 @@ def component(btn_type='navigation', elem_id=''):
             src="{img_src}"
             alt="navigation img"
             >
-            <p>
-                {btn_text}
-            </p>
+            <a>
+                <p>
+                    {btn_text}
+                </p>
+            </a>
         </div>
         
     """)

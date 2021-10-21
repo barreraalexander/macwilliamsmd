@@ -50,6 +50,24 @@
         rel="stylesheet"
     > 
 
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto Condensed'
+        rel='stylesheet'
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=GoogleSans:wght@100;400&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+        rel="stylesheet"
+    >
+
+
     
     {% assets "main_scss" %}
         <link
@@ -64,177 +82,14 @@
 
 </head>
 <body>
-
-
-    <section id="base_header_section">
-        <aside>
-            <nav>
-                <ul class="main_nav_ul">
-                    <li id="logo_ctnr">
-                        <a href="{{ url_for('main.index') }}">
-                            <img
-                                id="mac_banner"
-                                src="{{url_for('static', filename='images/assets/mac_logo_banner.svg')}}"
-                                alt="mac williams md logo"
-                            >
-                        </a>
-                    </li>
-                    <li id="hamburger_ctnr">
-                        <img
-                            id="hamburger"
-                            src="{{url_for('static', filename='images/assets/hamburger_lblue.svg')}}"
-                            alt="mobile navigation button"
-                        >
-                    </li>
-                    {{link_set("tablet")}}
-                    <li id="patient_portal_ctnr" dataset-mquery="tablet">
-                        {{button_like('patient')}}
-                    </li>
-                    <li id="book_appointment_ctnr" dataset-mquery="tablet">
-                        {{button_like('appointment', elem_id='header_appointment')}}
-                    </li>
-                </ul>
-            </nav>
-            <div id="header_btn_ctnr">
-                <div id="header_book_btn">
-                    <img
-                        src="{{url_for('static', filename='images/assets/appointment.svg')}}"
-                        alt="appointment icon"
-                    >
-                    <a href="{{url_for('main.contact')}}">
-                        Appointments
-                    </a>
-                </div>
-                <div id="header_phone_btn">
-                    <img
-                        src="{{url_for('static', filename='images/assets/call_navy.svg')}}"
-                        alt="phone icon"
-                    >
-                    <a href="tel:{{CONTACT_DICT['phone']}}">
-                        {{CONTACT_DICT['phone']}}
-                    </a>
-                </div>
-            </div>
-            <div id="hidden_menu" data-status='closed'>
-                <ul>
-                    {{link_set("hidden_menu")}}
-                </ul>
-            </div>
-        </aside>
-
-    </section>
+    {{header()}}
 
 
     {% block content %}
     {% endblock %}
 
 
-    <section id="base_footer_section">
-        <div id="footer_actions_ctnr">
-            <div class="action_ctnr">
-                <h2>
-                    Location
-                </h2>
-                <i>
-                    {{CONTACT_DICT['address']}}
-                </i>
-                {{button_like(btn_type='navigation')}}
-            </div>
-            <div class="action_ctnr">
-                <h2>
-                    Appointments
-                </h2>
-                {{button_like(btn_type='phone')}}
-            </div>
-            <div class="action_ctnr">
-                <h2>
-                    Questions
-                </h2>
-                {{button_like(btn_type='phone2')}}
-            </div>
-            <div class="action_ctnr">
-                <h2>
-                    Message Us
-                </h2>
-                {{button_like(btn_type='send')}}
-            </div>
-            <!-- <div class="action_ctnr">
-                <h2>
-                    New Client
-                </h2>
-                {{button_like(btn_type='send')}}
-            </div> -->
-        </div>
-
-        <hr>
-        
-
-        <div id="office_hours_ctnr">
-            <h2>
-                Office Hours
-            </h2>
-            <div class="office_hour">
-                <p class="date">Monday</p>
-                <p class="time">8:00am - 5:00pm</p>
-            </div>
-            <div class="office_hour">
-                <p class="date">Tuesday</p>
-                <p class="time">8:00am - 5:00pm</p>
-            </div>
-            <div class="office_hour">
-                <p class="date">Wednesday</p>
-                <p class="time">8:00am - 5:00pm</p>
-            </div>
-            <div class="office_hour">
-                <p class="date">Thursday</p>
-                <p class="time">8:00am - 5:00pm</p>
-            </div>
-            <div class="office_hour">
-                <p class="date">Friday</p>
-                <p class="time">8:00am - 5:00pm</p>
-            </div>
-            <div class="office_hour">
-                <p class="date">Saturday</p>
-                <p class="time">Closed</p>
-            </div>
-            <div class="office_hour">
-                <p class="date">Sunday</p>
-                <p class="time">Closed</p>
-            </div>
-        </div>
-    
-        <div id="tos_ctnr">
-            <a href="#">
-                Terms of Service
-            </a>
-            <a href="#">
-                Legal Stuff
-            </a>
-            <a href="#">
-                Sitemap
-            </a>
-        </div>
-
-        <div class="map_widget_ctnr">
-            <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkR8GEl6h2YgRWx0pMVCxKFc&key=AIzaSyDQ4g571-kVI0g1E7VNHoDXPKxf4B0UpLU"></iframe>
-        </div>
-
-        <div class="last_logo_ctnr">
-            <img
-                src="{{url_for('static', filename='/images/assets/mac_logo_sqr.svg')}}"
-                alt="Mac Williams & Associates Logo"
-            >
-        </div>
-        <div id="top_btn_ctnr">
-            <a href="#base_header_section">
-                <button id="to_top_btn">
-                    BACK TO THE TOP
-                </button>                
-            </a>
-        </div>
-
-    </section>
-
+    {{footer()}}
 
     {% assets "main_js" %}
         <script type="text/javascript" src="{{ ASSET_URL}}"> </script>

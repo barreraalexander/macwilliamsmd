@@ -16,10 +16,25 @@ button:hover{
     
 }
 
+h1,h2,h3,
+h4,h5,h6{
+    @include heavy_text;
+}
+
+p{
+    @include regular_text;
+}
+
+
 a{
+    @include light_text;
     text-decoration: none;
 }
 
+
+.last_logo_ctnr{
+    margin-bottom: -.5em;
+}
 
 
 #base_header_section{
@@ -41,6 +56,11 @@ a{
         }
         a:hover{
             text-decoration: underline;
+        }
+        .button_like{
+            a{
+                color: $primary;
+            }
         }
     }
     #mac_banner{

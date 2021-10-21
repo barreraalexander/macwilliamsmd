@@ -1,50 +1,67 @@
-h1,h2,h3,p,ul,li{
+h1,h2,h3,
+h4,h5,h6,
+p,ul,li{
     margin: 0;
 }
 
+@mixin heavy_text($font_size: $font_sz_lg){
+    font-weight: $font_wt_heavy;
+    letter-spacing: $letter_spacing_lg;
+    font-family: $font_family;
+    font-size: $font_size;
+}
+
+@mixin regular_text($font_size: $font_sz_md){
+    font-weight: $font_wt_regular;
+    letter-spacing: $letter_spacing_md;
+    font-family: $font_family_alt;
+    font-size: $font_size;
+}
+@mixin light_text($font_size: $font_sz_sm){
+    font-weight: $font_wt_light;
+    letter-spacing: $letter_spacing_sm;
+    font-family: $font_family_alt;
+    font-size: $font_size;
+}
+
+
 
 @mixin proj_h1{
+    @include heavy_text(2em);
     color: $primary;
-    font-size: 1.8rem;
-    // font-size: 2rem;
-    // font-size: 2.5rem;
-    font-weight: 700;
+
 }
 
 @mixin proj_h2{
+    @include regular_text(1.6em);
     color: $primary;
-    font-size: 1.6rem;
-    // font-size: 1.9rem;
-    font-weight: 400;
 }
 
 @mixin proj_a{
+    @include light_text(1.2em);
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
 
 @mixin heading{
+    @include regular_text(1.8em);
     color: $primary;
-    font-size: 1.8rem;
-    font-weight: 500;
 }
 
 @mixin subtitle{
+    @include light_text(1.3em);
     font-style: italic;
     color: $accent_dk;
-    font-size: 1.3rem;
-    font-weight: 500;
     
 }
 
 @mixin details{
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-style: italic;
 }
 
 .sm_details{
-    font-size: .8rem;
+    font-size: .8em;
     color: $accent_dk;
     font-style: italic;
 }
@@ -54,14 +71,13 @@ h1,h2,h3,p,ul,li{
 }
 
 @mixin sm_paragraph{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 400;
     
 }
 
 @mixin md_paragraph{
     font-size: 1.2rem;
-    // font-size: 1.4rem;
     font-weight: 400;
     
 }
