@@ -1,8 +1,7 @@
 from flask import Blueprint, render_template, url_for
+from website import cache
 from website.blueprints.main import CONTACT_DICT, SERVICES, META_DICT
-
 from website.blueprints.api.forms import ContactUsForm
-
 from website.components.button_like import component as button_like
 from website.components.doctor_card import component as doctor_card
 from website.components.doctor_panel import component as doctor_panel
@@ -15,8 +14,6 @@ from website.components.doctor_card import component as doctor_card
 from website.components.navbars.linkset import component as linkset
 from website.components.navbars.header import component as header
 from website.components.navbars.footer import component as footer
-
-
 
 main = Blueprint ('main', __name__ )
 
@@ -48,6 +45,7 @@ def load_components():
 
 @main.route('/home')
 @main.route('/')
+@cache.cached(timeout=0)
 def index():
     return render_template('_index.html',
                         title="Home")

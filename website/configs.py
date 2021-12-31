@@ -14,3 +14,10 @@ class Config:
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_USE_TLS = True
 
+
+cacheConfig = {
+    "DEBUG": True,         
+    "CACHE_TYPE": "simple",
+    "CACHE_DEFAULT_TIMEOUT": 300
+}
+
