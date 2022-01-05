@@ -25,6 +25,14 @@ def load_dicts():
         SERVICES=SERVICES
     )
 
+@main.context_processor
+def load_base():
+    return dict(
+        header=header,
+        footer=footer,
+        linkset=linkset,
+    )
+
 
 @main.context_processor
 def load_components():
@@ -37,8 +45,6 @@ def load_components():
         service_grid=service_grid,
         doctor_panel_lg=doctor_panel_lg,
         slide_text=slide_text,
-        header=header,
-        footer=footer
     )
 
 

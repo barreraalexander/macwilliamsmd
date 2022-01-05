@@ -5,7 +5,7 @@ from website.components.button_like import component as button_like
 
 def component():
     home_link = url_for('main.index')    
-    contact_link = {url_for('main.contact')}
+    contact_link = url_for('main.contact')
 
     logo_src = url_for('static', filename='images/assets/mac_logo_banner.svg')
     menu_src = url_for('static', filename='images/assets/hamburger_lblue.svg')
