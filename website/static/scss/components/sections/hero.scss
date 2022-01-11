@@ -1,0 +1,73 @@
+#hero_section{
+    margin: $section_margin;
+    h1{
+        @include proj_h1;
+    }
+    small{
+        @include subtitle;
+    }
+    .img_ctnr{
+        img{
+            width: unset;
+        }
+        #radiology_img{
+            margin-top: 1em;
+            margin-left: 8em;
+        }
+        #laboratory_img{
+            margin-top: 1em;
+        }
+    }
+    #slider_ctnr{
+        margin-top: 2em;
+        .slide_ctnr + .slide_ctnr{
+            display: none;
+        }
+
+    }
+    .doctor_panels_lg_ctnr{
+        display: none;
+    }
+    #read_more_btn{
+        a{
+            color: $text_inv;
+        }
+    }
+}
+
+
+.slide_dot{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: $primary;
+    border: $border_width solid $accent_dk;
+}
+
+.slide_dot[data-active='true']{
+    background-color: $secondary;
+}
+
+
+.slide_dots_ctnr{
+    display: flex;
+    gap: .5em;
+    margin-top: .5em;
+}
+
+
+
+.main_display_ctnr{
+    .right_col{
+        display: none;
+    }
+    .left_col{
+        .buttons_ctnr{
+            display: none;
+        }
+        .slide_text_ctnr + .slide_text_ctnr{
+            display: none;
+        }
+
+    }
+}
