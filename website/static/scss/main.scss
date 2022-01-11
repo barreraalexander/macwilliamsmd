@@ -1,32 +1,34 @@
-// MUST IMPORT FIRST
-@import '_variables';
-@import '_typo';
-@import '_mixin';
-@import '_animations';
-
-@import './components/buttons';
-@import './components/service_panel';
-@import './components/doctor_panel';
-@import './components/doctor_panel_lg';
-@import './components/forms';
-@import './components/service_slide';
-@import './components/service_grid';
-@import './components/doctor_card';
+// BASE (MUST IMPORT FIRST)
+@import './base/variables';
+@import './base/typography';
+@import './base/mixin';
+@import './base/animations';
+@import './base/buttons';
 
 
-
-
-
-
-
+// PAGES
 @import './pages/_base';
-@import './pages/_index';
-@import './pages/_about';
-@import './pages/_doctors';
-@import './pages/_services';
-@import './pages/_contact';
-@import './pages/_new_client';
-@import './pages/_error';
-@import './pages/_sitemap';
+@import './pages/index';
+@import './pages/about';
+@import './pages/doctors';
+@import './pages/services';
+@import './pages/contact';
+@import './pages/new_client';
+@import './pages/error';
+@import './pages/sitemap';
 
-@import '_media_queries';
+
+
+
+// PARTS
+@import './components/parts/service_panel';
+@import './components/parts/doctor_panel';
+@import './components/parts/doctor_panel_lg';
+@import './components/parts/service_slide';
+@import './components/parts/service_grid';
+@import './components/parts/doctor_card';
+
+
+// FORMS
+@import './forms/contact_us';
+
