@@ -1,9 +1,12 @@
-{% extends 'base.html' %}
+from flask import Markup
+from website.components.slide_text import component as slide_text
+from website.components.button_like import component as button_like
+from website.components.service_slide import component as service_slide
+from website.components.doctor_panel_lg import component as doctor_panel_lg
 
-{% block content %}
-<script src="{{url_for('static', filename='js/assets/three.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/assets/gsap.min.js')}}"></script>
-<main>
+
+def component():
+    return Markup(f"""
     <section id="index_section1">
         <div class="main_display_ctnr">
             <div class="left_col">
@@ -134,6 +137,6 @@
             </div>
         </div>
     </section>
-</main>
 
-{% endblock %}
+    
+    """)
