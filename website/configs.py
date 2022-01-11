@@ -1,6 +1,12 @@
 import json
+from os import path
 
-with open('/etc/macwilliamsmd_config.json') as config_file:
+
+local_config = path.expanduser('~/etc/macwilliamsmd_config.json')
+launch_config = '/etc/macwilliamsmd_config.json'
+
+
+with open(local_config) as config_file:
     config = json.load(config_file)
 
 class Config:
