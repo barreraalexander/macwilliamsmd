@@ -1,4 +1,4 @@
-#index_section1{
+#hero_section{
     margin: $section_margin;
     h1{
         @include proj_h1;
@@ -179,7 +179,7 @@
             }
         }
     }
-    #index_section1{
+    #hero_section{
         margin: 0;
         .img_circle_ctnr{
             display: none;
@@ -251,7 +251,7 @@
 
 
 @media only screen and (min-width: $desktop_bp){
-    #index_section1{
+    #hero_section{
         h1{
             font-size: 3.5rem;
         }

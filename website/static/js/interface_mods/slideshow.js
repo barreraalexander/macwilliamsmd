@@ -1,4 +1,4 @@
-let index_section = document.querySelector('#index_section1')
+let index_section = document.querySelector('#hero_section')
 if (index_section){
     var slide_dots = index_section.querySelectorAll('.slide_dot')
     for (let dot of slide_dots){

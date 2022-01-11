@@ -1,19 +1,24 @@
 from flask import Blueprint, render_template, url_for
 from website import cache
+
 from website.blueprints.main import CONTACT_DICT, SERVICES, META_DICT
-from website.blueprints.api.forms import ContactUsForm
-from website.components.button_like import component as button_like
-from website.components.doctor_card import component as doctor_card
-from website.components.doctor_panel import component as doctor_panel
-from website.components.doctor_panel_lg import component as doctor_panel_lg
-from website.components.service_panel import component as service_panel
-from website.components.service_slide import component as service_slide
-from website.components.slide_text import component as slide_text
-from website.components.service_grid import component as service_grid
-from website.components.doctor_card import component as doctor_card
+from website.components.parts.button_like import component as button_like
+
+# navbars
 from website.components.navbars.linkset import component as linkset
 from website.components.navbars.header import component as header
 from website.components.navbars.footer import component as footer
+
+# sections
+from website.components.sections.hero import component as hero_section
+from website.components.sections.about import component as about_section
+from website.components.sections.services import component as services_section
+
+# components
+from website.components.parts.doctor_panel import component as doctor_panel
+
+#  forms
+from website.components.forms.contact_us import component as contact_us_form
 
 main = Blueprint ('main', __name__ )
 
@@ -33,72 +38,58 @@ def load_base():
         linkset=linkset,
     )
 
-
 @main.context_processor
 def load_components():
     return dict(
         button_like=button_like,
-        service_slide=service_slide,
-        doctor_card=doctor_card,
-        doctor_panel=doctor_panel,
-        service_panel=service_panel,
-        service_grid=service_grid,
-        doctor_panel_lg=doctor_panel_lg,
-        slide_text=slide_text,
     )
 
 
 
 @main.route('/home')
 @main.route('/')
-@cache.cached(timeout=0)
+# @cache.cached(timeout=0)
 def index():
     return render_template('_index.html',
-                        title="Home")
+        title="Home",
+        hero_section=hero_section,
+        )
 
 
 @main.route('/about')
 def about():
     return render_template('_about.html',
-                        title="About Us")
+        title="About Us",
+        about_section=about_section,
+        )
 
 
 @main.route('/doctors')
 def doctors():
+    
     return render_template('_doctors.html',
-                        title="Our Doctors")
+        title="Our Doctors",
+        doctor_panel=doctor_panel,
+        )
 
 
 @main.route('/services')
 def services():
     return render_template('_services.html',
-                        title="Our Services")
+        title="Our Services",
+        services_section=services_section,
+        )
 
 @main.route('/contact')
 def contact():
-    form = ContactUsForm()
     return render_template('_contact.html',
-                        form=form,
-                        title="Contact")
+        title="Contact",
+        contact_us_form=contact_us_form,
+        )
 
 
 @main.route('/sitemap')
 def sitemap():
     return render_template('_sitemap.html',
-                        title="Sitemap")
-    
-
-
-# @main.route('/new_client')
-# def new_client():
-#     form = NewClientForm()
-#     return render_template('_new_client.html',
-#                         title="New Client",
-#                         button_like=button_like,
-#                         service_panel=service_panel,
-#                         form=form,
-#                         link_set=link_set,
-#                         service_grid=service_grid,
-                        # META_DICT=META_DICT,
-#                         CONTACT_DICT=CONTACT_DICT)
-
+        title="Sitemap",
+        )

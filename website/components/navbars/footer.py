@@ -1,6 +1,6 @@
 from flask import Markup, url_for
 from website.blueprints.main import CONTACT_DICT
-from website.components.button_like import component as button_like
+from website.components.parts.button_like import component as button_like
 
 
 def component():
