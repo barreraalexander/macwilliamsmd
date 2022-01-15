@@ -29,10 +29,7 @@ def component():
                             {button_like('appointment')}  
                         </div>
                         <p>
-                            This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
-                            This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
-                            This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
-                            This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
+                            A team of experts in a range of medical specialties, we cover the South Florida region and are proud of a reputation for excellent service and a professional yet welcoming approach. With many years of experience behind them our team are all fully qualified in their area of expertise and we guarantee you will be treated with the care and attention you deserve. 
                         </p>
                     </div>
                     <div class="row_img_ctnr">
@@ -46,15 +43,29 @@ def component():
 
                 <div class="about_row">
                     <p>
-                        This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
-                        This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
-                        This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
+                        Our specialist areas include the following:
                     </p>
+                    <ul>
+                        <li>
+                            Lab work including Complete Blood Count, Metabolic Panels, Liver Panels and more, plus all areas of lab work including cultures. 
+                        </li>
+                        <li>
+                            Gynecology including the specialized area of endocrinology, pelvic malignancy, female urology, and all areas of women’s health.
+                        </li>
+                        <li>
+                            Radiology solutions including X-ray, CT scans, MRI, and all the very latest in diagnostic radiology procedures.
+                        </li>
+                    </ul>
+                    <p>
+                        While the above is not a comprehensive list of our services and solutions it does outline the areas in which we believe we can provide the best service in the South Florida region. We're here to help patients who need expert treatment and with many satisfied clients who testify to our excellence, we are committed to being the best in all areas of the medical field in which we profess expertise. You can find full details of our services at our website where you will also see contact details. We also invite you to check out our doctor's biographies on the website so you can see where our highly skilled and professionally trained team gained their education and work experience. Please contact us now if you need our help and one of the team will be happy to discuss your situation.
+                    </p>
+
                     <p class="hidden_about">
                         This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
                         This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
                         This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. This is about us. 
                     </p>
+                    
                 </div>
             </div>
 

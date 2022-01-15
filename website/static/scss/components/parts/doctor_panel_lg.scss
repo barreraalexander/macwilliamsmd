@@ -1,0 +1,25 @@
+.doctor_panel_lg_ctnr{
+    @include box_shadow;
+    align-items: center;
+    background-color: $secondary;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 2em;
+    gap: 1.2em;
+    img{
+        width: 12rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media only screen and (min-width: $desktop_bp){
+    .doctor_panel_lg_ctnr{
+        padding: 2em;
+    }
+}
