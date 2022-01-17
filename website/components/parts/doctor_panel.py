@@ -19,7 +19,13 @@ def component (doctor):
                     {doctor_dict['titles']}
                 </small>
                 <p>
-                    {doctor_dict['details']}
+                    {doctor_dict['details1']}
+                </p>
+                <p>
+                    {doctor_dict['details2']}
+                </p>
+                <p>
+                    {doctor_dict['details3']}
                 </p>
             </div>
         </div>
