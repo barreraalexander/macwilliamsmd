@@ -49,15 +49,15 @@ ABOUT_US = {
     
     'description2' : 'While the above is not a comprehensive list of our services and solutions it does outline the areas in which we believe we can provide the best service in the South Florida region.',
     
-    'description3' : 'We’re here to help patients who need expert treatment and with many satisfied clients who testify to our excellence, we are committed to being the best in all areas of the medical field in which we profess expertise. You can find full details of our services at our website where you will also see contact details.',
+    'description3' : "We're here to help patients who need expert treatment and with many satisfied clients who testify to our excellence, we are committed to being the best in all areas of the medical field in which we profess expertise. You can find full details of our services at our website where you will also see contact details.",
     
-    'description3' : 'We also invite you to check out our doctor’s biographies on the website so you can see where our highly skilled and professionally trained team gained their education and work experience. Please contact us now if you need our help and one of the team will be happy to discuss your situation.',
+    'description3' : "We also invite you to check out our doctor's biographies on the website so you can see where our highly skilled and professionally trained team gained their education and work experience. Please contact us now if you need our help and one of the team will be happy to discuss your situation.",
     
     'ul_heading' : 'Our specialist areas include the following',
     
     'li_1' : 'Lab work including Complete Blood Count, Metabolic Panels, Liver Panels and more, plus all areas of lab work including cultures.',
     
-    'li_2' : 'Gynecology including the specialized area of endocrinology, pelvic malignancy, female urology, and all areas of women’s health.',
+    'li_2' : "Gynecology including the specialized area of endocrinology, pelvic malignancy, female urology, and all areas of women's health.",
     
     'li_3' : 'Radiology solutions including X-ray, CT scans, MRI, and all the very latest in diagnostic radiology procedures.',
 
@@ -68,7 +68,7 @@ SERVICES = {
     'ekg' : {
         'heading1' : 'What is an EKG? ',
         
-        'description1' : 'Put simply, an EKG is a test that measures the electrical activity of the heart. You may also see it referred to as an ECG – electrocardiogram. EKG is used to ensure that in speech the procedure is not confused with an EEG, which is the electroencephalogram, a test that measures the electrical activity of the brain.',
+        'description1' : 'Put simply, an EKG is a test that measures the electrical activity of the heart. You may also see it referred to as an ECG - electrocardiogram. EKG is used to ensure that in speech the procedure is not confused with an EEG, which is the electroencephalogram, a test that measures the electrical activity of the brain.',
         
         'description2' : 'The EKG gives accurate information on the function of the heart and has been in use for many years. It is a simple and non-invasive test that can be carried out quickly.',
         
@@ -100,13 +100,13 @@ SERVICES = {
         
         'ul2_heading' : 'An EKG takes a measurement of the natural electrical activity in the heart and by doing so can detect indications of the following ailments and conditions:',
         
-        'ul2_li1' : 'By measuring the heart beat rate an EKG can diagnose tachycardia – which is an abnormally fast heart rate – and bradycardia, which is a slower the normal heart rate.',
+        'ul2_li1' : 'By measuring the heart beat rate an EKG can diagnose tachycardia - which is an abnormally fast heart rate - and bradycardia, which is a slower the normal heart rate.',
         
-        'ul2_li2' : 'By analysing the rhythm of the heart, the EKG returns details of arrythmias or irregularities. This can indicate a malfunction in the heart’s electrical system.',
+        'ul2_li2' : "By analysing the rhythm of the heart, the EKG returns details of arrythmias or irregularities. This can indicate a malfunction in the heart's electrical system.",
         
         'ul2_li3' : 'An EKG can diagnose whether a patient has previously experienced a heart attack and if so, the damage that has been done.',
         
-        'ul2_li4' : 'The reasons for chest pain – such as angina – can be detected by an EKG.',
+        'ul2_li4' : 'The reasons for chest pain - such as angina - can be detected by an EKG.',
         
         'ul2_li5' : 'If there are structural abnormalities in the heart such as enlargement of the chambers or walls the test will highlight them.',
         
@@ -124,7 +124,7 @@ SERVICES = {
 
         'heading2' : 'Complete Blood Count',
 
-        'description2' : 'The CBC – Complete Blood Count – test is the most commonly performed blood test. It measures the number and types of cells in the blood across red and white cells and platelets. The CBC test is used to screen the patient’s general health, to detect certain ailments, and to check nutritional standards. Anemia, leukemia, malaria and various infections can be detected using CBC, as can causes fatigue.',
+        'description2' : "The CBC - Complete Blood Count - test is the most commonly performed blood test. It measures the number and types of cells in the blood across red and white cells and platelets. The CBC test is used to screen the patient's general health, to detect certain ailments, and to check nutritional standards. Anemia, leukemia, malaria and various infections can be detected using CBC, as can causes fatigue.",
 
         'heading3' : 'Basic Metabolic Panel',
 
@@ -174,11 +174,11 @@ SERVICES = {
         
         'heading4' : 'MRI',
         
-        'description4' : 'Magnetic Resonance Imaging – MRI – is an advanced method of non-invasive diagnosis. MRI uses a complex combination of magnetic fields and radio waves to create amazingly accurate images of the internals of the body. Unlike CT scans and x-rays it uses neither the x-ray technique nor any form of non-ionizing radiation. MRI is performed in a long tube which some patients find discomforting. Nevertheless, in helping with the diagnosis of neurological problems, cardiovascular disorders, problems with the liver and intestines as well lung problems MRI is perhaps the best and most accurate diagnosis tool. Persons with non-removable metallic implants may not be able to undergo MRI analysis.',
+        'description4' : 'Magnetic Resonance Imaging - MRI - is an advanced method of non-invasive diagnosis. MRI uses a complex combination of magnetic fields and radio waves to create amazingly accurate images of the internals of the body. Unlike CT scans and x-rays it uses neither the x-ray technique nor any form of non-ionizing radiation. MRI is performed in a long tube which some patients find discomforting. Nevertheless, in helping with the diagnosis of neurological problems, cardiovascular disorders, problems with the liver and intestines as well lung problems MRI is perhaps the best and most accurate diagnosis tool. Persons with non-removable metallic implants may not be able to undergo MRI analysis.',
         
         'heading5' : 'Other Diagnostic Radiology Solutions',
         
-        'description5' : 'In addition to the three main radiology procedures described in brief above we can also provide others such as Fluoroscopy – effectively a real-time moving X-ray image often used for diagnosis of gastro-intestinal problems and also used with a barium enema for more detailed results. Other specialist services such as MRA (Magnetic Resonance Angiography) which is used to get a detailed picture of the blood vessels and the CT version known as CTA are also available.',
+        'description5' : 'In addition to the three main radiology procedures described in brief above we can also provide others such as Fluoroscopy - effectively a real-time moving X-ray image often used for diagnosis of gastro-intestinal problems and also used with a barium enema for more detailed results. Other specialist services such as MRA (Magnetic Resonance Angiography) which is used to get a detailed picture of the blood vessels and the CT version known as CTA are also available.',
         
         'description6' : 'With a team of expert radiologists on hand to provide the service that is most appropriate for the patient we guarantee the best results possible and are here to help with all areas of diagnostic radiology.',
         
@@ -188,7 +188,7 @@ SERVICES = {
     },
 
     'gynecology' : {
-        'description1' : 'Among the most specialized areas of health and medical practice is gynecology. It is defined as ‘being concerned with the well-being and health of the female reproductive organs and the ability to reproduce’. Gynecologists need to study for at least seven years to become qualified in what is a demanding role. We have expert gynecologists who are trained and qualified to the highest degree, and who can provide the best service in the business.',
+        'description1' : "Among the most specialized areas of health and medical practice is gynecology. It is defined as ‘being concerned with the well-being and health of the female reproductive organs and the ability to reproduce'. Gynecologists need to study for at least seven years to become qualified in what is a demanding role. We have expert gynecologists who are trained and qualified to the highest degree, and who can provide the best service in the business.",
         
         'description2' : 'What problems does gynecologist treat, and when should you see a gynecologist? Let’s answer the latter question first.',
         
@@ -212,11 +212,11 @@ SERVICES = {
         
         'ul2_li1_bold' : 'Endocrinology',
         
-        'ul2_li1' : 'is the treatment of women who have hormone problems. Hormones are an essential element of health – in men as well as women – and any hormone imbalance (too much or not enough of a hormone) can be problematic. Associated ailments include diabetes and thyroid disease.',
+        'ul2_li1' : 'is the treatment of women who have hormone problems. Hormones are an essential element of health - in men as well as women - and any hormone imbalance (too much or not enough of a hormone) can be problematic. Associated ailments include diabetes and thyroid disease.',
         
         'ul2_li2_bold' : 'Pelvic Malignancy',
         
-        'ul2_li2' : 'deals with tumors that occur in the pelvis, usually close to the ovaries, uterus and fallopian tubes. These tumors – known as an adnexal mass – are often benign but can be cancerous and need immediate and accurate treatment.',
+        'ul2_li2' : 'deals with tumors that occur in the pelvis, usually close to the ovaries, uterus and fallopian tubes. These tumors - known as an adnexal mass - are often benign but can be cancerous and need immediate and accurate treatment.',
         
         'ul2_li3_bold' : 'Female Urology',
 
@@ -230,6 +230,6 @@ SERVICES = {
 
         'description5' : 'Whether you have noticed any of the signs or problems mentioned above or you are concerned about this area of female health for other reasons we invite you to get in touch and we will arrange an initial consultation at your convenience. You will find our gynecology team to be professional, friendly and helpful throughout, and we will endeavor to provide an accurate diagnosis and treatment plan as quickly as we can.',
 
-        'description6' : 'Don’t hesitate to get in touch as time can be important, and we have a team waiting here to help you in any way we can with gynecology issues.',
+        'description6' : "Don't hesitate to get in touch as time can be important, and we have a team waiting here to help you in any way we can with gynecology issues.",
     }
 }
