@@ -46,12 +46,19 @@ DOCTORS_DICT = {
 
 ABOUT_US = {
     'description1' : 'A team of experts in a range of medical specialties, we cover the South Florida region and are proud of a reputation for excellent service and a professional yet welcoming approach. With many years of experience behind them our team are all fully qualified in their area of expertise and we guarantee you will be treated with the care and attention you deserve.',
+    
     'description2' : 'While the above is not a comprehensive list of our services and solutions it does outline the areas in which we believe we can provide the best service in the South Florida region.',
+    
     'description3' : 'We’re here to help patients who need expert treatment and with many satisfied clients who testify to our excellence, we are committed to being the best in all areas of the medical field in which we profess expertise. You can find full details of our services at our website where you will also see contact details.',
+    
     'description3' : 'We also invite you to check out our doctor’s biographies on the website so you can see where our highly skilled and professionally trained team gained their education and work experience. Please contact us now if you need our help and one of the team will be happy to discuss your situation.',
+    
     'ul_heading' : 'Our specialist areas include the following',
+    
     'li_1' : 'Lab work including Complete Blood Count, Metabolic Panels, Liver Panels and more, plus all areas of lab work including cultures.',
+    
     'li_2' : 'Gynecology including the specialized area of endocrinology, pelvic malignancy, female urology, and all areas of women’s health.',
+    
     'li_3' : 'Radiology solutions including X-ray, CT scans, MRI, and all the very latest in diagnostic radiology procedures.',
 
 }
@@ -111,8 +118,47 @@ SERVICES = {
     },
 
     'laboratory' : {
-        'description1' : '',
+        'heading1' : 'Lab Work',
+
+        'description1' : 'Our laboratory work services cover the full range of medical and clinical analysis solutions, and we are proud of a reputation for expertise and knowledge in this field. Following are some of the services our laboratory can provide.',
+
+        'heading2' : 'Complete Blood Count',
+
+        'description2' : 'The CBC – Complete Blood Count – test is the most commonly performed blood test. It measures the number and types of cells in the blood across red and white cells and platelets. The CBC test is used to screen the patient’s general health, to detect certain ailments, and to check nutritional standards. Anemia, leukemia, malaria and various infections can be detected using CBC, as can causes fatigue.',
+
+        'heading3' : 'Basic Metabolic Panel',
+
+        'description3' : 'This test is used to measure the levels of glucose, sodium, potassium, calcium, chloride, carbon dioxide, blood urea nitrogen and creatinine in the body. These indicators can help in determining the  blood sugar level, electrolyte, kidney function and fluid balance can the effects of medications the patient is taking. The Basic Metabolic Panel can be used to determine specific problems or may be part of routine health screening.',
+
+        'heading4' : 'Comprehensive Metabolic Panel',
+
+        'description4' : 'Used to analyse the performance of various organs, the Comprehensive Metabolic Panel is an extension of the Basic Metabolic Panel giving a more in-depth examination of the systems in the body. This is usually performed when searching for specific ailments and involves an additional six tests for accurate and comprehensive results.',
+
+        'heading5' : 'Prothrombin Time',
+
+        'description5' : 'This coagulation test, also known as PT or Pro Time, measures the time it takes for the blood to clot. It looks at five separate clotting factors and is used to determine the cause of abnormalities in bleeding as well as keeping check of medications that are taken to prevent blood clots.',
+
+        'heading6' : 'Lipid Panel',
+
+        'description6' : 'By looking at the levels of cholesterol and triglyceride in a patient this series of tests can detect the level of cardiac risk and is performed specifically for this purpose.',
+
+        'heading7' : 'Liver Panel',
+
+        'description7' : 'This series of tests is designed to check the performance of the liver and also the presence of tumours. As with the above it is a specific test for one purpose and not for general health screening.',
+
+        'heading8' : 'Other Lab Work Services',
+
+        'description8' : 'In addition to the above which are the most commonly performed tests in the laboratory, we also provide service including those to check thyroid performance, screen for diabetes and one of the first tests may be urinalysis, which is helpful in detecting problems such as diabetes and early signs of many other diseases.',
+
+        'heading9' : 'Cultures',
+
+        'description9' : 'Our lab services also includes cultures which are used to check for many different ailments such as meningitis, MRSA, pneumonia and more, and can be helpful in determining the correct antibiotic treatment for the individual patient.',
+
+        'heading10' : 'Contact us for More Information',
+
+        'description10' : 'If you are looking for experts in the lab services field we are here to help, so please feel free to contact us right now and we will be happy to answer any questions you may have and provide the solutions you require.',
     },
+
     'radiology' : {
         'heading1' : 'Radiology',
 
@@ -140,6 +186,7 @@ SERVICES = {
         
         'description7' : 'We are here to answer any questions you might have on radiology solutions and our team is fully qualified and trained in all areas of diagnostics. With a reputation for excellent service and accurate diagnosis we are proud to be regarded as a leading name in diagnostic radiology. Please don’t hesitate to get in touch as we are waiting to help you, so give us a call now and one of our friendly and professional team will be more than happy to help.',
     },
+
     'gynecology' : {
         'description1' : 'Among the most specialized areas of health and medical practice is gynecology. It is defined as ‘being concerned with the well-being and health of the female reproductive organs and the ability to reproduce’. Gynecologists need to study for at least seven years to become qualified in what is a demanding role. We have expert gynecologists who are trained and qualified to the highest degree, and who can provide the best service in the business.',
         
