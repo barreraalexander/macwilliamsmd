@@ -14,6 +14,7 @@ from website.components.sections.hero import component as hero_section
 from website.components.sections.about import component as about_section
 from website.components.sections.services import component as services_section
 
+
 # components
 from website.components.parts.doctor_panel import component as doctor_panel
 

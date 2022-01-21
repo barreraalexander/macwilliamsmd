@@ -1,20 +1,23 @@
 #about_section{
-    margin: $section_margin;
     h1{
         @include proj_h1;
-        // font-size: 2rem;
     }
-    .hidden_about{
-        display: none;
+    h2{
+        @include subtitle;
+        font-size: 2em;
+    }
+    p{
+        @include regular_text;
+        font-size: 1.3em;
     }
     .row_img_ctnr{
         display: none;
     }
-    .about_row{
-        margin-top: 1rem;
-    }
-    #btn_ctnr{
-        margin: 1em 0;
+    .banner_ctnr{
+        display: flex;
+        flex-flow: column;
+        gap: .5em;
+        padding: $section_margin;
     }
     .about_doctor_ctnr{
         margin: 5em 0;
@@ -31,64 +34,72 @@
         margin-top: 2em;
         .doctor_panel_lg_ctnr{
             width:15rem;
-            // max-width: 160px;
             text-align: center;
         }
     }
+    .description1_ctnr{
+        padding: $section_margin;
+        padding-top: 0;
+        p{
+            font-size: 1.3em;
+        }
+    }
+    
 
+    .ul_ctnr{
+        background-color: $primary;
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        gap: 1em;
+        justify-content: center;
+        padding: $section_margin;
+        filter: grayscale(100%);
+        p{
+            width: 3em;
+            color: $secondary;
+            font-size: 2em;
+        }
+        ul{
+            display: flex;
+            flex-flow: column;
+            list-style: none;
+            gap: 2em;
+
+        }
+        li{
+            @include light_text;
+            color: $secondary;
+            // font-size: $font_sz_md;
+            font-size: 1.2em;
+        }
+        
+    }
+    .button_like{
+        width: max-content;
+    }
+    .about_row{
+        padding: $section_margin;
+        display: flex;
+        flex-flow: column;
+        gap: 1em;
+        position: relative;
+        // img{
+        //     position: absolute;
+        //     margin: 0 auto;
+
+        //     mix-blend-mode: color-dodge;
+        // }
+    }
 }
-
-#about_header_ctnr{
-    display: flex;
-    flex-flow: column;
-    gap: 1.5em;
-    margin-top: 2em;
-    h2{
-        @include subtitle;
-        font-size: 2rem;
-    }
-    small{
-        @include details;
-        color: $accent_dk;
-        font-size: 1.4rem;
-    }
-    button{
-        padding: .5em;
-        width: 12rem;
-    }
-    #book_now_btn{
-        @include secondary_btn;
-        font-size: 1rem;
-    }
-    #new_client_btn{
-        @include primary_btn;
-        font-size: 1rem;
-    }
-    p{
-        @include md_paragraph;
-    }
-}
-
-#btn_ctnr{
-    display: flex;
-    gap: 2em;
-    justify-content: flex-start;
-}
-
 
 @media only screen and (min-width: $tablet_bp){
     #about_section{
-        .hidden_about{
-            display: block;
-        }
+
         .about_row{
             align-items: flex-start;
             display: flex;
             gap: 2em;
-            // p{
-                // width: 70%;
-            // }
-
 
         }
         .row_text_ctnr{
@@ -108,7 +119,6 @@
             }
         }
         #btn_ctnr{
-            // margin: unset;
         }
     
     }

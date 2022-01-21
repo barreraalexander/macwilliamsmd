@@ -1,10 +1,8 @@
 META_DICT = {
     'domain_name' : "Mac Wlliams Md & Associates",
     'domain_url' : "www.URLHERE.com",
-    'description' : "Mac Wlliams Md & Associates",
-    
+    'description' : "Mac Wlliams Md & Associates",    
 }
-
 
 CONTACT_DICT = {
     'phone' : '954-000-0000',
@@ -26,7 +24,6 @@ DOCTORS_DICT = {
 
         'details3' : 'Since then, I have been practicing as an Internist - a specialist in internal medicine concerning the major and other organs - and serving the community in South Florida. I take great pride in a reputation for excellent service and ensuring my patients are comfortable and treated with care and attention that they deserve when in need of my expertise.',
 
-        'details' : 'This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. ',
     },
     'doctor2' : {
         'fname' : 'Mac',
@@ -39,33 +36,33 @@ DOCTORS_DICT = {
 
         'details3' : 'Since then, I have been practicing as an Internist - a specialist in internal medicine concerning the major and other organs - and serving the community in South Florida. I take great pride in a reputation for excellent service and ensuring my patients are comfortable and treated with care and attention that they deserve when in need of my expertise.',
 
-        'details' : 'This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. This is about the doctor. ',
     }
 }
 
 
 ABOUT_US = {
-    'description1' : 'A team of experts in a range of medical specialties, we cover the South Florida region and are proud of a reputation for excellent service and a professional yet welcoming approach. With many years of experience behind them our team are all fully qualified in their area of expertise and we guarantee you will be treated with the care and attention you deserve.',
+    'description1' : 'We are a team of experts in a range of medical specialties. We cover the South Florida region and are proud of a reputation for excellent service and a professional yet welcoming approach. With many years of experience behind them, our team are all fully qualified in their area of expertise and we guarantee you will be treated with the care and attention you deserve.',
     
     'description2' : 'While the above is not a comprehensive list of our services and solutions it does outline the areas in which we believe we can provide the best service in the South Florida region.',
     
     'description3' : "We're here to help patients who need expert treatment and with many satisfied clients who testify to our excellence, we are committed to being the best in all areas of the medical field in which we profess expertise. You can find full details of our services at our website where you will also see contact details.",
     
-    'description3' : "We also invite you to check out our doctor's biographies on the website so you can see where our highly skilled and professionally trained team gained their education and work experience. Please contact us now if you need our help and one of the team will be happy to discuss your situation.",
+    'description4' : "We also invite you to check out our doctor's biographies on the website so you can see where our highly skilled and professionally trained team gained their education and work experience. Please contact us now if you need our help and one of the team will be happy to discuss your situation.",
     
     'ul_heading' : 'Our specialist areas include the following',
     
-    'li_1' : 'Lab work including Complete Blood Count, Metabolic Panels, Liver Panels and more, plus all areas of lab work including cultures.',
+    'li1' : 'Lab work including Complete Blood Count, Metabolic Panels, Liver Panels and more, plus all areas of lab work including cultures.',
     
-    'li_2' : "Gynecology including the specialized area of endocrinology, pelvic malignancy, female urology, and all areas of women's health.",
+    'li2' : "Gynecology including the specialized area of endocrinology, pelvic malignancy, female urology, and all areas of women's health.",
     
-    'li_3' : 'Radiology solutions including X-ray, CT scans, MRI, and all the very latest in diagnostic radiology procedures.',
+    'li3' : 'Radiology solutions including X-ray, CT scans, MRI, and all the very latest in diagnostic radiology procedures.',
 
 }
 
 
 SERVICES = {
     'ekg' : {
+        'service_title' : 'EKG',
         'heading1' : 'What is an EKG? ',
         
         'description1' : 'Put simply, an EKG is a test that measures the electrical activity of the heart. You may also see it referred to as an ECG - electrocardiogram. EKG is used to ensure that in speech the procedure is not confused with an EEG, which is the electroencephalogram, a test that measures the electrical activity of the brain.',
@@ -94,7 +91,7 @@ SERVICES = {
         
         'ul1_li6' : 'To check if a pacemaker is working.',
         
-        'ul_footer' : 'This is not an exhaustive list but shows the most common reasons for undergoing an EKG. A patient who is expected to undergo regular procedures for an illness or ailment may also be given an EKG as a baseline for future monitoring.',
+        'ul1_footer' : 'This is not an exhaustive list but shows the most common reasons for undergoing an EKG. A patient who is expected to undergo regular procedures for an illness or ailment may also be given an EKG as a baseline for future monitoring.',
         
         'heading4' : 'What Can an EKG Detect?',
         
@@ -118,6 +115,8 @@ SERVICES = {
     },
 
     'laboratory' : {
+        'service_title' : 'Lab Work',
+
         'heading1' : 'Lab Work',
 
         'description1' : 'Our laboratory work services cover the full range of medical and clinical analysis solutions, and we are proud of a reputation for expertise and knowledge in this field. Following are some of the services our laboratory can provide.',
@@ -160,6 +159,8 @@ SERVICES = {
     },
 
     'radiology' : {
+        'service_title' : 'Radiology',
+
         'heading1' : 'Radiology',
 
         'description1' : 'Radiology is an area of medical diagnosis that includes a variety of routines and procedures. While once limited to X-ray, the radiology field now includes more advanced and powerful procedures that are capable of excellent results. We provide the following radiology services for our patients.',
@@ -188,6 +189,8 @@ SERVICES = {
     },
 
     'gynecology' : {
+        'service_title' : 'Gynecology',
+
         'description1' : "Among the most specialized areas of health and medical practice is gynecology. It is defined as ‘being concerned with the well-being and health of the female reproductive organs and the ability to reproduce'. Gynecologists need to study for at least seven years to become qualified in what is a demanding role. We have expert gynecologists who are trained and qualified to the highest degree, and who can provide the best service in the business.",
         
         'description2' : 'What problems does gynecologist treat, and when should you see a gynecologist? Let’s answer the latter question first.',

@@ -4,6 +4,8 @@ from website.components.parts.button_like import component as button_like
 from website.components.parts.service_grid import component as service_grid
 from website.components.parts.service_panel import component as service_panel
 
+from website.components.parts.service_panel_ekg import component as ekg_panel
+
 def component():
     return Markup(f"""
     <section id="services_section">
@@ -20,7 +22,7 @@ def component():
             {service_grid()}
         </div>
 
-        {service_panel('ekg')}
+        {ekg_panel()}
         {service_panel('laboratory')}
         {service_panel('radiology')}
         {service_panel('gynecology')}
