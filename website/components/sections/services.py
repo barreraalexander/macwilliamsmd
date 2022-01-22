@@ -23,9 +23,6 @@ def component():
         </div>
 
         {ekg_panel()}
-        {service_panel('laboratory')}
-        {service_panel('radiology')}
-        {service_panel('gynecology')}
         <div class="btn_ctnr">
             {button_like('appointment')}
         </div>

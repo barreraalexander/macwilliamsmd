@@ -15,8 +15,17 @@ def component(lazy=False):
 
     classes = ""
 
+
     return Markup(f"""
-    <div id="{service_name}_panel" class="service_ctnr {classes}">
+    <div class="service_ctnr">
+        
+    </div>
+
+    
+    """)
+
+    return Markup(f"""
+    <div id="{service_name}_panel" class="service_ctnr">
         <div class="service_header">
             <div class="picture_title">
                 <p class="sm_service_title">
