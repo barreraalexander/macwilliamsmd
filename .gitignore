@@ -9,7 +9,7 @@ website/static/images/services
 *.jpeg
 *.png
 *.pem
-
+*.sh
 
 # //SECTION: GENERAL
 
