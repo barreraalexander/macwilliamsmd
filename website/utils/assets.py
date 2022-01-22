@@ -9,6 +9,7 @@ bundles = {
             'scss/pages/*.scss',
             'scss/components/*.scss',
             'scss/components/parts/*.scss',
+            'scss/components/sections/*.scss',
             'scss/base/*.scss'
             'scss/forms/*.scss'
         ],

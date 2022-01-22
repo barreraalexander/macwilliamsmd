@@ -18,7 +18,7 @@ DOCTORS_DICT = {
         'lname' : 'Williams',
         'titles' : 'MD, PA, Primary Care Physician',
 
-        'details1' : 'Lab work including Complete Blood Cunt, Metabolic Panels, Liver Panels I am Dr. Mac Williams, and I am one of the team here who offers specialist expertise in our medical solutions and services. I studied medicine - with an emphasis on internal medicine - at UCE Dominican Republic Medical School from where I graduate in 1980.',
+        'details1' : 'I am Dr. Mac Williams, and I am one of the team here who offers specialist expertise in our medical solutions and services. I studied medicine - with an emphasis on internal medicine - at UCE Dominican Republic Medical School from where I graduate in 1980.',
 
         'details2' : 'I enjoyed a year long internship at Jackson Memorial Hospital, at the University of Miami. Following my decision to concentrate on internal medicine I underwent further training at Trenton Affiliated Hospital and then at Hahnemann University Hospital. I completed my training in internal medicine in 1986.',
 
@@ -30,7 +30,7 @@ DOCTORS_DICT = {
         'lname' : 'Williams',
         'titles' : 'MD, PA, Primary Care Physician',
 
-        'details1' : 'Lab work including Complete Blood Cunt, Metabolic Panels, Liver Panels I am Dr. Mac Williams, and I am one of the team here who offers specialist expertise in our medical solutions and services. I studied medicine - with an emphasis on internal medicine - at UCE Dominican Republic Medical School from where I graduate in 1980.',
+        'details1' : 'Lab work including Complete Blood Count, Metabolic Panels, Liver Panels I am Dr. Mac Williams, and I am one of the team here who offers specialist expertise in our medical solutions and services. I studied medicine - with an emphasis on internal medicine - at UCE Dominican Republic Medical School from where I graduate in 1980.',
 
         'details2' : 'I enjoyed a year long internship at Jackson Memorial Hospital, at the University of Miami. Following my decision to concentrate on internal medicine I underwent further training at Trenton Affiliated Hospital and then at Hahnemann University Hospital. I completed my training in internal medicine in 1986.',
 
@@ -41,6 +41,8 @@ DOCTORS_DICT = {
 
 
 ABOUT_US = {
+    'slide_text' : "We're here to help patients who need expert treatment and with many satisfied clients who testify to our excellence, we are committed to being the best in all areas of the medical field in which we profess expertise.",
+
     'description1' : 'We are a team of experts in a range of medical specialties. We cover the South Florida region and are proud of a reputation for excellent service and a professional yet welcoming approach. With many years of experience behind them, our team are all fully qualified in their area of expertise and we guarantee you will be treated with the care and attention you deserve.',
     
     'description2' : 'While the above is not a comprehensive list of our services and solutions it does outline the areas in which we believe we can provide the best service in the South Florida region.',
@@ -63,7 +65,10 @@ ABOUT_US = {
 SERVICES = {
     'ekg' : {
         'service_title' : 'EKG',
-        'heading1' : 'What is an EKG? ',
+        
+        'slide_text' : 'An EKG gives accurate information on the function of the heart and has been in use for many years. It is a simple and non-invasive test that can be carried out quickly.',
+
+        'heading1' : 'What is an EKG?',
         
         'description1' : 'Put simply, an EKG is a test that measures the electrical activity of the heart. You may also see it referred to as an ECG - electrocardiogram. EKG is used to ensure that in speech the procedure is not confused with an EEG, which is the electroencephalogram, a test that measures the electrical activity of the brain.',
         
@@ -117,6 +122,8 @@ SERVICES = {
     'laboratory' : {
         'service_title' : 'Lab Work',
 
+        'slide_text' : 'Our laboratory work services cover the full range of medical and clinical analysis solutions, and we are proud of a reputation for expertise and knowledge in this field.',
+
         'heading1' : 'Lab Work',
 
         'description1' : 'Our laboratory work services cover the full range of medical and clinical analysis solutions, and we are proud of a reputation for expertise and knowledge in this field. Following are some of the services our laboratory can provide.',
@@ -160,6 +167,7 @@ SERVICES = {
 
     'radiology' : {
         'service_title' : 'Radiology',
+        'slide_text' : 'Radiology is an area of medical diagnosis that includes a variety of routines and procedures. While once limited to X-ray, the radiology field now includes more advanced and powerful procedures that are capable of excellent results.',
 
         'heading1' : 'Radiology',
 
@@ -190,6 +198,8 @@ SERVICES = {
 
     'gynecology' : {
         'service_title' : 'Gynecology',
+
+        'slide_text' : 'Gynecologists need to study for at least seven years to become qualified in what is a demanding role. We have expert gynecologists who are trained and qualified to the highest degree, and who can provide the best service in the business.',
 
         'description1' : "Among the most specialized areas of health and medical practice is gynecology. It is defined as ‘being concerned with the well-being and health of the female reproductive organs and the ability to reproduce'. Gynecologists need to study for at least seven years to become qualified in what is a demanding role. We have expert gynecologists who are trained and qualified to the highest degree, and who can provide the best service in the business.",
         
