@@ -13,15 +13,15 @@ def component(slide_name):
 
     elif slide_name == "laboratory":
         slide_h1 = "Lab Work"
-        slide_small = "Some Comment"
+        slide_small = "Analysis Solutions"
         
     elif slide_name == "radiology":
         slide_h1 = "Radiology"
-        slide_small = "Some Comment"
+        slide_small = "Medical Diagnosis"
         
     elif slide_name == "gynecology":
         slide_h1 = "Gynecology"
-        slide_small = "Some Comment"
+        slide_small = "Reproductive Health"
         
     
     return Markup(f"""
