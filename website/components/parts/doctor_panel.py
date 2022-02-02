@@ -29,5 +29,4 @@ def component (doctor):
                 </p>
             </div>
         </div>
-
     """)
