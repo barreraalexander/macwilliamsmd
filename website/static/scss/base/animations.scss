@@ -113,3 +113,27 @@
     -webkit-animation: lift ease .5s forwards;
     animation: lift ease .5s forwards;
 }
+
+
+
+@keyframes wiggle {
+    from {
+        transform: skewY(-2deg);
+    } to {
+        transform:  skewY(2deg);
+    }
+}
+
+@-webkit-keyframes wiggle{
+    from {
+        transform: skewY(-.5deg);
+    } to {
+        transform:  skewY(.5deg);
+    }
+}
+
+.apply_wiggle{
+    animation: wiggle 1s infinite alternate;
+    -webkit-animation: wiggle 1s infinite alternate;
+    animation-delay: 1s;
+}

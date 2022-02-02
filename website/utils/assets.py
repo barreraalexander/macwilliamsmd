@@ -10,8 +10,8 @@ bundles = {
             'scss/components/*.scss',
             'scss/components/parts/*.scss',
             'scss/components/sections/*.scss',
-            'scss/base/*.scss'
-            'scss/forms/*.scss'
+            'scss/base/*.scss',
+            'scss/forms/*.scss',
         ],
         output='gen/css/main.%(version)s.css'
     ),

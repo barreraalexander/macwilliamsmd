@@ -7,7 +7,6 @@ def component():
 
     map_src = "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkR8GEl6h2YgRWx0pMVCxKFc&key=AIzaSyDQ4g571-kVI0g1E7VNHoDXPKxf4B0UpLU"
     logo_src = url_for('static', filename='/images/assets/mac_logo_sqr.svg')
-
     return Markup(f"""
 
     <section id="base_footer_section">
@@ -150,9 +149,4 @@ def component():
         </div>
 
     </section>
-
-
-
-
-
     """)

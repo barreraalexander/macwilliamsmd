@@ -17,7 +17,7 @@ def component(btn_type='navigation', elem_id=''):
 
     elif btn_type=='phone2':
         img_src = url_for('static', filename='images/assets/call.svg')
-        classes = "standard_btn_like"
+        classes = "standard_btn_like apply_wiggle"
         btn_text = CONTACT_DICT['phone2']
 
     elif btn_type=='send':
