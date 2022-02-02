@@ -124,7 +124,7 @@ SERVICES = {
 
         'slide_text' : 'Our laboratory work services cover the full range of medical and clinical analysis solutions, and we are proud of a reputation for expertise and knowledge in this field.',
 
-        'heading1' : 'Lab Work',
+        'heading1' : 'Laboratory',
 
         'description1' : 'Our laboratory work services cover the full range of medical and clinical analysis solutions, and we are proud of a reputation for expertise and knowledge in this field. Following are some of the services our laboratory can provide.',
 
@@ -169,7 +169,7 @@ SERVICES = {
         'service_title' : 'Radiology',
         'slide_text' : 'Radiology is an area of medical diagnosis that includes a variety of routines and procedures. While once limited to X-ray, the radiology field now includes more advanced and powerful procedures that are capable of excellent results.',
 
-        'heading1' : 'Radiology',
+        'heading1' : 'Radiology Work',
 
         'description1' : 'Radiology is an area of medical diagnosis that includes a variety of routines and procedures. While once limited to X-ray, the radiology field now includes more advanced and powerful procedures that are capable of excellent results. We provide the following radiology services for our patients.',
         
@@ -235,11 +235,11 @@ SERVICES = {
 
         'ul2_li3' : 'is a branch of gynecology that deals with problems such as an overactive bladder, pelvic organ prolapses and incontinence. It is a strictly specialist area of medicine that requires detailed experience in the area of the body concerned.',
         
+        'heading3' : 'Make an Appointment Now',
         'description3' : 'As we can see from the above gynecology covers more than you may think at first and is a comprehensive specialty area of women’s health.',
         
         'description4' : 'Our gynecology specialists are experts in their chosen field and have been trained to the highest degree and hand-picked for excellence. We recognize the need for accurate and detailed diagnosis, and we have a reputation for first-class service and attention to detail.',
         
-        'heading3' : 'Make an Appointment Now',
 
         'description5' : 'Whether you have noticed any of the signs or problems mentioned above or you are concerned about this area of female health for other reasons we invite you to get in touch and we will arrange an initial consultation at your convenience. You will find our gynecology team to be professional, friendly and helpful throughout, and we will endeavor to provide an accurate diagnosis and treatment plan as quickly as we can.',
 

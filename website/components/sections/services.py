@@ -5,7 +5,9 @@ from website.components.parts.service_grid import component as service_grid
 from website.components.parts.service_panel import component as service_panel
 
 from website.components.parts.service_panel_ekg import component as ekg_panel
-
+from website.components.parts.service_panel_laboratory import component as lab_panel
+from website.components.parts.service_panel_radiology import component as rad_panel
+from website.components.parts.service_panel_gynecology import component as gyn_panel
 def component():
     return Markup(f"""
     <section id="services_section">
@@ -23,6 +25,9 @@ def component():
         </div>
 
         {ekg_panel()}
+        {lab_panel()}
+        {rad_panel()}
+        {gyn_panel()}
         <div class="btn_ctnr">
             {button_like('appointment')}
         </div>

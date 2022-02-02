@@ -1,8 +1,49 @@
-.service_cntr{
-
+.service_ctnr{
+    padding: 1em;
+    h2{
+        @include heavy_text;
+        margin-bottom: 1em;
+    }
+    h3{
+        @include heavy_text;
+        margin-top: 1.25em;
+        margin-bottom: .25em;
+    }
+    h4{
+        @include regular_text;
+        font-weight: 400;
+        margin-bottom: .15em;
+    }
+    p{
+        @include light_text;
+        margin-bottom: .35em;
+        font-size: 1.5em;
+        color: $light_text;
+    }
+    ul{
+        display: flex;
+        background-color: $secondary;
+        padding: 2em;
+        flex-flow: column;
+        gap: .75em;
+        list-style: disclosure-closed;
+        border-radius: $border_radius;
+        margin-bottom: 1em;
+    }
+    li{
+        @include light_text;
+        font-size: $font_sz_md;
+    }
 }
 
 
+.service_ctnr[data-alt="alt1"]{
+    background-color: $primary;
+    color: $text_inv;
+    p{
+        color: $secondary;
+    }
+}
 
 // .service_ctnr{
 //     align-items: center;
