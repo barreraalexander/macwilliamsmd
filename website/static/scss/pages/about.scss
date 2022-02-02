@@ -20,7 +20,7 @@
         padding: $section_margin;
     }
     .about_doctor_ctnr{
-        margin: 5em 0;
+        margin: 2em 0;
         h1{
             text-align: center;
         }
@@ -40,6 +40,8 @@
     .description1_ctnr{
         padding: $section_margin;
         padding-top: 0;
+        // transition: 3s;
+        opacity: 0;
         p{
             font-size: 1.3em;
         }
@@ -84,6 +86,8 @@
         flex-flow: column;
         gap: 1em;
         position: relative;
+        opacity: 0;
+        // transition: 3s;
         // img{
         //     position: absolute;
         //     margin: 0 auto;

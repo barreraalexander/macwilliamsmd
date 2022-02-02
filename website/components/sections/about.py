@@ -1,9 +1,11 @@
-from flask import Markup
+from flask import Markup, url_for
 from website.blueprints.main import CONTACT_DICT, ABOUT_US
 from website.components.parts.doctor_panel_lg import component as doctor_panel
 from website.components.parts.button_like import component as button_like
 
 def component():
+    observer = url_for('static', filename='js/observers/about.js')
+
     return Markup(f"""
     <section id="about_section">
 
@@ -76,4 +78,7 @@ def component():
         </div>
 
     </section>
+    <script src="{observer}">
+    </script>
+    
     """)
