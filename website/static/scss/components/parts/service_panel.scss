@@ -1,13 +1,17 @@
 .service_ctnr{
-    padding: 1em;
+     padding: 1em 3em;
     h2{
         @include heavy_text;
         margin-bottom: 1em;
+        font-size: 2em;
     }
     h3{
         @include heavy_text;
         margin-top: 1.25em;
         margin-bottom: .25em;
+        font-style: italic;
+        font-family: $font_family_alt;
+        font-size: 1.5em;
     }
     h4{
         @include regular_text;
@@ -16,16 +20,22 @@
     }
     p{
         @include light_text;
-        margin-bottom: .35em;
+        margin-bottom: .5em;
+
         font-size: 1.5em;
         color: $light_text;
     }
+
+    p:last-of-type{
+        margin-bottom: 2em;
+    }
+
     ul{
         display: flex;
         background-color: $secondary;
         padding: 2em;
         flex-flow: column;
-        gap: .75em;
+        gap: 2em;
         list-style: disclosure-closed;
         border-radius: $border_radius;
         margin-bottom: 1em;
@@ -33,6 +43,10 @@
     li{
         @include light_text;
         font-size: $font_sz_md;
+    }
+    .text_group{
+        margin-bottom: 2em;
+        opacity: 0;        
     }
 }
 
@@ -45,126 +59,10 @@
     }
 }
 
-// .service_ctnr{
-//     align-items: center;
-//     // padding: $section_margin;
-//     display: flex;
-//     flex-flow: column;
-//     gap: 1em;
-//     justify-content: center;
-//     .picture_title{
-//         display: flex;
-//         flex-flow: column;
-//         align-self: flex-start;
-//         justify-content: flex-start;
-//         gap: 2em;
-//         align-items: center;
-//         p{
-//             @include border_bottom($primary);
-//             font-size: $font_sz_xl;
-//         }
-//         img{
-//             width:7em;
-//         }
-//     }
-//     .service_description{
-//         // border: 2px solid red;
-//     }
-//     .lg_service_img{
-//         display: none;
-//     }
-//     .service_header{
-//         display: flex;
-//         gap: 2em;
-//         padding: $section_margin;
+.service_ctnr[data-alt="alt2"]{
+    background-color: $gyno_theme;
+    ul{
+        background-color: #fff;
+    }
+}
 
-//         .service_heading{
-//             margin-top: 0;
-//         }
-//     }
-//     .service_heading{
-//         font-style: italic;
-//         font-size: $font_sz_lg;
-//         margin-bottom: .5em;
-//         margin-top: 1em;
-//     }
-//     .descriptions_ctnr{
-//         display: flex;
-//         flex-flow: column;
-//         gap: 1em;
-//         padding: 0 $section_margin;
-
-        
-
-//     }
-//     // .descriptions_ctnr_alt{
-//     //     background-color: $primary;
-//     //     color: $secondary;
-//     // }
-//     // .descriptions_ctnr_alt2{
-//     //     background-color: $secondary;
-//     //     // color: #fff;
-//     // }
-//     .ul_ctnr{
-//         padding: $section_margin;
-//         display: flex;
-//         flex-flow: column;
-//         background-color: $primary;
-//         color: #fff;
-//     }
-// }
-
-
-// .inverse_service_panel{
-//     background-color: $primary;
-//     color: $text_inv;
-//     flex-direction: row-reverse;
-//     .picture_title{
-//         p{
-//             @include border_bottom($text_inv);
-//         }
-//     }
-
-// }
-
-
-// @media only screen and (min-width: $tablet_bp){
-//     .service_ctnr{
-//         align-items: flex-start;
-//         .sm_service_img{
-//             display: none;
-//         }
-//         .lg_service_img{
-//             display: block;
-//         }
-//         .picture_title{
-//             .sm_service_title{
-//                 display: none;
-//             }
-//             img{
-//                 width: 18rem;
-//             }
-//         }
-//         .service_description{
-//             display: flex;
-//             flex-flow: column;
-//             gap: 1em;
-//             p{
-//                 @include md_paragraph;
-//             }
-//             .lg_service_title{
-//                 display: block;
-//                 @include proj_h1;
-//             }
-//         }
-//     }
-//     .inverse_service_panel{
-//         .service_description{
-//             text-align: right;
-//             .lg_service_title{
-//                 // text-align: right;
-//             }
-//         }
-//     }
-
-// }
