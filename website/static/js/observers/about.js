@@ -24,7 +24,6 @@ const description_observer = new IntersectionObserver(function(entries, descript
 description_observer.observe(descr1)
 description_observer.observe(about_row)
 
-
 const ul_options = {
     root : null,
     threshold : 1
