@@ -27,7 +27,7 @@ def component():
                     {title}
                 </h3>
                 <div class="learn_more_ctnr">
-                    <a class="learn_more_anchor" href="#{service}_panel">
+                    <a class="learn_more_anchor" href="#{service}_service_panel">
                         MORE
                     </a>
                     <a href="#{service}_panel">

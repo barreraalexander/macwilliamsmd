@@ -1,19 +1,19 @@
 .services_grid_ctnr{
-    display: none;
+    opacity: 0;
 }
 
 .grid_row{
     display: flex;
-    // background-color: red;
+    justify-content: center;
 }
 .grid_slot{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 
-    height: 8rem;
+    height: 10rem;
     position: relative;
-    width: 8rem;
+    width: 10rem;
     
     img{
         width: 100%;
