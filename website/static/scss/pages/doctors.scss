@@ -28,6 +28,7 @@
 
 .doctor_panel_ctnr{
     margin-bottom: 2em;
+    opacity: 0;
     h3{
         @include proj_h2;
         color: $accent_dk;
