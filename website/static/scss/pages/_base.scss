@@ -257,17 +257,12 @@ main{
 
 @media only screen and (min-width: $tablet_bp){
     body,html{
-        font-size: 0.9em;
     }
     #base_header_section{
         nav{
             @include box_shadow;
-
-            // background-color: $primary;
             a{
                 color: $secondary;
-                // color: $logo_text_lighter;
-                // color: $logo_text;
             }
         }
         #hamburger_ctnr{

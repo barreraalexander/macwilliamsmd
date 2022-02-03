@@ -1,30 +1,33 @@
 #about_section{
+    
     h1{
         @include proj_h1;
     }
+    
     h2{
         @include subtitle;
         font-size: 2em;
     }
+    
     p{
         @include regular_text;
         font-size: 1.3em;
     }
-    .row_img_ctnr{
-        display: none;
-    }
+    
     .banner_ctnr{
         display: flex;
         flex-flow: column;
         gap: .5em;
         padding: $section_margin;
     }
+    
     .about_doctor_ctnr{
         margin: 2em 0;
         h1{
             text-align: center;
         }
     }
+
     .about_doctor_panels_lg_ctnr{
         display: flex;
         flex-flow: row wrap;
@@ -40,7 +43,6 @@
     .description1_ctnr{
         padding: $section_margin;
         padding-top: 0;
-        // transition: 3s;
         opacity: 0;
         p{
             font-size: 1.3em;
@@ -72,7 +74,6 @@
         li{
             @include light_text;
             color: $secondary;
-            // font-size: $font_sz_md;
             font-size: 1.2em;
         }
         
@@ -87,53 +88,42 @@
         gap: 1em;
         position: relative;
         opacity: 0;
-        // transition: 3s;
-        // img{
-        //     position: absolute;
-        //     margin: 0 auto;
-
-        //     mix-blend-mode: color-dodge;
-        // }
+        img{
+            display: none;
+        }
     }
 }
 
 @media only screen and (min-width: $tablet_bp){
     #about_section{
-
+        font-size: 1.1em;
         .about_row{
-            align-items: flex-start;
-            display: flex;
-            gap: 2em;
-
-        }
-        .row_text_ctnr{
-            display: flex;
-            flex-flow: column;
-            flex: 1;
-        }
-        .row_img_ctnr{
-            display: block;
-            position: relative;
-            flex: 1;
             overflow: hidden;
+            position: relative;
             img{
-                border-radius: $border_radius;
-                border: $border_width solid $secondary;
+                display: block;
+                position: absolute;
                 width: 100%;
+                top: 0;
+                left: 0;
+                mix-blend-mode: overlay;
+                opacity: .3;
             }
-        }
-        #btn_ctnr{
-        }
-    
-    }
-    #about_header_ctnr{
-        p{
-            width: 80%;
-        }
-        .button_like{
             p{
-                width: unset;
+                background-color: rgba($color: $secondary, $alpha: .7);
+                padding: 1em;
+                border-radius: 2px;
             }
         }
     }
+    // #about_header_ctnr{
+    //     p{
+    //         width: 80%;
+    //     }
+    //     .button_like{
+    //         p{
+    //             width: unset;
+    //         }
+    //     }
+    // }
 }

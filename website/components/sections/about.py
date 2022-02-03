@@ -8,7 +8,6 @@ def component():
 
     return Markup(f"""
     <section id="about_section">
-
         <div class="banner_ctnr">
             <h1>
                 About our Practice
@@ -45,15 +44,11 @@ def component():
             </ul>
         </div>
         
-        <div class="row_img_ctnr" style="background">
+        <div class="about_row">
             <img
                 src="https://macwilliamsmd-static.s3.us-east-2.amazonaws.com/service_imgs/about_us.jpg"
                 alt="about us stock photo"
             >
-        </div>
-
-        
-        <div class="about_row">
             <p>
                 {ABOUT_US['description2']}
             </p>
