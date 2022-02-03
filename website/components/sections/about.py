@@ -6,18 +6,26 @@ from website.components.parts.button_like import component as button_like
 def component():
     observer = url_for('static', filename='js/observers/about.js')
 
+    logo_src = url_for('static', filename='images/assets/mac_logo_sqr.svg')
+
     return Markup(f"""
     <section id="about_section">
         <div class="banner_ctnr">
-            <h1>
-                About our Practice
-            </h1>
-            <h2>
-                Mac Williams MD
-                <br>
-                & Associates
-            </h2>
-            {button_like('appointment')}
+            <div class="desktop_flex">
+                <h1>
+                    About our Practice
+                </h1>
+                <h2>
+                    Mac Williams MD
+                    <br>
+                    & Associates
+                </h2>
+                {button_like('appointment')}
+            </div>
+            <img
+                class="banner_logo"
+                src={logo_src}
+            >
         </div>
 
         <div class="description1_ctnr">

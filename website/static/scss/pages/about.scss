@@ -19,6 +19,9 @@
         flex-flow: column;
         gap: .5em;
         padding: $section_margin;
+        .banner_logo{
+            display: none;
+        }
     }
     
     .about_doctor_ctnr{
@@ -69,6 +72,7 @@
             flex-flow: column;
             list-style: none;
             gap: 2em;
+            text-align: center;
 
         }
         li{
@@ -116,14 +120,47 @@
             }
         }
     }
-    // #about_header_ctnr{
-    //     p{
-    //         width: 80%;
-    //     }
-    //     .button_like{
-    //         p{
-    //             width: unset;
-    //         }
-    //     }
-    // }
+}
+
+@media only screen and (min-width: $desktop_bp){
+    #about_section{
+        font-size: 1.15em;
+        p, li{
+            width: 45%;
+        }
+        .about_row{
+            p{
+                text-align: center;
+                margin: 1em auto;
+                font-size: 1.5em;
+            }
+            img{
+                opacity: .1;
+            }
+        }
+        .banner_ctnr{
+            align-items: center;
+            font-size: 1.3em;
+            display: flex;
+            flex-flow: row;
+            justify-content: 2em;
+            justify-content: center;
+            margin-bottom: 2em;
+            gap: 10em;
+            .banner_logo{
+                align-items: center ;
+                display: block;
+                width: 25em;
+                border-radius: $border_radius;
+            }
+        }
+
+        .description1_ctnr{
+            p{
+                margin: 0 auto;
+                font-size: 1.8em;
+                text-align: center;
+            }
+        }
+    }
 }
