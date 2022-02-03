@@ -9,7 +9,7 @@ def component():
 
     return Markup(f"""
     <section id="{service_name}_service_panel">
-        <div class="service_ctnr">
+        <div class="service_ctnr" data-alt="alt2">
             <h2>
                 {service_dict['service_title']}
             </h2>
@@ -97,7 +97,6 @@ def component():
                     </p>
                 </div>
             </div>
-
         </div>            
     </section">
     """)

@@ -81,31 +81,6 @@ def component(lazy=False):
             
             </div>
 
-            <div class="text_group">
-                <h3>
-                    {service_dict['heading4']}
-                </h3>
-                <h4>
-                    {service_dict['ul2_heading']}
-                </h4>
-                <ul>
-                    <li>
-                        {service_dict['ul2_li1']}
-                    </li>
-                    <li>
-                        {service_dict['ul2_li2']}
-                    </li>
-                    <li>
-                        {service_dict['ul2_li3']}
-                    </li>
-                    <li>
-                        {service_dict['ul2_li4']}
-                    </li>
-                    <li>
-                        {service_dict['ul2_li5']}
-                    </li>
-                </ul>        
-            </div>
 
             <div class="text_group">
                 <h3>
