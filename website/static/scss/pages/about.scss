@@ -124,7 +124,7 @@
 
 @media only screen and (min-width: $desktop_bp){
     #about_section{
-        font-size: 1.15em;
+        font-size: 1.2em;
         p, li{
             width: 45%;
         }
@@ -138,6 +138,12 @@
                 opacity: .1;
             }
         }
+        .ul_ctnr{
+            ul{
+                align-items: center;
+                width: 35em;
+            }
+        }
         .banner_ctnr{
             align-items: center;
             font-size: 1.3em;
@@ -148,7 +154,7 @@
             margin-bottom: 2em;
             gap: 10em;
             .banner_logo{
-                align-items: center ;
+                align-items: center;
                 display: block;
                 width: 25em;
                 border-radius: $border_radius;

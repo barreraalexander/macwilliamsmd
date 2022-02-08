@@ -26,7 +26,7 @@ description_observer.observe(about_row)
 
 const ul_options = {
     root : null,
-    threshold : 1
+    threshold : .75
 }
 
 

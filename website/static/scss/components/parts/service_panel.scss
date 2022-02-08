@@ -66,3 +66,15 @@
     }
 }
 
+
+@media only screen and (min-width: $tablet_bp){
+    .service_ctnr{
+        padding: 1em 10em;
+        // width: 80%;
+        margin: 0 auto;
+        ul{
+            // max-width: 40em;
+        }
+    }
+
+}

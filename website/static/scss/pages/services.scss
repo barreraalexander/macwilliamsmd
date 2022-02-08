@@ -70,7 +70,9 @@
 
 @media only screen and (min-width: $tablet_bp){
     #services_section{
+        font-size: 1.2em;
         .services_banner_ctnr{
+            background-color: $secondary;
             display: flex;
             padding: 2em;
             align-items: center;
@@ -102,9 +104,6 @@
             display: block;
             font-size: 1.5rem;
             max-width: 18rem;
-        }
-        .service_ctnr{
-            background-color: $secondary;
         }
         .inverse_service_panel{
             background-color: $text_inv;
