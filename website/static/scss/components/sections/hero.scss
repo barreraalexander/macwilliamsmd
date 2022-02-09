@@ -76,12 +76,122 @@
 @media only screen and (min-width: $tablet_bp){
     #hero_section{
         margin: 0;
-
     }
+
     .main_display_ctnr{
-        height: 55vh;
+        height: 70vh;
+        position: relative;
+        display: flex;
+        
+        .left_col{
+            background-color: $accent_lt;
+            display: flex;
+            flex-flow: column;
+            padding: 2em;
+            width: 40%;
+            .buttons_ctnr{
+                display: flex;
+                justify-content: flex-start;
+                gap: 1em;
+                margin-top: 2em;
+                flex-flow: wrap;
+                .button_like{
+                    width: 25%;
+                }
+            }
+            .book_btn{
+                @include primary_btn;
+            }
+            .phone_btn{
+                @include secondary_btn;
+            }
+            .slide_dots_ctnr{
+                order: 1;
+                margin-top: auto;
+            }
+            .slide_text_ctnr{
+                font-size: 1.25em;
+            }
+        }
+        
         .right_col{
             display: block;
+            overflow: hidden;
+            position: relative;
+            width: 60%;
+            img{
+                height: 100%;
+                position: absolute;
+            }
+            .slide_img_full + .slide_img_full{
+                display: none;
+            }
+            #welcome_full{
+                right: -48rem;
+            }
+            #ekg_full{
+                right: -33rem;
+            }
+            #laboratory_full{
+                right: -12rem;
+            }
+            #gynecology_full{
+                right: -26rem;
+            }
+            #radiology_full{
+                right: -69em;
+            }
         }
     }
+    #hero_section{
+        margin: 0;
+        .img_circle_ctnr{
+            display: none;
+        }
+        .doctor_panels_lg_ctnr{
+            margin-top: 2em;
+            display: flex;
+            flex-flow: wrap;
+            gap: 4em;
+            justify-content: center;
+            text-align: center;
+            img{
+                width: 7rem;
+            }
+            hr{
+                margin: 0;
+                opacity: .5;
+            }
+            .doctor_panel_lg_ctnr{
+                width: 10rem;
+
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: $desktop_bp) {
+    .main_display_ctnr{
+        height: 90vh;
+        .right_col{
+            #welcome_full{
+                right: unset;
+            }
+            #ekg_full{
+                right: unset;
+            }
+            #laboratory_full{
+                right: unset;
+            }
+            #gynecology_full{
+                right: unset;
+            }
+            #radiology_full{
+                right:unset;
+            }
+        }
+    }
+    
 }

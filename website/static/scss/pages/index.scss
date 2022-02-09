@@ -40,167 +40,75 @@
 
 
 
-@media only screen and (min-width: $tablet_bp){
-    .main_display_ctnr{
-        height: 90vh;
-        position: relative;
-        display: flex;
+// @media only screen and (min-width: $tablet_bp){
+//     .doctors_ctnr{
+//         margin: unset;
+//         background-color: $text_inv;
+//         .doctor_card_ctnr{
+//             display: none;
+//         }
+//         #read_more_btn{
+//             display: none;
+//         }
+//     }
 
-        .left_col, .right_col{
-            // border: 1px solid red;
-        }
-        
-        .left_col{
-            background-color: $accent_lt;
-            display: flex;
-            flex-flow: column;
-            padding: 2em;
-            width: 40%;
-            .buttons_ctnr{
-                display: flex;
-                justify-content: flex-start;
-                gap: 1em;
-                margin-top: 2em;
-                flex-flow: wrap;
-                .button_like{
-                    width: 25%;
-                }
-            }
-            .book_btn{
-                @include primary_btn;
-            }
-            .phone_btn{
-                @include secondary_btn;
-            }
-            .slide_dots_ctnr{
-                order: 1;
-                margin-top: auto;
-            }
-        }
-        
-        .right_col{
-            display: block;
-            overflow: hidden;
-            position: relative;
-            width: 60%;
-            img{
-                height: 100%;
-                position: absolute;
-            }
-            .slide_img_full + .slide_img_full{
-                display: none;
-            }
-            #welcome_full{
-                right: -55rem;
-            }
-            #ekg_full{
-                right: -33rem;
-            }
-            #laboratory_full{
-                right: -12rem;
-            }
-            #gynecology_full{
-                right: -26rem;
-            }
-            #radiology_full{
-                right: -69em;
-            }
-        }
-    }
-    #hero_section{
-        margin: 0;
-        .img_circle_ctnr{
-            display: none;
-        }
-        .doctor_panels_lg_ctnr{
-            margin-top: 2em;
-            display: flex;
-            flex-flow: wrap;
-            gap: 4em;
-            justify-content: center;
-            text-align: center;
-            // width: 10rem;
-            img{
-                width: 7rem;
-            }
-            hr{
-                margin: 0;
-                opacity: .5;
-            }
-            .doctor_panel_lg_ctnr{
-                width: 10rem;
+//     .insurances_ctnr {
+//         background-color: $secondary;
+//         .insurance_imgs{
+//             margin: unset;
+//         }
 
-            }
-        }
-    }
-    .doctors_ctnr{
-        margin: unset;
-        background-color: $text_inv;
-        .doctor_card_ctnr{
-            display: none;
-        }
-        #read_more_btn{
-            display: none;
-        }
-    }
+//     }
+// }
 
-    .insurances_ctnr {
-        background-color: $secondary;
-        .insurance_imgs{
-            margin: unset;
-        }
+// @media only screen and (min-width: $desktop_bp){
+//     .main_display_ctnr{
+//         .right_col{
+//             #welcome_full{
+//                 left: 0;
+//                 right: unset;
+//             }
+//             #ekg_full{
+//                 left: 0;
+//                 right: unset;
+//             }
+//             #radiology_full{
+//                 left: 0;
+//                 right: unset;
+//             }
+//             #gynecology_full{
+//                 left: 0;
+//                 right: unset;
+//             }
 
-    }
-}
-
-@media only screen and (min-width: $desktop_bp){
-    .main_display_ctnr{
-        .right_col{
-            #welcome_full{
-                left: 0;
-                right: unset;
-            }
-            #ekg_full{
-                left: 0;
-                right: unset;
-            }
-            #radiology_full{
-                left: 0;
-                right: unset;
-            }
-            #gynecology_full{
-                left: 0;
-                right: unset;
-            }
-
-        }
-    }
-}
+//         }
+//     }
+// }
 
 
-@media only screen and (min-width: $desktop_bp){
-    #hero_section{
-        h1{
-            font-size: 3.5rem;
-        }
-        small{
-            font-size: 2.5rem;
-        }
-    }
-    .main_display_ctnr{
-        .right_col{
-            #welcome_full{
-                right: -20rem;
-            }
-            #ekg_full{
-                right: -4rem;
-            }
-            #gynecology_full{
-                right: -16rem;
-            }
-            #radiology_full{
-                right: -14em;
-            }
-        }
-    }
-}
+// @media only screen and (min-width: $desktop_bp){
+//     #hero_section{
+//         h1{
+//             font-size: 3.5rem;
+//         }
+//         small{
+//             font-size: 2.5rem;
+//         }
+//     }
+//     .main_display_ctnr{
+//         .right_col{
+//             #welcome_full{
+//                 right: -20rem;
+//             }
+//             #ekg_full{
+//                 right: -4rem;
+//             }
+//             #gynecology_full{
+//                 right: -16rem;
+//             }
+//             #radiology_full{
+//                 right: -14em;
+//             }
+//         }
+//     }
+// }
