@@ -71,3 +71,17 @@
 
     }
 }
+
+
+@media only screen and (min-width: $tablet_bp){
+    #hero_section{
+        margin: 0;
+
+    }
+    .main_display_ctnr{
+        height: 55vh;
+        .right_col{
+            display: block;
+        }
+    }
+}

@@ -5,10 +5,12 @@ META_DICT = {
 }
 
 CONTACT_DICT = {
-    'phone' : '954-000-0000',
+    'phone' : '305-691-7018',
     'phone2' : '954-000-1111',
-    'address_city' : 'Miami',
-    'address' : '8500 Jones Street, Miami FL 00000',
+    'address_city' : 'Pembroke Pines',
+    'address' : '810 East 39th Place, Hialeah FL 33013',
+    'address_city2' : 'Hialeah',
+    'address2' : '18044 nw 6th st #101, Pembroke Pines FL 33029 ',
 }
 
 
