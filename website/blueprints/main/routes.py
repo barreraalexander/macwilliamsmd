@@ -17,6 +17,7 @@ from website.components.sections.services import component as services_section
 
 # components
 from website.components.parts.doctor_panel import component as doctor_panel
+from website.components.parts.insurances_ctnr import component as insurances_ctnr
 
 #  forms
 from website.components.forms.contact_us import component as contact_us_form
@@ -54,6 +55,7 @@ def index():
     return render_template('_index.html',
         title="Home",
         hero_section=hero_section,
+        insurances_ctnr=insurances_ctnr,
         )
 
 

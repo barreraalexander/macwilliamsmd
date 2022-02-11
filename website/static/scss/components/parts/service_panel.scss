@@ -17,6 +17,7 @@
         @include regular_text;
         font-weight: 400;
         margin-bottom: .15em;
+        max-width: 40em
     }
     p{
         @include light_text;
@@ -38,6 +39,7 @@
         gap: 2em;
         list-style: disclosure-closed;
         border-radius: $border_radius;
+        max-width: 40em;
         margin-bottom: 1em;
     }
     li{

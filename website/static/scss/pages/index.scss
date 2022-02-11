@@ -21,24 +21,6 @@
 }
 
 
-.insurances_ctnr{
-    margin: 0 -2em;
-    // margin-top: 4em;
-    padding: 2em;
-    background-color: $accent_lt;
-    h2{
-        @include proj_h2;
-        text-align: center;
-    }
-    .insurance_imgs{
-        // background-color: $secondary;
-        display: flex;
-        height: 20em;
-    }
-}
-
-
-
 
 // @media only screen and (min-width: $tablet_bp){
 //     .doctors_ctnr{

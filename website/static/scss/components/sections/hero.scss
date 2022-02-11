@@ -49,14 +49,6 @@
 }
 
 
-.slide_dots_ctnr{
-    display: flex;
-    gap: .5em;
-    margin-top: .5em;
-}
-
-
-
 .main_display_ctnr{
     .right_col{
         display: none;
@@ -105,10 +97,6 @@
             .phone_btn{
                 @include secondary_btn;
             }
-            .slide_dots_ctnr{
-                order: 1;
-                margin-top: auto;
-            }
             .slide_text_ctnr{
                 font-size: 1.25em;
             }
@@ -139,7 +127,8 @@
                 right: -26rem;
             }
             #radiology_full{
-                right: -5em;
+                // right: -5em;
+                right: -49em;
             }
         }
     }

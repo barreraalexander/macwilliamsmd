@@ -248,3 +248,68 @@ SERVICES = {
         'description6' : "Don't hesitate to get in touch as time can be important, and we have a team waiting here to help you in any way we can with gynecology issues.",
     }
 }
+
+INSURANCES = {
+    'aetna' : {
+        'title' : 'Aetna-Medicare',
+    },
+    'ambetter' : {
+        'title' : 'Ambetter',
+
+    },
+    'avmed' : {
+        'title' : 'AvMed',
+
+    },
+    'bcbs' : {
+        'title' : 'Blue Cross Blue Shield',
+    },
+    'bright_health' : {
+        'title' : 'Bright Health',
+    },
+    'care_plus' : {
+        'title' : 'Care Plus',
+    },
+    'cigna' : {
+        'title' : 'Cigna',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+    'dhp' : {
+        'title' : 'Doctors Healthcare Plan',
+    },
+}

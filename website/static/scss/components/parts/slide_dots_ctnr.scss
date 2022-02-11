@@ -1,0 +1,16 @@
+.slide_dots_ctnr{
+    display: flex;
+    gap: .5em;
+    margin-top: .5em;
+}
+
+@media only screen and (min-width: $tablet_bp){
+    .slide_dots_ctnr{
+        order: 1;
+        margin-top: auto;
+        gap: 1.25souem;
+    }
+    .slide_dot{
+        padding: .25em;
+    }
+}

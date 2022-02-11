@@ -12,6 +12,13 @@
         z-index: 999;
         position: relative;
         padding: 1em;
+
+    }
+    a{
+        display: contents;
+    }
+    .hidden_text{
+        display: none;
     }
 }
 
@@ -27,6 +34,17 @@
 }
 
 
+.link{
+    @include light_text;
+    text-decoration: underline;
+    color: #444; 
+}
+
+.link:hover{
+    text-decoration: none;
+    color: $primary; 
+}
+
 
 
 @media only screen and (min-width: $tablet_bp){
@@ -37,7 +55,9 @@
         width: unset;
         p{
             width: 85%;
-            margin-left: 1rem;
+        }
+        .hidden_text{
+            display: block;
         }
     }
     #slider_ctnr{
@@ -45,14 +65,15 @@
         flex-flow: wrap;
     }
 
+
     
 
 }
 
-@media only screen and (min-width: $desktop_4k_bp){
+@media only screen and (min-width: $desktop_bp){
     .slide_description_ctnr{
         p{
-            margin-left: 3.2rem;
+            font-size: 2em;
         }
     }
 }
