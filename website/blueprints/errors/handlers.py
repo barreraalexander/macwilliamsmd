@@ -7,13 +7,11 @@ errors = Blueprint ('errors', __name__)
 
 
 errors.context_processor
-def load_base():
+def load_dicts():
     return dict(
-        META_DICT=META_DICT,
         CONTACT_DICT=CONTACT_DICT,
-        linkset=linkset,
+        META_DICT=META_DICT,
     )
-
 errors.context_processor
 def load_components():
     return dict(

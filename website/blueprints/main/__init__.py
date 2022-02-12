@@ -1,3 +1,7 @@
+def unpack_elems(elems):
+    return " ".join(elems)
+
+
 META_DICT = {
     'domain_name' : "Mac Wlliams Md & Associates",
     'domain_url' : "www.URLHERE.com",
@@ -276,40 +280,40 @@ INSURANCES = {
     'dhp' : {
         'title' : 'Doctors Healthcare Plan',
     },
-    'dhp' : {
+    'fbm' : {
+        'title' : 'Florida Blue-Medicare',
+    },
+    'healthsun' : {
+        'title' : 'HealthSun',
+    },
+    'humana' : {
+        'title' : 'Humana-PPO',
+    },
+    'medica' : {
+        'title' : 'Medica',
+    },
+    'medicare' : {
         'title' : 'Doctors Healthcare Plan',
     },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
+    'meritain' : {
+        'title' : 'Meritain',
     },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
+    'mm' : {
+        'title' : 'Molina-Marketplace',
     },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
+    'oscar' : {
+        'title' : 'Oscar',
     },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
+    'pcp' : {
+        'title' : 'Preferred Care Partners',
     },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
+    'sm' : {
+        'title' : 'Simply Medicaid',
     },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
+    'solis' : {
+        'title' : 'Solis',
     },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
-    },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
-    },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
-    },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
-    },
-    'dhp' : {
-        'title' : 'Doctors Healthcare Plan',
+    'uh' : {
+        'title' : 'United Healthcare',
     },
 }
