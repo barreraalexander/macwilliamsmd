@@ -13,6 +13,8 @@ from website.components.navbars.footer import component as footer
 from website.components.sections.hero import component as hero_section
 from website.components.sections.about import component as about_section
 from website.components.sections.services import component as services_section
+from website.components.sections.our_promise import component as our_promise_section
+
 
 
 # components
@@ -56,7 +58,8 @@ def index():
         title="Home",
         hero_section=hero_section,
         insurances_ctnr=insurances_ctnr,
-        )
+        our_promise_section=our_promise_section,
+    )
 
 
 @main.route('/about')

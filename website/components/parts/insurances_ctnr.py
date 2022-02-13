@@ -7,6 +7,7 @@ from website.blueprints.main import INSURANCES, unpack_elems
 #  and maybe give them a button look, 
 
 def component():
+    observer = url_for('static', filename='js/observers/insurances_ctnr.js')
 
     parts = [
         f"""
@@ -15,7 +16,7 @@ def component():
             class="insurance"
         >
             <img
-                src={url_for('static', filename=f"/images/insurances/{insurance}.svg")}
+                src={url_for('static', filename=f"/images/insurances/{insurance}.png")}
                 alt={insurance}
             >
             <p>
@@ -29,10 +30,12 @@ def component():
     return Markup(f"""
     <div class="insurances_ctnr">
         <h2>
-            Insurances that we Accept
+            Accepted Insurances
         </h2>
         <div class="insurance_imgs">
             {unpack_elems(parts)}
         </div>
-    </div>    
+    </div>
+    <script src="{observer}">
+    </script>
     """)
