@@ -40,7 +40,7 @@ our_promise_tl.to(
 our_promise_tl.to(
     mission_statement_ctnr,
     {
-        delay: 2,
+        delay: 2.5,
         duration: 1,
         clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
 
