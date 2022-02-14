@@ -1,7 +1,7 @@
 from flask import Markup, url_for
 from website.blueprints.main import CONTACT_DICT
 from website.components.parts.button_like import component as button_like
-
+from website.components.parts.office_hours_ctnr import component as office_hours_ctnr
 
 def component():
 
@@ -13,12 +13,14 @@ def component():
         <div id="footer_actions_ctnr">
             <div class="action_ctnr">
                 <h2>
-                    Location
+                    Locations
                 </h2>
-                <i>
-                    {CONTACT_DICT['address']}
-                </i>
-                {button_like(btn_type='navigation')}
+                <p class="addr">
+                    {CONTACT_DICT.get('address_city1')} | <span> {CONTACT_DICT.get('address1')} <span>
+                </p>
+                <p class="addr">
+                    {CONTACT_DICT.get('address_city2')} | <span> {CONTACT_DICT.get('address2')} <span>
+                </p>
             </div>
             <div class="action_ctnr">
                 <h2>
@@ -38,78 +40,15 @@ def component():
                 </h2>
                 {button_like(btn_type='send')}
             </div>
-            <!-- <div class="action_ctnr">
-                <h2>
-                    New Client
-                </h2>
-                {button_like(btn_type='send')}
-            </div> -->
         </div>
 
         <hr>
         
+        {office_hours_ctnr('office1')}
 
-        <div id="office_hours_ctnr">
-            <h2>
-                Office Hours
-            </h2>
-            <div class="office_hour">
-                <p class="date">
-                    Monday
-                </p>
-                <p class="time">
-                    8:00am - 5:00pm
-                </p>
-            </div>
-            <div class="office_hour">
-                <p class="date">
-                    Tuesday
-                </p>
-                <p class="time">
-                    8:00am - 5:00pm
-                </p>
-            </div>
-            <div class="office_hour">
-                <p class="date">
-                    Wednesday
-                </p>
-                <p class="time">
-                    8:00am - 5:00pm
-                </p>
-            </div>
-            <div class="office_hour">
-                <p class="date">
-                    Thursday
-                </p>
-                <p class="time">
-                    8:00am - 5:00pm
-                </p>
-            </div>
-            <div class="office_hour">
-                <p class="date">
-                    Friday
-                </p>
-                <p class="time">
-                    8:00am - 5:00pm
-                </p>
-            </div>
-            <div class="office_hour">
-                <p class="date">
-                    Saturday
-                </p>
-                <p class="time">
-                    Closed
-                </p>
-            </div>
-            <div class="office_hour">
-                <p class="date">
-                    Sunday
-                </p>
-                <p class="time">
-                    Closed
-                </p>
-            </div>
-        </div>
+        <hr>
+        
+        {office_hours_ctnr('office2')}
     
         <div id="tos_ctnr">
             <a href="#">

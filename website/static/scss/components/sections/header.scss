@@ -1,0 +1,164 @@
+
+#base_header_section{
+    position: relative;
+    nav{
+        padding: .5em 1em;
+        background-color: $primary;
+    }
+
+    .main_nav_ul{
+        align-items: center;
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        padding: 0;
+        a{
+            @include proj_a;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .button_like{
+            a{
+                color: $primary;
+            }
+        }
+    }
+    #mac_banner{
+        width: 10rem;
+    }
+    #hamburger{
+        width: 2em;
+        cursor: pointer;
+    }
+    #header_btn_ctnr{
+        display: flex;
+        width: 100%;
+        margin-bottom: 2em;
+        #header_book_btn{
+            background-color: $accent_dk;
+            a{
+                color: $text_inv;
+            }
+        }
+        #header_phone_btn{
+            background-color: $secondary;
+            a{
+                color: $text;
+            }
+        }
+        #header_book_btn, #header_phone_btn{
+            border-radius: 0;
+            text-align: center;
+            padding: .5em 1em;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            img{
+                width: 1em;
+            }
+        }
+
+    }
+    *[dataset-mquery="tablet"]{
+        display: none;
+    }
+    *[dataset-mquery="desktop"]{
+        display: none;
+    }
+    #hidden_menu{
+        background-color: $secondary;
+        border-radius: 0px 0px $border_radius $border_radius;
+        display: none;
+        position: absolute;
+        gap: 2em;
+        // right: 0;
+        right: -15em;
+        top: 0;
+        width: 50vw;
+        height: 90vh;
+        padding: 2em 0;
+        z-index: 1000;
+        li{
+            width: 100%;
+            text-align: center;
+            padding: .5em 0;
+        }
+        li[data-active='true']{
+            background-color: $text_inv;
+            font-weight: 600;
+        }
+        ul{
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+            :hover{
+                a{
+                    @include border_bottom($primary);
+                    transition: 1s;
+                }
+            }
+            a{
+                @include proj_a;
+                text-align: center;
+                color: $primary;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $tablet_bp){
+
+    #base_header_section{
+        nav{
+            @include box_shadow;
+            a{
+                color: $secondary;
+            }
+        }
+        #hamburger_ctnr{
+            display: none;
+        }
+        
+        #header_btn_ctnr{
+            display: none;
+        }
+        #hidden_menu{
+            display: none;
+        }
+
+        *[dataset-mquery="tablet"]{
+            display: block;
+        }
+        .main_nav_ul{
+            justify-content: flex-end;
+            gap: 1em;
+            padding: 0 .2em;
+            #logo_ctnr{
+                margin-right: auto;
+            }
+            a{
+                font-size: 1rem;
+            }
+        }
+    
+    }
+
+
+}
+
+
+@media only screen and (min-width: $desktop_bp){
+    #base_header_section{
+        *[dataset-mquery="desktop"]{
+            display: block;
+        }
+    }
+
+
+}

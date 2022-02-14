@@ -20,6 +20,8 @@
 // SECTIONS
 @import './components/sections/hero.scss';
 @import './components/sections/our_promise.scss';
+@import './components/sections/header.scss';
+@import './components/sections/footer.scss';
 
 
 // PARTS
@@ -29,8 +31,10 @@
 @import './components/parts/service_slide';
 @import './components/parts/service_grid';
 @import './components/parts/doctor_card';
+
 @import './components/parts/slide_dots_ctnr';
 @import './components/parts/insurances_ctnr';
+@import './components/parts/office_hours_ctnr';
 
 
 // FORMS

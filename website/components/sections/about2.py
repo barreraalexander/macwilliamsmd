@@ -21,7 +21,7 @@ def component():
                             & Associates
                         </h2>
                         <small>
-                            {CONTACT_DICT['address']}
+                            {CONTACT_DICT['address1']}
                         </small>
                         <div id="btn_ctnr">
                             {button_like('appointment')}  

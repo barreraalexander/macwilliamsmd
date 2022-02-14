@@ -1,0 +1,76 @@
+.office_hours_ctnr{
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    margin: 2em;
+    h2{
+        @include proj_h2;
+    }
+    p{
+        @include subtitle;
+        font-size: 1.3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+    small{
+        font-size: 1.2em;
+        font-style: italic;
+        margin-bottom: .25em;
+    }
+}
+
+.office_hour{
+    display: flex;
+    gap: 2em;
+    .date{
+        width: 40%;
+        text-align: left;
+    }
+    .time{
+        width: 60%;
+        text-align: center;
+        max-width: 600px;
+    }
+
+}
+
+.office_hour[data-time=Closed]{
+    opacity: .7;
+    color: #f8f8f8;
+}
+
+
+hr{
+    margin: 0 auto;
+    width: 90%;
+    opacity: .7;
+}
+
+@media only screen and (min-width: $tablet_bp){
+    .office_hours_ctnr{
+        span{
+            white-space: unset;
+        }
+        h2{
+            text-align: center;
+        }
+        .office_hour{
+            font-size: 1.8rem;
+            .date{
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop_bp){
+    #base_footer_section{
+        .office_hours_ctnr{
+            h2{
+                text-align: left;
+            }
+        }
+    
+    }
+}
