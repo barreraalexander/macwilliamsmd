@@ -35,6 +35,8 @@ p,ul,li{
 @mixin proj_h2{
     @include regular_text(1.6em);
     color: $primary;
+    // border-bottom: 4px solid;
+    // width: max-content;
 }
 
 @mixin proj_a{
