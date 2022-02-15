@@ -38,10 +38,10 @@ p,ul,li{
 
 }
 
-@mixin proj_a{
-    @include light_text(1.2em);
-    text-decoration: none;
-}
+// @mixin proj_a{
+//     @include light_text(1.2em);
+//     text-decoration: none;
+// }
 
 
 @mixin heading{
@@ -91,6 +91,14 @@ h4,h5,h6{
 
 p{
     @include regular_text;
+}
+
+a{
+    display: contents;
+}
+
+ul{
+    list-style: none;
 }
 
 button:hover{

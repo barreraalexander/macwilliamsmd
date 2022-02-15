@@ -1,11 +1,13 @@
 from flask import Markup, url_for
 from website.blueprints.main import CONTACT_DICT
 
-
 def component(btn_type='navigation', elem_id=''):
     img_src = ""
     classes = ""
     btn_text = ""
+    link = ""
+
+
 
     if btn_type=='navigation':
         img_src = url_for('static', filename='images/assets/navigation.svg')
@@ -14,7 +16,7 @@ def component(btn_type='navigation', elem_id=''):
 
     elif btn_type=='phone':
         img_src = url_for('static', filename='images/assets/call.svg')
-        classes = "standard_btn_like"
+        classes = "standard_btn_like apply_wiggle"
         btn_text = CONTACT_DICT['phone']
 
     elif btn_type=='phone2':
@@ -41,10 +43,10 @@ def component(btn_type='navigation', elem_id=''):
         img_src = url_for('static', filename='images/assets/appointment.svg')
         classes = "standard_btn_like appointment_btn"
         btn_text = "Appointments"
+
         if elem_id=="header_appointment":    
             img_src = url_for('static', filename='images/assets/appointment_navy.svg')
             classes = "inverse_btn_like appointment_btn"
-
 
 
     return Markup (f"""
@@ -53,7 +55,7 @@ def component(btn_type='navigation', elem_id=''):
             src="{img_src}"
             alt="navigation img"
             >
-            <a>
+            <a href="{link}">
                 <p>
                     {btn_text}
                 </p>

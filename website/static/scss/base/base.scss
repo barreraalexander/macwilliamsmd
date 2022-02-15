@@ -1,5 +1,4 @@
 body, html {
-    font-size: .9em;
     font-family: 'Roboto', sans-serif;
     height: calc(100% - 2em);
     margin: 0;
@@ -9,11 +8,11 @@ body, html {
 
 @media only screen and (min-width: $tablet_bp){
     body,html{
-        font-size: .9em;
+        // font-size: .9em;
     }
 }
 @media only screen and (min-width: $desktop_bp){
     body,html{
-        font-size: .9em;
+        // font-size: .9em;
     }
 }

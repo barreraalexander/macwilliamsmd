@@ -1,40 +1,51 @@
 from flask import Markup, url_for
 
 def component():
+    animation = url_for('static', filename='js/interface_mods/menu.js')
+
     return Markup(f"""
-    <div id="hidden_menu" data-status='closed'>
-        <ul>
-            <li>
+    <div id="hidden_menu" data-status='hidden'>
+        <div class="empty">
+            <p>
+                C <br> L <br> O <br> S <br> E
+            </p>
+
+        </div>
+
+        <nav>
+            <ul>
                 <a href="{url_for('main.index')}">
-                    Home
+                    <li>
+                        Home
+                    </li>
                 </a>
-            </li>
-                <li
+
                 <a href="{url_for('main.about')}">
-                    About
+                    <li>
+                        About
+                    </li>  
                 </a>
-            </li>  
-            <li
+
                 <a href="{url_for('main.doctors')}">
-                    Doctors
+                    <li>
+                        Doctors
+                    </li>
                 </a>
-            </li>
-            <li
+
                 <a href="{url_for('main.services')}">
-                    Services
+                    <li>
+                        Services
+                    </li>
                 </a>
-            </li>
-            <li
+
                 <a href="{url_for('main.contact')}">
-                    Contact
+                    <li>
+                            Contact
+                    </li>
                 </a>
-            </li>  
-
-
-
-
-        </ul>
+            </ul>
+        </nav>
     </div>
-
-    
+    <script src={animation}>
+    </script>
     """)
