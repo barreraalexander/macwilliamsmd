@@ -76,7 +76,9 @@ def component():
                 Meet our Doctors
             </h1>
             <div class="about_doctor_panels_lg_ctnr">
-                {doctor_panel('doctor1')}
+                <a href="{url_for('main.doctors')}">
+                    {doctor_panel('doctor1')}
+                </a>
             </div>
         </div>
 

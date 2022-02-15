@@ -5,6 +5,7 @@ def component (doctor):
     doctor_dict = DOCTORS_DICT[doctor]
     img_src = url_for('static', filename='images/assets/doctor.svg')
     return Markup (f"""
+
         <div class="doctor_panel_ctnr">
             <div class="img_circle_ctnr">
                 <div class="img_ctnr">

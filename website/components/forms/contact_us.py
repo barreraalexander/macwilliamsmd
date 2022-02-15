@@ -21,18 +21,14 @@ def component():
                     {form.fname}
                 </div>
                 <div class="form_group">
-                    {form.fname.label}
-                    {form.fname}
+                    {form.email.label}
+                    {form.email}
                 </div>
             </div>
             <div class="form_column">
                 <div class="form_group">
-                    {form.fname.label}
-                    {form.fname}
-                </div>
-                <div class="form_group">
-                    {form.fname.label}
-                    {form.fname}
+                    {form.help_description.label}
+                    {form.help_description}
                 </div>
             </div>
 

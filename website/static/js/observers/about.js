@@ -33,11 +33,11 @@ const ul_options = {
 const ul_observer = new IntersectionObserver(function(entries, ul_observer){
     entries.forEach(entry => {
         if (entry.isIntersecting){
-            console.log('here now')
+            // console.log('here now')
             entry.target.style.transition = '1.5s';
             entry.target.style.filter = "grayscale(0)";
         } else {
-            console.log('leaving')
+            // console.log('leaving')
             entry.target.style.filter = "grayscale(100%)";
         }
     })
