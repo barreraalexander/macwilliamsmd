@@ -13,10 +13,10 @@
         flex-flow: row;
         justify-content: space-between;
         padding: 0;
-        a{
-            @include proj_a;
-        }
-        a:hover{
+        // a{
+        //     @include proj_a;
+        // }
+        li:hover{
             text-decoration: underline;
         }
         .button_like{
@@ -25,6 +25,7 @@
             }
         }
     }
+
     #mac_banner{
         width: 10rem;
     }
@@ -32,36 +33,7 @@
         width: 2em;
         cursor: pointer;
     }
-    #header_btn_ctnr{
-        display: flex;
-        width: 100%;
-        margin-bottom: 2em;
-        #header_book_btn{
-            background-color: $accent_dk;
-            a{
-                color: $text_inv;
-            }
-        }
-        #header_phone_btn{
-            background-color: $secondary;
-            a{
-                color: $text;
-            }
-        }
-        #header_book_btn, #header_phone_btn{
-            border-radius: 0;
-            text-align: center;
-            padding: .5em 1em;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            gap: 1em;
-            img{
-                width: 1em;
-            }
-        }
 
-    }
     *[dataset-mquery="tablet"]{
         display: none;
     }
@@ -125,9 +97,7 @@
             display: none;
         }
         
-        #header_btn_ctnr{
-            display: none;
-        }
+
         #hidden_menu{
             display: none;
         }
@@ -139,9 +109,9 @@
             justify-content: flex-end;
             gap: 1em;
             padding: 0 .2em;
-            #logo_ctnr{
-                margin-right: auto;
-            }
+            // #logo_ctnr{
+            //     margin-right: auto;
+            // }
             a{
                 font-size: 1rem;
             }

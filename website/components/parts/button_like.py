@@ -1,10 +1,12 @@
 from flask import Markup, url_for
 from website.blueprints.main import CONTACT_DICT
 
+
 def component(btn_type='navigation', elem_id=''):
     img_src = ""
     classes = ""
     btn_text = ""
+
     if btn_type=='navigation':
         img_src = url_for('static', filename='images/assets/navigation.svg')
         classes = "inverse_btn_like"

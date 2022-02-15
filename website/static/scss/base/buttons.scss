@@ -20,30 +20,6 @@
 
 
 
-.button_like{
-    @include box_shadow;
-    display: flex;
-    border-radius: 10em;
-    justify-content: center;
-    align-items: center;
-    border: $border_width solid $primary;
-    padding: .5em 1em;
-    gap: 1em;
-    width: 75%;
-    max-width: 18rem;
-    min-width: max-content;
-    img{
-        width: 1.5em;
-    }
-    p{
-        font-size: 1.3rem;
-    }
-    :hover{
-        cursor: pointer;
-        text-decoration: underline;
-    }
-}
-
 .inverse_btn_like{
     // background-color: $logo_text_lighter;
     background-color: $secondary;
