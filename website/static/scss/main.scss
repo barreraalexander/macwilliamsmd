@@ -4,16 +4,15 @@
 @import './base/mixin';
 @import './base/animations';
 @import './base/buttons';
+@import './base/base';
 
 
 // PAGES
-@import './pages/_base';
 @import './pages/index';
-@import './pages/about';
-@import './pages/doctors';
 @import './pages/services';
 @import './pages/contact';
 @import './pages/new_client';
+@import './pages/doctors';
 @import './pages/error';
 @import './pages/sitemap';
 
@@ -22,6 +21,7 @@
 @import './components/sections/our_promise.scss';
 @import './components/sections/header.scss';
 @import './components/sections/footer.scss';
+@import './components/sections/about';
 
 
 // PARTS

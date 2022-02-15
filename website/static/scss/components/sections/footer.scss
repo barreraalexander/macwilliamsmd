@@ -44,6 +44,11 @@
         max-width: 20em;
     }
 
+    .last_logo_ctnr{
+        margin-bottom: -.5em;
+    }
+    
+    
 
 
     #tos_ctnr{
@@ -52,11 +57,6 @@
         flex-flow: column;
         gap: 1em;
         padding: 2em;
-        a{
-            @include proj_a;
-            text-align: center;
-            color: $text_inv;
-        }
     }
 
     #top_btn_ctnr{

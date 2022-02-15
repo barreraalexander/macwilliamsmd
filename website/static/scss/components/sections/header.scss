@@ -13,9 +13,6 @@
         flex-flow: row;
         justify-content: space-between;
         padding: 0;
-        a{
-            @include proj_a;
-        }
         a:hover{
             text-decoration: underline;
         }
@@ -102,11 +99,6 @@
                     @include border_bottom($primary);
                     transition: 1s;
                 }
-            }
-            a{
-                @include proj_a;
-                text-align: center;
-                color: $primary;
             }
         }
     }

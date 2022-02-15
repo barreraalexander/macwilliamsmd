@@ -6,12 +6,9 @@
     p:first-of-type{
         @include sm_paragraph;
         margin: .5em 0em;
-        // color: red;
     }
-    a{
-        @include proj_a;
-        text-decoration: underline;
-    }
+    
+
     #new_client_ctnr{
         margin-top: 3em;
         h3{

@@ -5,7 +5,6 @@ from website.components.parts.button_like import component as button_like
 
 def component():
     observer = url_for('static', filename='js/observers/about.js')
-
     logo_src = url_for('static', filename='images/assets/mac_logo_sqr.svg')
 
     return Markup(f"""
