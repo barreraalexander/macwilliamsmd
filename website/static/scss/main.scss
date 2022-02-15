@@ -1,9 +1,9 @@
 // BASE (MUST IMPORT FIRST)
-@import './base/variables';
-@import './base/typography';
-@import './base/mixin';
-@import './base/animations';
-@import './base/buttons';
+@import 'base/variables';
+@import 'base/typography';
+@import 'base/mixin';
+@import 'base/animations';
+@import 'base/buttons';
 @import 'base/base';
 
 
@@ -15,10 +15,12 @@
 @import 'components/parts/service_grid';
 @import 'components/parts/doctor_card';
 
+
 @import 'components/parts/slide_dots_ctnr';
 @import 'components/parts/insurances_ctnr';
 @import 'components/parts/office_hours_ctnr';
 @import 'components/parts/header_btn_ctnr';
+
 
 @import 'components/parts/button_like';
 
@@ -27,6 +29,7 @@
 // SECTIONS
 @import 'components/sections/hero.scss';
 @import 'components/sections/our_promise.scss';
+@import 'components/sections/about';
 
 @import 'components/navbars/header.scss';
 @import 'components/navbars/footer.scss';
@@ -35,11 +38,9 @@
 
 // PAGES
 @import 'pages/index';
-@import 'pages/about';
 @import 'pages/doctors';
 @import 'pages/services';
 @import 'pages/contact';
-@import 'pages/new_client';
 @import 'pages/error';
 @import 'pages/sitemap';
 

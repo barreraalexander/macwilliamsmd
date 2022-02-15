@@ -5,7 +5,6 @@ from website.blueprints.main import CONTACT_DICT, SERVICES, META_DICT
 from website.components.parts.button_like import component as button_like
 
 # navbars
-from website.components.navbars.linkset import component as linkset
 from website.components.navbars.header import component as header
 from website.components.navbars.footer import component as footer
 
@@ -39,7 +38,6 @@ def load_base():
     return dict(
         header=header,
         footer=footer,
-        linkset=linkset,
     )
 
 @main.context_processor

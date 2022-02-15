@@ -47,9 +47,7 @@
     #book_now_btn{
         @include primary_btn;
     }
-    #new_client_btn{
-        @include secondary_btn;
-    }
+
     .service_summary{
         display: none;
     }

@@ -1,9 +1,9 @@
 from flask import Markup, url_for
 # from website.blueprints.main import CONTACT_DICT
-from website.components.navbars.linkset import component as linkset
 from website.components.parts.button_like import component as button_like
 
 from website.components.parts.header_btn_ctnr import component as header_btn_ctnr
+from website.components.navbars.hidden_menu import component as hidden_menu
 
 def component():
 
@@ -38,7 +38,6 @@ def component():
 
 
 
-                    {linkset("tablet")}
 
 
                     <li id="patient_portal_ctnr" dataset-mquery="tablet">
@@ -53,11 +52,7 @@ def component():
 
             {header_btn_ctnr()}
 
-            <div id="hidden_menu" data-status='closed'>
-                <ul>
-                    {linkset("hidden_menu")}
-                </ul>
-            </div>
+            {hidden_menu()}
 
 
 

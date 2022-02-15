@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template
 from website.blueprints.main import META_DICT, CONTACT_DICT
-from website.components.navbars.linkset import component as linkset
 from website.components.parts.button_like import component as button_like
 
 errors = Blueprint ('errors', __name__)
