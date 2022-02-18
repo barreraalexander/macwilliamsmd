@@ -17,6 +17,8 @@
         font-size: 1.2em;
         font-style: italic;
         margin-bottom: .25em;
+        font-weight: 100;
+        letter-spacing: 1.25px;
     }
 }
 
@@ -55,8 +57,11 @@ hr{
         h2{
             text-align: center;
         }
+        small{
+            text-align: center;
+        }
         .office_hour{
-            font-size: 1.8em;
+            // font-size: 1.8em;
             .date{
                 text-align: right;
             }

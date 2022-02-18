@@ -54,8 +54,20 @@
             margin-bottom: .5em;
             color: $primary;
 
+        }
+    }
+}
 
-
+@media only screen and (min-width: $tablet_bp){
+    #our_promise_section{
+        .gif_ctnr{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            width: 100%;
+            img{
+                width: 50%;
+            }
         }
     }
 }
