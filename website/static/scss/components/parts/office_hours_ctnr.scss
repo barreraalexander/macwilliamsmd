@@ -8,7 +8,7 @@
     }
     p{
         @include subtitle;
-        font-size: 1.3rem;
+        font-size: 1.3em;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
     }
@@ -56,7 +56,7 @@ hr{
             text-align: center;
         }
         .office_hour{
-            font-size: 1.8rem;
+            font-size: 1.8em;
             .date{
                 text-align: right;
             }

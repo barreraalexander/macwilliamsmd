@@ -9,12 +9,12 @@
     padding: .5em 1em;
     max-width: 18em;
     min-width: max-content;
-    // width: 75%;
     img{
         width: 1.5em;
     }
     p{
-        font-size: 1.3rem;
+        font-size: 1.3em;
+        margin: 0;
     }
     :hover{
         cursor: pointer;
@@ -27,6 +27,9 @@
     background-color: $primary;
     color: $text_inv;
     border-width: $border_width;
+    p{
+        color: $secondary;
+    }
 }
 
 .standard_btn_like:hover{
@@ -41,10 +44,8 @@
 
 
 .inverse_btn_like{
-    // background-color: $logo_text_lighter;
     background-color: $secondary;
     color: $primary;
-    // border-width: $border_width;
     border-width: 2px;
     box-shadow: none;
 }
@@ -64,7 +65,7 @@
 @media only screen and (min-width: $tablet_bp){
     .button_like{
         p{
-            font-size: 1rem;
+            font-size: 1em;
         }
         img{
             width: 1.2em;

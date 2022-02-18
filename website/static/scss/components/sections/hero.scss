@@ -1,5 +1,4 @@
 #hero_section{
-    margin: $section_margin;
     h1{
         @include proj_h1;
     }
@@ -7,27 +6,28 @@
         @include subtitle;
     }
     .img_ctnr{
-        img{
-            width: unset;
-        }
-        #radiology_img{
-            margin-top: 1em;
-            margin-left: 8em;
-        }
-        #laboratory_img{
-            margin-top: 1em;
-        }
+        // img{
+        //     width: unset;
+        // }
+        // #radiology_img{
+        //     // margin-top: 1em;
+        //     // margin-left: 8em;
+        // }
+        // #laboratory_img{
+        //     // margin-top: 1em;
+        // }
     }
     #slider_ctnr{
         margin-top: 2em;
         .slide_ctnr + .slide_ctnr{
             display: none;
         }
-
     }
+
     .doctor_panels_lg_ctnr{
         display: none;
     }
+    
     #read_more_btn{
         a{
             color: $text_inv;
@@ -36,20 +36,10 @@
 }
 
 
-.slide_dot{
-    width: 1.5em;
-    height: .5em;
-    border-radius: $border_radius;
-    background-color: $primary;
-    border: $border_width solid $accent_dk;
-}
-
-.slide_dot[data-active='true']{
-    background-color: $secondary;
-}
 
 
 .main_display_ctnr{
+    padding: 1em;
     .right_col{
         display: none;
     }
@@ -57,9 +47,9 @@
         .buttons_ctnr{
             display: none;
         }
-        .slide_text_ctnr + .slide_text_ctnr{
-            display: none;
-        }
+        // .slide_text_ctnr + .slide_text_ctnr{
+        //     display: none;
+        // }
 
     }
 }
@@ -68,19 +58,26 @@
 @media only screen and (min-width: $tablet_bp){
     #hero_section{
         margin: 0;
+        h1{
+            // text-align: center;
+        }
+        p{
+            // text-align: center;
+        }
     }
 
     .main_display_ctnr{
         height: 70vh;
         position: relative;
         display: flex;
+        padding: 0;
         
         .left_col{
             background-color: $accent_lt;
             display: flex;
             flex-flow: column;
             padding: 2em;
-            width: 40%;
+            flex: .25;
             .buttons_ctnr{
                 display: flex;
                 justify-content: flex-start;
@@ -97,16 +94,14 @@
             .phone_btn{
                 @include secondary_btn;
             }
-            .slide_text_ctnr{
-                font-size: 1.25em;
-            }
+
         }
         
         .right_col{
             display: block;
+            flex: .75;
             overflow: hidden;
             position: relative;
-            width: 60%;
             img{
                 height: 100%;
                 position: absolute;
@@ -115,28 +110,25 @@
                 display: none;
             }
             #welcome_full{
-                right: -48rem;
+                left: -15em;
             }
             #ekg_full{
-                right: -33rem;
+                right: -20em;
             }
             #laboratory_full{
-                right: -12rem;
+                right: -12em;
             }
             #gynecology_full{
-                right: -26rem;
+                right: -20em;
             }
             #radiology_full{
-                // right: -5em;
-                right: -49em;
+                left: -6em;
+                // right: -49em;
             }
         }
     }
     #hero_section{
         margin: 0;
-        .img_circle_ctnr{
-            display: none;
-        }
         .doctor_panels_lg_ctnr{
             margin-top: 2em;
             display: flex;
@@ -145,14 +137,14 @@
             justify-content: center;
             text-align: center;
             img{
-                width: 7rem;
+                width: 7em;
             }
             hr{
                 margin: 0;
                 opacity: .5;
             }
             .doctor_panel_lg_ctnr{
-                width: 10rem;
+                width: 10em;
 
             }
         }
@@ -166,7 +158,7 @@
         height: 90vh;
         .right_col{
             #welcome_full{
-                right: unset;
+                left: unset;
             }
             #ekg_full{
                 right: unset;
@@ -178,7 +170,7 @@
                 right: unset;
             }
             #radiology_full{
-                right:unset;
+                left:unset;
             }
         }
     }

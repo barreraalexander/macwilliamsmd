@@ -22,17 +22,12 @@ def component():
                     {CONTACT_DICT.get('address_city2')} | <span> {CONTACT_DICT.get('address2')} <span>
                 </p>
             </div>
-            <div class="action_ctnr">
-                <h2>
-                    Appointments
-                </h2>
-                {button_like(btn_type='phone')}
-            </div>
+
             <div class="action_ctnr">
                 <h2>
                     Questions
                 </h2>
-                {button_like(btn_type='phone2')}
+                {button_like(btn_type='phone')}
             </div>
             <div class="action_ctnr">
                 <h2>
@@ -52,13 +47,19 @@ def component():
     
         <div id="tos_ctnr">
             <a href="#">
-                Terms of Service
+                <p>
+                    Terms of Service
+                </p>
             </a>
             <a href="#">
-                Legal Stuff
+                <p>
+                    Legal Stuff
+                </p>
             </a>
             <a href="#">
-                Sitemap
+                <p>
+                    Sitemap
+                </p>
             </a>
         </div>
 

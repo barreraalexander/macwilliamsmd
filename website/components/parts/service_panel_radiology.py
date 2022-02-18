@@ -1,5 +1,6 @@
 from flask import Markup
 from website.blueprints.main import SERVICES
+from website.components.parts.button_like import component as button_like
 
 def component():
     service_name = "radiology"
@@ -64,6 +65,9 @@ def component():
                     <p>
                         {service_dict['description5']}
                     </p>
+                    <p>
+                        {service_dict['description6']}
+                    </p>
                 </div>
             </div>
 
@@ -73,19 +77,12 @@ def component():
                 </h3>
                 <div class="descriptions_ctnr">
                     <p>
-                        {service_dict['description6']}
-                    </p>
-                </div>
-            </div>
-
-            <div class="text_group">
-                <div class="descriptions_ctnr">
-                    <p>
                         {service_dict['description7']}
                     </p>
+                    {button_like('phone', elem_id="text_group_button")}
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
     """)

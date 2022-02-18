@@ -8,7 +8,7 @@
         gap: 2em;
     }
     .map_widget_ctnr{
-        height: 20rem;
+        height: 20em;
     }
     .action_ctnr{
         display: flex;
@@ -42,6 +42,7 @@
     .button_like{
         margin-top: 1em;
         max-width: 20em;
+        
     }
 
 
@@ -57,11 +58,15 @@
         flex-flow: column;
         gap: 1em;
         padding: 2em;
-        // a{
-        //     @include proj_a;
-        //     text-align: center;
-        //     color: $text_inv;
-        // }
+        p{
+            // @include proj_a;
+            text-align: center;
+            color: $text_inv;
+            text-decoration: underline;
+        }
+        p:hover{
+            text-decoration: none;
+        }
     }
 
     #top_btn_ctnr{
@@ -73,7 +78,7 @@
             @include secondary_btn;
             margin: 0 auto;
             padding: 0.5em 1em;
-            font-size: 1rem;
+            font-size: 1em;
             box-shadow: none;
         }
     }
@@ -92,7 +97,7 @@
             .action_ctnr{
                 min-width: 25em;
                 i{
-                    font-size: 1.2rem;
+                    font-size: 1.2em;
                 }
             }
         }
@@ -102,7 +107,7 @@
             justify-content: center;
             width: 100%;
             img{
-                max-width: 37rem;
+                max-width: 37em;
             }
         }
     }
@@ -112,9 +117,9 @@
 
     #base_footer_section{
         .button_like{
-            width: 13rem;
+            width: 13em;
             p{
-                font-size: 1rem;
+                font-size: 1em;
                 text-align: left;
             }
         }

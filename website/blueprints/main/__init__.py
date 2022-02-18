@@ -71,6 +71,10 @@ ABOUT_US = {
 SERVICES = {
     'ekg' : {
         'service_title' : 'EKG',
+
+        'slide_h1' : 'Electrocardiogram',
+
+        'slide_small' : 'Heart Health',
         
         'slide_text' : 'An EKG gives accurate information on the function of the heart and has been in use for many years. It is a simple and non-invasive test that can be carried out quickly.',
 
@@ -125,8 +129,15 @@ SERVICES = {
         'description6' : 'All aspects of an EKG will be outlined by your consultant before the procedure is carried out.',
     },
 
+
     'laboratory' : {
         'service_title' : 'Lab Work',
+
+        'slide_h1' : 'Lab Work',
+
+        'slide_small' : 'Analysis Solutions',
+
+
 
         'slide_text' : 'Our laboratory work services cover the full range of medical and clinical analysis solutions, and we are proud of a reputation for expertise and knowledge in this field.',
 
@@ -173,6 +184,11 @@ SERVICES = {
 
     'radiology' : {
         'service_title' : 'Radiology',
+
+        'slide_h1' : 'Radiology',
+
+        'slide_small' : 'Medical Diagnosis',
+
         'slide_text' : 'Radiology is an area of medical diagnosis that includes a variety of routines and procedures. While once limited to X-ray, the radiology field now includes more advanced and powerful procedures that are capable of excellent results.',
 
         'heading1' : 'Radiology Work',
@@ -204,6 +220,10 @@ SERVICES = {
 
     'gynecology' : {
         'service_title' : 'Gynecology',
+
+        'slide_h1' : 'Gynecology',
+
+        'slide_small' : 'Reproductive Health',
 
         'slide_text' : 'Gynecologists need to study for at least seven years to become qualified in what is a demanding role. We have expert gynecologists who are trained and qualified to the highest degree, and who can provide the best service in the business.',
 
@@ -242,7 +262,7 @@ SERVICES = {
         'ul2_li3' : 'is a branch of gynecology that deals with problems such as an overactive bladder, pelvic organ prolapses and incontinence. It is a strictly specialist area of medicine that requires detailed experience in the area of the body concerned.',
         
         'heading3' : 'Make an Appointment Now',
-        'description3' : 'As we can see from the above gynecology covers more than you may think at first and is a comprehensive specialty area of women’s health.',
+        'description3' : 'As we can see from above gynecology covers more than you may think at first and is a comprehensive specialty area of women’s health.',
         
         'description4' : 'Our gynecology specialists are experts in their chosen field and have been trained to the highest degree and hand-picked for excellence. We recognize the need for accurate and detailed diagnosis, and we have a reputation for first-class service and attention to detail.',
         

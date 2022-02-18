@@ -4,7 +4,6 @@
         @include heavy_text;
         margin-top: 2em;
         font-size: 2em;
-        // border-bottom: 4px solid #fff;
     }
     h3{
         @include heavy_text;
@@ -28,10 +27,6 @@
         color: $light_text;
     }
 
-    p:last-of-type{
-        margin-bottom: 2em;
-    }
-
     ul{
         display: flex;
         background-color: $secondary;
@@ -47,10 +42,21 @@
         @include light_text;
         font-size: $font_sz_md;
     }
+    #text_group_button{
+        p{
+            margin: 0;
+        }
+    }
+
     .text_group{
         margin-bottom: 2em;
-        opacity: 0;        
+        opacity: 0;
+        p:last-of-type{
+            margin-bottom: 2em;
+        }
     }
+
+
 }
 
 

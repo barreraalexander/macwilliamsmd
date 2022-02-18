@@ -1,37 +1,79 @@
-.serice_slide{
+.slide_ctnr{
+    align-items: flex-start;
+    // align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+
+    #slide_h1{
+        // text-align: center;
+    }
+    #slide_small{
+        // text-align: center;
+    }
+    .small_slide{
+        margin-top: 1em;
+        align-self: center;
+    }
+
+}
+
+.slide_ctnr+.slide_ctnr{
+    display: none;
 }
 
 .slide_description_ctnr{
-    margin-top: 2em;
     position: relative;
-    width: 100vw;  
     overflow: hidden;
-    margin:  0 -2em;
+    margin:  1em -2em;
+    width: 100vw;
+    align-self: center;
     p{
         @include md_paragraph;
-        z-index: 999;
         position: relative;
         padding: 1em;
-
-    }
-    a{
-        display: contents;
+        text-align: center;
+        z-index: 999;
+    }       
+    .stripe{
+        background-color: $secondary_lighter;
+        width: 150vw;
+        height: 4em;
+        position: absolute;
+        top: 5em;
+        left: -5em;
+        transform: rotate(18deg);
+        z-index: 998;
     }
     .hidden_text{
         display: none;
     }
 }
 
-.stripe{
-    background-color: $secondary_lighter;
-    width: 150vw;
-    height: 4em;
-    position: absolute;
-    z-index: 998;
-    top: 2em;
-    left: -5em;
-    transform: rotate(18deg);
+.img_ctnr{
+    @include box_shadow;
+    background-color: $secondary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 16em;
+    height: 16em;
+    overflow: hidden;
+
+    margin: 0 auto;
+
+    img{
+        position: relative;
+        top: 1em;
+        // left: 1em;
+        // width: 70%;
+    }
+    #radiology_img{
+        left: 4em;   
+    }
 }
+
 
 
 .link{
@@ -48,6 +90,17 @@
 
 
 @media only screen and (min-width: $tablet_bp){
+    .slide_ctnr{
+        .small_slide{
+            display: none;
+        }
+        .slide_text_ctnr{
+            // display: flex;
+            // flex-flow: column;
+            // justify-content: center;
+        }
+
+    }
     .stripe{
         display: none;
     }
@@ -57,14 +110,9 @@
             width: 85%;
         }
         .hidden_text{
-            display: block;
+            // display: block;
         }
     }
-    #slider_ctnr{
-        display: flex;
-        flex-flow: wrap;
-    }
-
 
     
 
@@ -76,4 +124,5 @@
             font-size: 2em;
         }
     }
+
 }
