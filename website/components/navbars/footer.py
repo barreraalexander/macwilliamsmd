@@ -46,12 +46,12 @@ def component():
         {office_hours_ctnr('office2')}
     
         <div id="tos_ctnr">
-            <a href="#">
+            <a href="#" style="display:none">
                 <p>
                     Terms of Service
                 </p>
             </a>
-            <a href="#">
+            <a href="#" style="display:none">
                 <p>
                     Legal Stuff
                 </p>

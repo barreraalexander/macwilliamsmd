@@ -2,8 +2,9 @@
     position: relative;
     h1{
         @include proj_h1;
+        text-align: center;
+        color: $primary;
         font-size: 3em;
-        margin-left: 2em;
     }
     .btn_ctnr{
         background-color: $accent_lt;

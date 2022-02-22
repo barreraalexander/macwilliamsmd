@@ -35,6 +35,7 @@
         padding: 1em;
         text-align: center;
         z-index: 999;
+        font-weight: 100;
     }       
     .stripe{
         background-color: $secondary_lighter;
@@ -80,6 +81,7 @@
     @include light_text;
     text-decoration: underline;
     color: #444; 
+    font-weight: 300;
 }
 
 .link:hover{

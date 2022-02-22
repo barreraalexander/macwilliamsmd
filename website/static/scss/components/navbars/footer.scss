@@ -6,6 +6,7 @@
         flex-flow: column;
         margin: 2em;
         gap: 2em;
+        // justify-content: flex-start;
     }
     .map_widget_ctnr{
         height: 20em;
@@ -93,7 +94,7 @@
         }
         #footer_actions_ctnr{
             flex-flow: row wrap;
-            align-items: flex-end;
+            align-items: flex-start;
             .action_ctnr{
                 min-width: 25em;
                 i{
