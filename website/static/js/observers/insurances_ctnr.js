@@ -4,7 +4,7 @@ const insurances = insurances_ctnr.querySelectorAll('.insurance')
 
 const insurances_ctnr_options = {
     root: null,
-    threshold: .3,
+    threshold: .1,
 }
 
 const insurances_observer = new IntersectionObserver(function(entries, insurances_observer){
@@ -26,7 +26,7 @@ insurances_tl.pause()
 for (let insurance of insurances){
     insurances_tl.to(insurance,
         {
-            duration: .15,
+            duration: .25,
             clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             transform: 'translate(0px, -10px)'
         }      

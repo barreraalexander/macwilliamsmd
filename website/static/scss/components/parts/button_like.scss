@@ -1,0 +1,75 @@
+.button_like{
+    @include box_shadow;
+    align-items: center;
+    border-radius: 10em;
+    border: $border_width solid $primary;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    padding: .5em 1em;
+    max-width: 18em;
+    min-width: max-content;
+    img{
+        width: 1.5em;
+    }
+    p{
+        font-size: 1.3em;
+        margin: 0;
+    }
+    :hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+
+.standard_btn_like{
+    background-color: $primary;
+    color: $text_inv;
+    border-width: $border_width;
+    p{
+        color: $secondary;
+    }
+}
+
+.standard_btn_like:hover{
+    background-color: darken($primary, 10%);
+    cursor: pointer;
+    p{
+        text-decoration: underline;
+    }
+}
+
+
+
+
+.inverse_btn_like{
+    background-color: $secondary;
+    color: $primary;
+    border-width: 2px;
+    box-shadow: none;
+}
+
+
+
+
+.inverse_btn_like:hover{
+    background-color: lighten($secondary, 5%);
+    cursor: pointer;
+    p{
+        text-decoration: underline;
+    }
+}
+
+
+@media only screen and (min-width: $tablet_bp){
+    .button_like{
+        p{
+            font-size: 1em;
+        }
+        img{
+            width: 1.2em;
+            
+        }
+    }
+}

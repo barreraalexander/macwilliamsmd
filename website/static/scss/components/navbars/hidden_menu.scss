@@ -1,0 +1,62 @@
+#hidden_menu{
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    opacity: 0;
+    .empty{
+        flex: 1;
+        background-color: $primary;
+        opacity: .9;
+        position: relative;
+        left: -20em;
+        p{
+            @include light_text;
+            font-size: 4em;
+            text-align: center;
+            color: $secondary;
+        }
+        br{
+            margin: .15em 0;
+        }
+    }
+    nav{
+        background-color: rgba($color: $secondary, $alpha: .95  );
+        flex: 1;
+        position: relative;
+        right: -20em;
+
+
+        ul{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            gap: 2.5em;
+            margin-top: 2em;
+            padding: 0;
+            li{
+                text-align: center;
+                color: $primary;
+            }
+        }
+    }
+}
+
+#hidden_menu[data-status=hidden]{
+    display: none;
+    opacity: 0;
+    nav{
+        // right: -20em;
+
+        // transition: ;
+    }
+}
+
+
+@media only screen and (min-width: $tablet_bp){
+    #hidden_menu{
+        display: none;
+    }
+}

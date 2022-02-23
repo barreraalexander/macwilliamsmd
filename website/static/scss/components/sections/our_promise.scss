@@ -53,9 +53,34 @@
             font-size: 1.5em;
             margin-bottom: .5em;
             color: $primary;
-
-
+            max-width: 30em;
+            font-weight: 100;
 
         }
     }
+}
+
+@media only screen and (min-width: $tablet_bp){
+    #our_promise_section{
+        .gif_ctnr{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            width: 100%;
+            img{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop_bp){
+        #our_promise_section{
+            height: 70vh;
+            .gif_ctnr{
+                top: -13em;
+
+            }
+        }
+
 }

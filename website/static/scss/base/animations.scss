@@ -81,6 +81,13 @@
     display: block !important;
 }
 
+@mixin remove_disappear{
+    -webkit-animation: shift_opacity ease 1 forwards reverse;
+    animation: shift_opacity ease 1 forwards reverse;
+    animation-duration: .5s;
+    display: block !important;
+}
+
 
 
 

@@ -13,7 +13,7 @@ class ContactUsForm (FlaskForm):
     email = StringField ('Email',
                         validators=[DataRequired(),
                         Length(min=2, max=50)],
-                        render_kw={"placeholder":"Your Phone Number or Email"})
+                        render_kw={"placeholder":"Email"})
    
     help_description = TextAreaField ('How Can We Help',
                         validators=[Length(min=2, max=300)],

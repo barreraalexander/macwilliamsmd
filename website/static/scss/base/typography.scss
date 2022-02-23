@@ -42,7 +42,6 @@ a{
 
 }
 
-
 @mixin heading{
     @include regular_text(1.8em);
     color: $primary;
@@ -73,7 +72,7 @@ a{
 }
 
 @mixin md_paragraph{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 400;
     
 }
@@ -87,3 +86,20 @@ h4,h5,h6{
 p{
     @include regular_text;
 }
+<<<<<<< HEAD
+=======
+
+a{
+    display: contents;
+}
+
+ul{
+    list-style: none;
+}
+
+button:hover{
+    cursor: pointer;
+    
+}
+
+>>>>>>> sitemap

@@ -11,7 +11,6 @@ def component(service_name):
         classes="inverse_service_panel"
 
     service_dict = SERVICES[service_name]
-    # service_dict = SERVICES['ekg']
 
     return Markup(f"""
         <div id="{service_name}_panel" class="service_ctnr {classes}">

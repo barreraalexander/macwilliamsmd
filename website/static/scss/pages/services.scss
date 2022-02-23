@@ -2,8 +2,9 @@
     position: relative;
     h1{
         @include proj_h1;
+        text-align: center;
+        color: $primary;
         font-size: 3em;
-        margin-left: 2em;
     }
     .btn_ctnr{
         background-color: $accent_lt;
@@ -16,10 +17,10 @@
         margin-bottom: 4em;
     }
     button{
-        font-size: 1.3rem;
+        font-size: 1.3em;
         padding: .5em 1em;
-        max-width: 22rem;
-        width: 18rem;
+        max-width: 22em;
+        width: 18em;
     }
 
     #back_to_top{
@@ -47,9 +48,7 @@
     #book_now_btn{
         @include primary_btn;
     }
-    #new_client_btn{
-        @include secondary_btn;
-    }
+
     .service_summary{
         display: none;
     }
@@ -90,7 +89,7 @@
             }
         }
         h1{
-            font-size: 3rem;
+            font-size: 3em;
             margin-left: unset;
             text-align: center;
         }
@@ -98,13 +97,13 @@
             @include md_paragraph;
             display: block;
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.5em;
         }
         .book_btn{
             @include primary_btn;
             display: block;
-            font-size: 1.5rem;
-            max-width: 18rem;
+            font-size: 1.5em;
+            max-width: 18em;
         }
         .inverse_service_panel{
             background-color: $text_inv;

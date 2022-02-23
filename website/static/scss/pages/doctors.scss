@@ -3,28 +3,11 @@
     h1{
         @include proj_h1;
     }
+    
 }
 
-.img_circle_ctnr{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 2em 0;
-}
 
-.img_ctnr{
-    @include box_shadow;
-    background-color: $secondary;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    width: 16em;
-    height: 16em;
-    overflow: hidden;
-    img{
-        width: 70%;
-    }
-}
+
 
 .doctor_panel_ctnr{
     margin-bottom: 2em;
@@ -52,6 +35,9 @@
     a{
         display: contents;
     }
+    .img_circle_ctnr{
+        margin-bottom: 1em;
+    }
 }
 
 
@@ -64,16 +50,16 @@
             display: flex;
             margin-top: 2em;
             margin-bottom: 4em;
-            gap: 3rem;
+            gap: 3em;
             padding: 0 4em;
             flex-flow: row-reverse;
             .img_circle_ctnr{
-                margin: unset;
+                // margin-bottom: 1em;
             }
             .img_ctnr{
                 border-radius: 2em;
-                height: 20rem;
-                width: 20rem;
+                height: 20em;
+                width: 20em;
             }
         }
         .doctor_panel_ctnr:nth-child(4){
@@ -95,9 +81,9 @@
         }
         .doctor_panel_ctnr{
             justify-content: center;
-            .img_circle_ctnr{
-                width: unset;
-            }
+            // .img_circle_ctnr{
+            //     width: unset;
+            // }
         }
         .doctor_text_ctnr{
             width: 50%;

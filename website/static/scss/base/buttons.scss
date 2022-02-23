@@ -2,7 +2,7 @@
     @include box_shadow;  
     color: $text_inv;
     background-color: $primary;
-    border: .05rem solid transparent;
+    border: .05em solid transparent;
     border-radius: $border_radius;
     font-weight: 500;
     text-decoration: none;
@@ -12,77 +12,9 @@
     @include box_shadow;  
     color: $primary;
     background-color: $secondary;
-    border: .05rem solid $primary;
+    border: .05em solid $primary;
     border-radius: $border_radius;
     font-weight: 500;
 }
 
 
-
-
-.button_like{
-    @include box_shadow;
-    display: flex;
-    border-radius: 10em;
-    justify-content: center;
-    align-items: center;
-    border: $border_width solid $primary;
-    padding: .5em 1em;
-    gap: 1em;
-    width: 75%;
-    max-width: 18rem;
-    min-width: max-content;
-    img{
-        width: 1.5em;
-    }
-    p{
-        font-size: 1.3rem;
-    }
-    :hover{
-        cursor: pointer;
-        text-decoration: underline;
-    }
-}
-
-.inverse_btn_like{
-    // background-color: $logo_text_lighter;
-    background-color: $secondary;
-    color: $primary;
-    // border-width: $border_width;
-    border-width: 2px;
-    box-shadow: none;
-}
-
-.standard_btn_like{
-    background-color: $primary;
-    color: $text_inv;
-    border-width: $border_width;
-}
-
-.standard_btn_like:hover{
-    background-color: darken($primary, 10%);
-    cursor: pointer;
-    p{
-        text-decoration: underline;
-    }
-}
-
-.inverse_btn_like:hover{
-    background-color: lighten($secondary, 5%);
-    cursor: pointer;
-    p{
-        text-decoration: underline;
-    }
-}
-
-@media only screen and (min-width: $tablet_bp){
-    .button_like{
-        p{
-            font-size: 1rem;
-        }
-        img{
-            width: 1.2em;
-            
-        }
-    }
-}

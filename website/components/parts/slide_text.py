@@ -8,8 +8,8 @@ def component(slide_name):
         slide_small = "& Associates"
 
     elif slide_name == "ekg":
-        slide_h1 = "Electrocardiogram"
-        slide_small = "Heart Health"
+        slide_h1 = ""
+        slide_small = ""
 
     elif slide_name == "laboratory":
         slide_h1 = "Lab Work"

@@ -1,76 +1,80 @@
 from flask import Markup, url_for
-from website.blueprints.main import CONTACT_DICT
-from website.components.navbars.linkset import component as linkset
 from website.components.parts.button_like import component as button_like
 
+from website.components.parts.header_btn_ctnr import component as header_btn_ctnr
+from website.components.navbars.hidden_menu import component as hidden_menu
+
 def component():
-    home_link = url_for('main.index')    
-    contact_link = url_for('main.contact')
 
     logo_src = url_for('static', filename='images/assets/mac_logo_banner.svg')
     menu_src = url_for('static', filename='images/assets/hamburger_lblue.svg')
-    appointment_src = url_for('static', filename='images/assets/appointment.svg')
-    phone_src = url_for('static', filename='images/assets/call_navy.svg')
-    
+
     return Markup(f"""
     <section id="base_header_section">
-        <aside>
-            <nav>
-                <ul class="main_nav_ul">
+        <nav>
+
+            <ul class="main_nav_ul">
+
+                <a href="{ url_for('main.index') }">
                     <li id="logo_ctnr">
-                        <a href="{home_link}">
-                            <img
-                                id="mac_banner"
-                                src="{logo_src}"
-                                alt="mac williams md logo"
-                            >
-                        </a>
-                    </li>
-                    <li id="hamburger_ctnr">
                         <img
-                            id="hamburger"
-                            src="{menu_src}"
-                            alt="mobile navigation button"
+                            id="mac_banner"
+                            src="{logo_src}"
+                            alt="mac williams md logo"
                         >
                     </li>
-                    {linkset("tablet")}
-                    <li id="patient_portal_ctnr" dataset-mquery="tablet">
-                        {button_like('patient')}
-                    </li>
-                    <li id="book_appointment_ctnr" dataset-mquery="tablet">
-                        {button_like('appointment', elem_id='header_appointment')}
-                    </li>
-                </ul>
-            </nav>
-            <div id="header_btn_ctnr">
-                <div id="header_book_btn">
+                </a>
+
+                <li id="hamburger_ctnr">
                     <img
-                        src="{appointment_src}"
-                        alt="appointment icon"
+                        id="hamburger"
+                        src="{menu_src}"
+                        alt="mobile navigation button"
                     >
-                    <a href="{contact_link}">
-                        Appointments
+                </li>
+
+                <div class="hidden_links">
+                    <a href="{url_for('main.index')}">
+                        <li id="home">
+                            Home
+                        </li>
                     </a>
-                </div>
-                <div id="header_phone_btn">
-                    <img
-                        src="{phone_src}"
-                        alt="phone icon"
-                    >
-                    <a href="tel:{CONTACT_DICT['phone']}">
-                        {CONTACT_DICT['phone']}
+
+                    <a href="{url_for('main.about')}">
+                        <li>
+                            About
+                        </li>  
                     </a>
+
+                    <a href="{url_for('main.doctors')}">
+                        <li>
+                            Doctors
+                        </li>
+                    </a>
+
+                    <a href="{url_for('main.services')}">
+                        <li>
+                            Services
+                        </li>
+                    </a>
+
+                    <a href="{url_for('main.contact')}">
+                        <li>
+                                Contact
+                        </li>
+                    </a>
+
+                    {button_like('patient')}
+
+                    {button_like('appointment', elem_id='header_appointment')}
                 </div>
-            </div>
-            <div id="hidden_menu" data-status='closed'>
-                <ul>
-                    {linkset("hidden_menu")}
-                </ul>
-            </div>
-        </aside>
+            </ul>
+        </nav>
+
+        {header_btn_ctnr()}
+
+        {hidden_menu()}
 
     </section>
 
-    
-    
     """)

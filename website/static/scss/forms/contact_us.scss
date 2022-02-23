@@ -13,9 +13,9 @@
         border: $border_width solid $primary;
         border-radius: $border_radius;
         width: 90%;
-        font-size: 1.2rem;
+        font-size: 1.2em;
         padding: .5em;
-        max-width: 25rem;
+        max-width: 25em;
     }
     textarea{
         height: 10em;
@@ -65,7 +65,7 @@
         padding: 1em;
         width: 100%;
         .button_like{
-            width: 10rem;
+            width: 10em;
         }
     }
 

@@ -1,0 +1,87 @@
+
+#base_header_section{
+    position: relative;
+    nav{
+        background-color: $primary;
+        padding: .5em 1em;
+    }
+    .main_nav_ul{
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+    #mac_banner{
+        width: 10em;
+    }
+    #hamburger{
+        width: 2em;
+        cursor: pointer;
+    }
+    .button_like{
+    }
+    .hidden_links{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: $tablet_bp){
+    #base_header_section{
+        font-size: .95em;
+        nav{
+            @include box_shadow;
+        }
+        #hamburger_ctnr{
+            display: none;
+        }
+        #logo_ctnr{
+            margin-right: auto;
+        }
+        #home{
+            display: none;
+        }
+        .hidden_links{
+            display: contents;
+        }
+        .button_like{
+            display: flex;
+            font-size: .7em;
+            p{
+
+                color: $primary;
+            }
+        }
+        .main_nav_ul{
+            justify-content: flex-end;
+            gap: 1em;
+            padding: 0 .2em;
+            li{
+                color: $secondary;
+                font-size: 1em;
+                text-decoration: underline;
+            }
+            li:hover{
+                text-decoration: none;
+            }
+        }
+    
+    }
+
+
+}
+
+
+@media only screen and (min-width: $desktop_bp){
+    #base_header_section{
+        font-size: 1.1em;
+        #home{
+            display: block;
+        }
+        // #mac_banne
+    }
+
+
+}

@@ -1,4 +1,5 @@
 // BASE (MUST IMPORT FIRST)
+<<<<<<< HEAD
 @import './base/variables';
 @import './base/typography';
 @import './base/mixin';
@@ -22,21 +23,50 @@
 @import './components/sections/header.scss';
 @import './components/sections/footer.scss';
 @import './components/sections/about';
+=======
+@import 'base/variables';
+@import 'base/typography';
+@import 'base/mixin';
+@import 'base/animations';
+@import 'base/buttons';
+@import 'base/base';
+>>>>>>> sitemap
 
 
 // PARTS
-@import './components/parts/service_panel';
-@import './components/parts/doctor_panel';
-@import './components/parts/doctor_panel_lg';
-@import './components/parts/service_slide';
-@import './components/parts/service_grid';
-@import './components/parts/doctor_card';
+@import 'components/parts/service_panel';
+@import 'components/parts/doctor_panel';
+@import 'components/parts/doctor_panel_lg';
+@import 'components/parts/service_slide';
+@import 'components/parts/service_grid';
+@import 'components/parts/doctor_card';
+@import 'components/parts/slide_dots_ctnr';
+@import 'components/parts/insurances_ctnr';
+@import 'components/parts/office_hours_ctnr';
+@import 'components/parts/header_btn_ctnr';
+@import 'components/parts/button_like';
 
-@import './components/parts/slide_dots_ctnr';
-@import './components/parts/insurances_ctnr';
-@import './components/parts/office_hours_ctnr';
+
+// SECTIONS
+@import 'components/sections/hero';
+@import 'components/sections/our_promise';
+@import 'components/sections/about';
+
+@import 'components/navbars/header';
+@import 'components/navbars/footer';
+@import 'components/navbars/hidden_menu';
+
+
+// PAGES
+@import 'pages/index';
+@import 'pages/doctors';
+@import 'pages/services';
+@import 'pages/contact';
+@import 'pages/error';
+@import 'pages/sitemap';
+
 
 
 // FORMS
-@import './forms/contact_us';
+@import 'forms/contact_us';
 

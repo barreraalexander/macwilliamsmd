@@ -1,22 +1,21 @@
 from flask import Blueprint, render_template
 from website.blueprints.main import META_DICT, CONTACT_DICT
-from website.components.navbars.linkset import component as linkset
 from website.components.parts.button_like import component as button_like
+
 
 errors = Blueprint ('errors', __name__)
 
-
-errors.context_processor
-def load_dicts():
-    return dict(
-        CONTACT_DICT=CONTACT_DICT,
-        META_DICT=META_DICT,
-    )
-errors.context_processor
-def load_components():
-    return dict(
-        button_like=button_like,
-    )
+# errors.context_processor
+# def load_dicts():
+#     return dict(
+#         CONTACT_DICT=CONTACT_DICT,
+#         META_DICT=META_DICT,
+#     )
+# errors.context_processor
+# def load_components():
+#     return dict(
+#         button_like=button_like,
+#     )
 
 
 @errors.app_errorhandler(404)

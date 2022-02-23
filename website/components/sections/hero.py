@@ -1,4 +1,4 @@
-from flask import Markup
+from flask import Markup, url_for
 
 from website.components.parts.slide_text import component as slide_text
 from website.components.parts.button_like import component as button_like
@@ -6,30 +6,18 @@ from website.components.parts.service_slide import component as service_slide
 from website.components.parts.slide_dots_ctnr import component as slide_dots_ctnr
 
 def component():
+    animation = url_for('static', filename='js/interface_mods/slideshow.js')
+
     return Markup(f"""
     <section id="hero_section">
         <div class="main_display_ctnr">
-            <div class="left_col">
-                {slide_text('welcome')}
-                {slide_text('ekg')}
-                {slide_text('laboratory')}
-                {slide_text('radiology')}
-                {slide_text('gynecology')}
-                {slide_dots_ctnr()}
-    
-                <div id="slider_ctnr">
-                    { service_slide('welcome')}
-                    { service_slide('ekg') }
-                    { service_slide('laboratory')}
-                    { service_slide('radiology') }
-                    { service_slide('gynecology')}
-                </div>
 
-                <div class="buttons_ctnr">
-                    { button_like('appointment') }
-                    { button_like('phone') }
-                </div>
-        
+            <div class="left_col">
+                {service_slide('welcome')}
+                {service_slide('ekg')}
+                {service_slide('laboratory')}
+                {service_slide('gynecology')}
+                {service_slide('radiology')}
             </div>
 
             <div class="right_col">
@@ -63,7 +51,10 @@ def component():
                     class="slide_img_full"
                     alt="radiology stock photo"
                 >
-            </div>
+            </div>    
         </div>
     </section>
+
+    <script src="{animation}">
+    </script>
     """)

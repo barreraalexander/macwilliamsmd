@@ -4,7 +4,7 @@ const mission_statement_ctnr = our_promise_section.querySelector('.mission_state
 
 const mission_statement_ctnr_options = {
     root: null,
-    threshold: .4, 
+    threshold: .7, 
 }
 
 const mission_observer = new IntersectionObserver(function(entries, mission_observer){
@@ -40,7 +40,7 @@ our_promise_tl.to(
 our_promise_tl.to(
     mission_statement_ctnr,
     {
-        delay: 1,
+        delay: .5,
         duration: 1,
         clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
 

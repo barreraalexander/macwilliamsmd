@@ -4,11 +4,24 @@
     margin-top: .5em;
 }
 
+.slide_dot{
+    width: 1.5em;
+    height: .8em;
+    border-radius: $border_radius;
+    background-color: $primary;
+    border: $border_width solid $accent_dk;
+}
+
+.slide_dot[data-active='true']{
+    background-color: $secondary;
+}
+
+
 @media only screen and (min-width: $tablet_bp){
     .slide_dots_ctnr{
         order: 1;
         margin-top: auto;
-        gap: 1.25souem;
+        // gap: 1.25em;
     }
     .slide_dot{
         padding: .25em;
