@@ -8,7 +8,61 @@
             <h1>
                 Sitemap
             </h1>
+
             <ul class="sitemap_ctnr">
+                <h2>
+                    Look Around a Bit
+                </h2>
+                <a href=" {{url_for('main.index')}}" >
+                    <li>
+                        Home
+                    </li>
+                </a>
+
+                <a href="{{url_for('main.about')}}">
+                    <li>
+                        About Us
+                    </li>
+                </a>
+                <a href="{{url_for('main.doctors')}}">
+                    <li>
+                        About our Doctors
+                    </li>
+                </a>
+                <a href="{{url_for('main.contact')}}">
+                    <li>
+                        Contact Us
+                    </li>
+                </a>
+            </ul>
+
+
+            <ul class="sitemap_ctnr">
+                <a href="{{url_for('main.services')}}">
+                    <h2>
+                        Check out our Services
+                    </h2>
+                </a>
+                <a href="{{url_for('main.services') + '#radiology_service_panel'}}">
+                    <li>
+                        Radiology
+                    </li>
+                </a>
+                <a href="{{url_for('main.services') + '#laboratory_service_panel'}}">
+                    <li>
+                        Laboratory
+                    </li>
+                </a>
+                <a href="{{url_for('main.services') + '#ekg_service_panel '}}">
+                    <li>
+                        Gynecology
+                    </li>
+                </a>
+                <a href="{{url_for('main.services') + '#ekg_service_panel'}}">
+                    <li>
+                        Electrocardiogram
+                    </li>
+                </a>
             </ul>
         </section>
     </main>
