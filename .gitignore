@@ -7,7 +7,7 @@ website/static/images/services
 *.xd
 *.jpg
 *.jpeg
-*.png
+# *.png
 *.pem
 *.sh
 
