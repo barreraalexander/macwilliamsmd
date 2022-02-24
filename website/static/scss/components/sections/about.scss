@@ -12,6 +12,11 @@
     p{
         @include regular_text;
         font-size: 1.3em;
+        // color: $primary;
+
+    }
+    h3{
+        color: $primary;
     }
     
     .banner_ctnr{
@@ -137,6 +142,7 @@
         font-size: 1.2em;
         p, li{
             width: 45%;
+            
         }
         .about_row{
             p{

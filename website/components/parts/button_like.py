@@ -7,8 +7,6 @@ def component(btn_type, elem_id=''):
     btn_text = ""
     link = ""
 
-
-
     if btn_type=='navigation':
         img_src = url_for('static', filename='images/assets/navigation.svg')
         classes = "inverse_btn_like"
@@ -45,6 +43,7 @@ def component(btn_type, elem_id=''):
         img_src = url_for('static', filename='images/assets/appointment.svg')
         classes = "standard_btn_like appointment_btn"
         btn_text = "Appointments"
+        link = url_for('main.contact')
 
         if elem_id=="header_appointment":    
             img_src = url_for('static', filename='images/assets/appointment_navy.svg')

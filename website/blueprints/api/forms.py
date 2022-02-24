@@ -15,7 +15,7 @@ class ContactUsForm (FlaskForm):
                         Length(min=2, max=50)],
                         render_kw={"placeholder":"Email"})
    
-    help_description = TextAreaField ('How Can We Help',
+    help_description = TextAreaField ('How Can We Help?',
                         validators=[Length(min=2, max=300)],
                         render_kw={"placeholder":"Your Message"})
 
