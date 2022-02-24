@@ -1,36 +1,10 @@
 // BASE (MUST IMPORT FIRST)
-<<<<<<< HEAD
-@import './base/variables';
-@import './base/typography';
-@import './base/mixin';
-@import './base/animations';
-@import './base/buttons';
-@import './base/base';
-
-
-// PAGES
-@import './pages/index';
-@import './pages/services';
-@import './pages/contact';
-@import './pages/new_client';
-@import './pages/doctors';
-@import './pages/error';
-@import './pages/sitemap';
-
-// SECTIONS
-@import './components/sections/hero.scss';
-@import './components/sections/our_promise.scss';
-@import './components/sections/header.scss';
-@import './components/sections/footer.scss';
-@import './components/sections/about';
-=======
 @import 'base/variables';
 @import 'base/typography';
 @import 'base/mixin';
 @import 'base/animations';
 @import 'base/buttons';
 @import 'base/base';
->>>>>>> sitemap
 
 
 // PARTS
