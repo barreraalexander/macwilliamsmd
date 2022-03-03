@@ -33,7 +33,9 @@
             gap: .75em;
         }
     }
-    
+    .button_like{
+        width: max-content;
+    }
     .about_doctor_ctnr{
         margin: 2em 0;
         h1{
@@ -97,9 +99,7 @@
         }
         
     }
-    .button_like{
-        width: max-content;
-    }
+
     .about_row{
         padding: $section_margin;
         display: flex;
@@ -139,10 +139,12 @@
 
 @media only screen and (min-width: $desktop_bp){
     #about_section{
-        font-size: 1.2em;
+        font-size: .9em;
         p, li{
             width: 45%;
-            
+        }
+        .button_like{
+            width: unset;
         }
         .about_row{
             p{
@@ -152,6 +154,7 @@
             }
             img{
                 opacity: .1;
+                top: -150px;
             }
         }
         .ul_ctnr{
