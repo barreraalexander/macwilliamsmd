@@ -144,3 +144,13 @@
     -webkit-animation: wiggle 1s infinite alternate;
     animation-delay: 1s;
 }
+
+
+@keyframes showme{
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}

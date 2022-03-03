@@ -8,10 +8,25 @@ for (let elem of buttons){
     elem.addEventListener('click', mod_slide, false)
 }
 
+
+let slide_tl = gsap.timeline(
+    {
+        paused: true,
+    }
+)
+
 var curr_slide = slides[0]
 var curr_img = full_imgs[0]
 var curr_index = 0
 function mod_slide(event){
+
+    if (event.isTrusted){
+        if (slideshow_clock){
+            slideshow_clock.stop()
+        }
+    }
+
+
     if (event.target.dataset.slide_index==curr_index){
         return
     }
@@ -31,30 +46,45 @@ function mod_slide(event){
 
     curr_slide = slides[curr_index]
     curr_img = full_imgs[curr_index]
-    
-    old_img.style.display = 'none'
-    curr_img.style.display = 'block'
 
+    slide_tl.to(
+        [old_slide, old_img], {
+            duration: .5,
+            opacity: 0,
+            display: 'none',
+        }
+    ), 0
 
-    old_slide.style.display = 'none'
-    curr_slide.style.display = 'flex'
+    slide_tl.to(
+        [curr_slide, curr_img], {
+            duration: .5,
+            opacity: 1,
+            display: 'flex',
+        }
+    )
+    slide_tl.resume()
 }
 
-// const slideshow_clock = new THREE.Clock()
-// let clocking = function(){
-//     let curr_time = slideshow_clock.getElapsedTime()
+var slide_index = 0
+const slideshow_clock = new THREE.Clock()
+let clocking = function(){
 
-//     if (curr_time < 9 && curr_time > 8 ){
-//         slide_dots[slide_index].click()
-//         slideshow_clock.start()
-//         slide_index += 1;
-//         if (slide_index >= slide_dots.length){
-//             slide_index = 0
-//         }
-//     }
+    let curr_time = slideshow_clock.getElapsedTime()
+
+    if (curr_time < 3 && curr_time > 2 ){
+        slideshow_clock.start()
+        buttons[slide_index].click()
+
+
+        slide_index +=  1;
+        if (slide_index >= buttons.length){
+            slide_index = 0
+        }
+
+    }
     
-//     requestAnimationFrame(clocking)
-// }
-// clocking();
+    requestAnimationFrame(clocking)
+}
+clocking();
 
 

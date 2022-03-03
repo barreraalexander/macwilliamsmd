@@ -6,8 +6,6 @@ from website.components.parts.service_slide import component as service_slide
 from website.components.parts.slide_dots_ctnr import component as slide_dots_ctnr
 
 def component():
-    animation = url_for('static', filename='js/interface_mods/slideshow.js')
-
     return Markup(f"""
     <section id="hero_section">
         <div class="main_display_ctnr">
@@ -55,6 +53,5 @@ def component():
         </div>
     </section>
 
-    <script src="{animation}">
-    </script>
+
     """)
