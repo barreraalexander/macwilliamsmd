@@ -71,7 +71,7 @@ let clocking = function(){
 
     let curr_time = slideshow_clock.getElapsedTime()
 
-    if (curr_time < 3 && curr_time > 2 ){
+    if (curr_time < 9 && curr_time > 8 ){
         slideshow_clock.start()
         buttons[slide_index].click()
 
